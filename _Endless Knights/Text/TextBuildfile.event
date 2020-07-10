@@ -1,0 +1,26 @@
+# 0x0356 SlimBladeNameText
+Slim Blade[X]
+
+# 0x036C BlueStabberNameText
+Blue Stabber[X]
+
+# 0x0903 PrologueOpenText
+# [FarFarLeft] | [FarLeft] [MidLeft] [Left] x [Right] [MidRight] [FarRight] | [FarFarRight]
+
+[MidLeft][LoadEirika]Hey.[A]
+[MidRight][LoadEirika]Whoah.[A]
+[MidLeft]Whoah[TMM].[.....][TMM] You're me.[NL]
+That's weird.[A]
+[MidRight][MoveLeft]No its not[CloseEyes] *hug[.....].[A][OpenEyes][CloseSpeech][MoveMidRight]
+[MidRight][ClearFace][MidLeft][Smile]Where'd you go?[A][X]
+
+# 0x916
+[FarRight][LoadEirika] I'm the first to die.[A][ClearFace]
+[FarLeft][LoadFace][0x03][0x01] We know.[A][X]
+
+# 0x0C69 Def1Text
+# This is a comment.
+This is some text that I want to exist.[X]
+
+#include "Items/ItemText.event"
+#include "Classes/ClassText.event"

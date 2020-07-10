@@ -1,0 +1,7 @@
+PUSH
+//Skips world map intro
+ORG $A39768
+EVBIT_MODIFY 0x1
+SKIPWN
+ENDA
+POP

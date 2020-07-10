@@ -1,0 +1,48 @@
+#ifdef _FE8_
+	#include "EAstdlib.event"
+	#include "EA Standard Library/Backward Compatibility.txt"
+	
+	#include "Tools/Tool Helpers.txt"
+	#include "Extensions/Hack Installation.txt"
+	#include "Tables/Table Installer.event"
+	//#include "Definitions.event"
+
+	//Free space definitions
+	#define FreeSpace
+	#define Free_Space
+	#define FreeSpaceA $B2A610
+	#define FreeSpaceB $E47200
+	#define FreeSpaceC $EFB2E0
+
+	#define EndOfRom $FE4000
+	#define EndofRom EndOfRom
+
+	#define BLRange $1C2270
+	#define FreeSpaceBLRange BLRange
+	#define BlRange BLRange
+
+	ORG FreeSpaceA // Normal master installer
+
+	#include "_FE8EssentialFixes.event"
+	//ClassTable:, CharacterTable:, LukasPortrait:,
+
+	// Install text
+	#include "Text/Install Text Data.event"
+	
+	// Install CSV tables
+
+	// Install graphics
+
+	// Install ASM hacks
+
+	// Install music 
+
+	// Install maps
+	#include "Tileset and Animations/Tileset and Animations Installer.event"
+
+	#include "Maps/Master Map Installer.event"
+
+	// Install events
+	#include "Events/Master Event Installer.event"
+
+#endif

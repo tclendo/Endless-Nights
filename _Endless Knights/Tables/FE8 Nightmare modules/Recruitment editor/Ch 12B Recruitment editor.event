@@ -1,0 +1,6 @@
+#define csvmacro170(arg000,arg001,arg002,arg003,arg004,arg005,arg006) "SHORT arg000 ;BYTE arg001 arg002 ;WORD arg003 ;BYTE arg004 arg005 arg006 "
+
+PUSH
+ORG 0x9ea658
+csvmacro170(0x3,0x7,0x0,0x89fb90c,0x18,0x16,0x0 0x0 0x0 0x0 0x0 0x0)
+POP

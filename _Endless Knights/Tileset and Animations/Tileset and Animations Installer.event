@@ -1,0 +1,16 @@
+//Tileset and Animations Installer
+ALIGN 4
+DesertObjects:
+#incext Png2Dmp "Map Objects/DesertObjects.png" --lz77
+
+ALIGN 4
+DesertPalette:
+#incext Png2Dmp "Map Objects/DesertObjects.png" --palette-only
+
+ALIGN 4
+DesertTiles:
+#incext compress "Map Configs/DesertTiles.mapchip_config"
+
+EventPointerTable(0x8b, DesertObjects)
+EventPointerTable(0x8c, DesertPalette)
+EventPointerTable(0x8d, DesertTiles)
