@@ -2,7 +2,7 @@
 0x00 Nothing
 0x88ADEBB Armour
 0x88ADEC2 Armour/Mounted
-0x88ADED7 Swordfighters
+0x88ADED7 Myrm/Merc/Lord(F)
 0x88ADEE0 Mounted
 0x88ADEF1 Flying/Monsters
 0x88ADF13 Dragons

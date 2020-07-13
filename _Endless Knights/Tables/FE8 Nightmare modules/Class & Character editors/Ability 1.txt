@@ -1,84 +1,84 @@
 256
 0x00 None
-0x01 
-0x02 
-0x03 Mounted Move Again
+0x01 Mounted Aid Formula
+0x02 Canto
+0x03 Canto+Mounted Aid
 0x04 Steal Skill
 0x05 
 0x06 
-0x07 Steal/Move Again
-0x08 Thief Key
+0x07 Steal/Canto/Mounted Aid
+0x08 Lockpicks
 0x09 
 0x0A 
-0x0B Thief Key/Move Again
-0x0C Thief Key/Steal
+0x0B Lockpicks/Canto/Mounted Aid
+0x0C Lockpicks/Steal
 0x0D 
 0x0E 
-0x0F Thief Key/Steal/Move Again
+0x0F Lockpicks/Steal/Canto/Mounted Aid
 0x10 Dance Skill
 0x11 
 0x12 
-0x13 Dance/Move Again
+0x13 Dance/Canto/Mounted Aid
 0x14 Dance/Steal
 0x15 
 0x16 
-0x17 Dance/Steal/Move Again
-0x18 Dance/Thief Key
+0x17 Dance/Steal/Canto/Mounted Aid
+0x18 Dance/Lockpicks
 0x19 
 0x1A 
-0x1B Dance/Thief Key/Move Again
-0x1C Dance/Thief Key/Steal 
+0x1B Dance/Lockpicks/Canto/Mounted Aid
+0x1C Dance/Lockpicks/Steal 
 0x1D 
 0x1E 
-0x1F Dance/Thief Key/Steal/Move Again
+0x1F Dance/Lockpicks/Steal/Canto/Mounted Aid
 0x20 Play Skill
 0x21 
 0x22 
-0x23 Play/Move Again
+0x23 Play/Canto/Mounted Aid
 0x24 Play/Steal 
 0x25 
 0x26 
-0x27 Play/Steal/Move Again
-0x28 Play/Thief Key 
+0x27 Play/Steal/Canto/Mounted Aid
+0x28 Play/Lockpicks 
 0x29 
 0x2A 
-0x2B Play/Thief Key/Move Again
-0x2C Play/Thief Key/Steal
+0x2B Play/Lockpicks/Canto/Mounted Aid
+0x2C Play/Lockpicks/Steal
 0x2D 
 0x2E 
-0x2F Play/Thief Key/Steal/Move Again
+0x2F Play/Lockpicks/Steal/Canto/Mounted Aid
 0x30 Play/Dance
 0x31 
 0x32 
-0x33 Play/Dance/Move Again
+0x33 Play/Dance/Canto/Mounted Aid
 0x34 Play/Dance/Steal 
 0x35 
 0x36 
-0x37 Play/Dance/Steal/Move Again
-0x38 Play/Dance/Thief Key
+0x37 Play/Dance/Steal/Canto/Mounted Aid
+0x38 Play/Dance/Lockpicks
 0x39 
 0x3A 
-0x3B Play/Dance/Thief Key/Move Again
-0x3C Play/Dance/Thief Key/Steal 
+0x3B Play/Dance/Lockpicks/Canto/Mounted Aid
+0x3C Play/Dance/Lockpicks/Steal 
 0x3D 
 0x3E 
-0x3F Play/Dance/Thief Key/Steal/Move
+0x3F Play/Dance/Lockpicks/Steal/Move
 0x40 Critical Hit +15
 0x41 
 0x42 
-0x43 Critical +15/Move Again
+0x43 Critical +15/Canto/Mounted Aid
 0x44 Critical +15/Steal
 0x45 
 0x46 
-0x47 Critical +15/Steal/Move Again
-0x48 Critical +15/Thief Key 
+0x47 Critical +15/Steal/Canto/Mounted Aid
+0x48 Critical +15/Lockpicks 
 0x49 
 0x4A 
-0x4B Critical +15/Thief Key/Move Again
-0x4C Critical +15/Thief Key/Steal
+0x4B Critical +15/Lockpicks/Canto/Mounted Aid
+0x4C Critical +15/Lockpicks/Steal
 0x4D 
 0x4E 
-0x4F Critical +15/Thief Key/Steal/Move 
+0x4F Critical +15/Lockpicks/Steal/Canto 
 0x50 
 0x51 
 0x52 

@@ -70,10 +70,10 @@
 0x88AF4C4 Priest
 0x88AF4D0 Recruit (1)
 0x88AF4DC Pegasus Knight
-0x88AF4E8 Falco Knight
+0x88AF4E8 Falcoknight
 0x88AF4F8 Cleric
-0x88AF504 Troubador
-0x88AF510 Valkiery
+0x88AF504 Troubadoir
+0x88AF510 Valkyrie
 0x88AF528 Dancer
 0x88AF53C Soldier
 0x88AF548 Necromancer
@@ -87,15 +87,15 @@
 0x88AF5BC Elder Bael
 0x88AF5C8 Cyclops
 0x88AF5E0 Mauthe Doog
-0x88AF5EC Gwigly
+0x88AF5EC Gwyllgi
 0x88AF5F8 Tarvos
-0x88AF610 Macadire
-0x88AF62C Bigl
-0x88AF640 Arch Bigl
+0x88AF610 Maelduin
+0x88AF62C Mogall
+0x88AF640 Arch Mogall
 0x88AF654 Gorgon
 0x88AF668 Gargoyle
-0x88AF674 Death Goyle
-0x88AF680 Draco Zombie
+0x88AF674 Deathgoyle
+0x88AF680 Dracozombie
 0x88AF68C Demon King
 0x88AF6A4 Cyclops (2)
 0x88AF6BC Elder Bael (2)

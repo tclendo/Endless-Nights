@@ -1,12 +1,12 @@
 #FE8 Stat Bonuses Editor by SpyroDi
-#
+#edited by circleseverywhere
 
 1
 FE8 Stat Bonuses Editor by SpyroDi (please consult Stat Bonuses.txt)
-0xE50000
+0x8AEED0
 100
-16
-Stat Bonus Pointers.txt
+12
+NULL
 NULL
 
 HP Bonus
@@ -47,6 +47,18 @@ NULL
 
 MDF Bonus
 5
+1
+NEDS
+NULL
+
+MOV Bonus
+7
+1
+NEDS
+NULL
+
+CON Bonus
+8
 1
 NEDS
 NULL

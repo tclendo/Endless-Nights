@@ -47,15 +47,9 @@ Walking Speed.txt
 
 Default Portrait
 8
-1
+2
 NDHU
 Portrait List.txt
-
-***UNKNOWN***
-9
-1
-NEHU
-NULL
 
 ***UNKNOWN***
 10
@@ -114,7 +108,7 @@ NULL
 Max HP
 19
 1
-NEDS
+NEDU
 NULL
 
 Max STR/MGC
@@ -267,7 +261,7 @@ Base Sword Level
 NDDU
 Weapon Rank.txt
 
-Base Spear Level
+Base Lance Level
 45
 1
 NDDU
@@ -333,25 +327,25 @@ Movement Cost(snow) Pointer
 NEHU
 NULL
 
-Terrain defence bonus
+Terrain avoid bonus
 68
 4
 NDHU
-Terrain bonuses.txt
+Terrain Bonus Type.txt
 
-Terrain avoid bonus
+Terrain defence bonus
 72
 4
 NDHU
-Terrain bonuses.txt
+Terrain Bonus Type.txt
 
 Terrain resistance bonus
 76
 4
 NDHU
-Terrain bonuses.txt
+Terrain Bonus Type.txt
 
-***UNKNOWN*** Pointer
+Class type/weaknesses
 80
 4
 NEHU

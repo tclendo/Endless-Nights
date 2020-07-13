@@ -42,8 +42,8 @@
 29 Tower of Valni 6
 2A Tower of Valni 7
 2B Tower of Valni 8
-2C Tower of Valni 8 Clone
-2D Tower of Valni 8 Clone
+2C Tower of Valni 8 (Cutscene)
+2D Tower of Valni 8 (Cutscene 2)
 2E Lagdou Ruins 1
 2F Lagdou Ruins 2
 30 Lagdou Ruins 3

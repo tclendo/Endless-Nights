@@ -3,7 +3,7 @@
 0x88AEBAC Default Eirika
 0x88AEBC4 Default Ephraim
 0x88AEBDC Default Seth
-0x88AEBF4 Default Frantz
+0x88AEBF4 Default Franz
 0x88AEC0C Default Gilliam
 0x88AEC24 Default Moulder
 0x88AEC3C Default Vanessa

@@ -1,5 +1,5 @@
 59
-0X00 None
+0x00 None
 0x01 Prologue
 0x02 Ch 1
 0x03 Ch 2
@@ -55,6 +55,6 @@
 0x35 Lagdou Ruins 9
 0x36 Lagdou Ruins 10
 0x37 Lords split up (glitchy map)
-0X38 Melkaen Coast
-0X39 Ch 11 Eirika
-0X3A Ch 11 Ephraim
+0x38 Melkaen Coast
+0x39 Ch 11 Eirika
+0x3A Ch 11 Ephraim

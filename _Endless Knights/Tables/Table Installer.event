@@ -2,6 +2,8 @@
 
 #include "Table Definitions.txt"
 
+#include "FE8 Nightmare modules\AdvWeaponLocks\WeaponLockArray.event"
+
 #include "FE8 Nightmare modules\Animation\Custom Battle Animation Editor.event"
 
 #include "FE8 Nightmare modules\Animation\FE8 Battle Palette Reference.event"
@@ -20,7 +22,15 @@
 
 #include "FE8 Nightmare modules\Battle screen editor\battle screen editor5.event"
 
+#include "FE8 Nightmare modules\Biorhythm\Biorhythm Editor.event"
+
 #include "FE8 Nightmare modules\Chapter data editor\Chapter Data Editor.event"
+
+#include "FE8 Nightmare modules\Chapter data editor\Pointer table editor.event"
+
+#include "FE8 Nightmare modules\Chapter data editor\World Map Cutscene table editor.event"
+
+#include "FE8 Nightmare modules\Chapter data editor\World Map Event table editor.event"
 
 #include "FE8 Nightmare modules\Chapter Unit Editor\Chapter1.event"
 
@@ -282,17 +292,25 @@
 
 #include "FE8 Nightmare modules\Chest Editor\Unknown9.event"
 
+#include "FE8 Nightmare modules\Class & Character editors\Class Level Cap Table.event"
+
 #include "FE8 Nightmare modules\Class & Character editors\FE8 Character Editor.event"
 
 #include "FE8 Nightmare modules\Class & Character editors\FE8 Class Editor.event"
+
+#include "FE8 Nightmare modules\Class & Character editors\FE8 Walking Sounds Editor.event"
 
 #include "FE8 Nightmare modules\Event data pointer table editor\Event table editor.event"
 
 #include "FE8 Nightmare modules\Item editors\FE8 Custom Item Animation List.event"
 
+#include "FE8 Nightmare modules\Item editors\FE8 Item AI Table.event"
+
 #include "FE8 Nightmare modules\Item editors\FE8 Item Editor.event"
 
 #include "FE8 Nightmare modules\Item editors\FE8 Item Effect Pointer Editor.event"
+
+#include "FE8 Nightmare modules\Item editors\FE8 Item Prep Screen Usability Editor.event"
 
 #include "FE8 Nightmare modules\Item editors\FE8 Item Target Pointer Editor.event"
 
@@ -300,15 +318,33 @@
 
 #include "FE8 Nightmare modules\Item editors\FE8 Spell Association Editor.event"
 
+#include "FE8 Nightmare modules\Item editors\FE8 Staff AI Table.event"
+
 #include "FE8 Nightmare modules\Item editors\Ocean Seal Promotion Editor.event"
 
 #include "FE8 Nightmare modules\Item editors\Promotion Item Editor.event"
 
 #include "FE8 Nightmare modules\Item editors\Stat Bonuses Editor.event"
 
+#include "FE8 Nightmare modules\LaguzBars\Transformation Bar Starting Position Table.event"
+
+#include "FE8 Nightmare modules\LaguzBars\Transformation Speed Table.event"
+
+#include "FE8 Nightmare modules\LaguzBars\Transformation Stat Boost Table.event"
+
+#include "FE8 Nightmare modules\Magic\Mag Char Editor.event"
+
+#include "FE8 Nightmare modules\Magic\Mag Class Editor.event"
+
 #include "FE8 Nightmare modules\Map sprite editor\Misc map sprite editor.event"
 
 #include "FE8 Nightmare modules\Map sprite editor\Standing map sprite editor.event"
+
+#include "FE8 Nightmare modules\Misc\Escape Quote Editor.event"
+
+#include "FE8 Nightmare modules\Misc\Modular EXP Class Table.event"
+
+#include "FE8 Nightmare modules\Misc\Personal Data Editor.event"
 
 #include "FE8 Nightmare modules\Portrait Editors\FE8 Portrait Editor.event"
 
@@ -532,6 +568,14 @@
 
 #include "FE8 Nightmare modules\Shop Editor\Map - Taizel Shop.event"
 
+#include "FE8 Nightmare modules\Skills\FE8 Character Level Up Skill Editor.event"
+
+#include "FE8 Nightmare modules\Skills\FE8 Class Level Up Skill Editor.event"
+
+#include "FE8 Nightmare modules\Skills\FE8 Class Skill Editor.event"
+
+#include "FE8 Nightmare modules\Skills\FE8 Personal Skill Editor.event"
+
 #include "FE8 Nightmare modules\Summon editors\Summon character editor.event"
 
 #include "FE8 Nightmare modules\Summon editors\Summon class editor.event"
@@ -547,3 +591,4 @@
 #include "FE8 Nightmare modules\Support editors\SupportCompatibilityEditor.event"
 
 #include "FE8 Nightmare modules\Support editors\SupportConvoAvailabilityEditor.event"
+

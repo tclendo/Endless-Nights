@@ -17,7 +17,7 @@ NULL
 
 Description value
 2
-1
+2
 NEHU
 NULL
 
@@ -35,15 +35,9 @@ Class List.txt
 
 Portrait (Zero is Default)
 6
-1
+2
 NDHU
 Portrait List.txt
-
-***UNKNOWN*** (Zero)
-7
-1
-NEHU
-NULL
 
 Mini Portrait (Zero is Default)
 8
@@ -57,7 +51,7 @@ Affinity
 NDDU
 Character Affinity.txt
 
-***UNKNOWN*** (Zero)
+Units Screen Priority
 10
 1
 NEHU
@@ -72,7 +66,7 @@ NULL
 Base HP
 12
 1
-NEDS
+NEDU
 NULL
 
 Base Strength/Magic
@@ -93,11 +87,6 @@ Base Speed
 NEDS
 NULL
 
-Base Luck
-18
-1
-NEDS
-NULL
 
 Base Defense
 16
@@ -105,8 +94,14 @@ Base Defense
 NEDS
 NULL
 
-Base Magic Defense
+Base Resistance
 17
+1
+NEDS
+NULL
+
+Base Luck
+18
 1
 NEDS
 NULL
@@ -123,7 +118,7 @@ Sword Level
 NDDU
 Weapon Rank.txt
 
-Spear Level
+Lance Level
 21
 1
 NDDU
@@ -189,12 +184,6 @@ Speed Growth
 NEDU
 NULL
 
-Luck Growth
-34
-1
-NEDU
-NULL
-
 Defense Growth
 32
 1
@@ -203,6 +192,12 @@ NULL
 
 Magic Defense Growth
 33
+1
+NEDU
+NULL
+
+Luck Growth
+34
 1
 NEDU
 NULL

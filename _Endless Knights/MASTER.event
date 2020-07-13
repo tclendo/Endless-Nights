@@ -40,7 +40,7 @@
 	#include "Graphics/Master Graphics Installer.event"
 
 	// Install ASM hacks
-	//#include "ASM/Master ASM Installer.event"
+	#include "ASM/Master ASM Installer.event"
 
 	// Install music 
 

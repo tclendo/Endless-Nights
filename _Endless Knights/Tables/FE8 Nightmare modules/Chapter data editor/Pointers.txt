@@ -25,7 +25,7 @@
 0x17 Ch 4 events
 0x18 Object type 3
 0x19 Map palette 3
-0x1A Tile confihutation 3
+0x1A Tile configuration 3
 0x1B Ch 5x map
 0x1C Tile animations 3
 0x1D Ch 5x Map changes

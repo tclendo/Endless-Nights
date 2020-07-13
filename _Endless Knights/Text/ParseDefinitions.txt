@@ -33,6 +33,8 @@
 [FarRight] = [OpenFarRight]
 [FarFarRight] = [OpenFarFarRight]
 
+[CurrentPortrait] = [0xFF][0xFF]
+
 [<-......] = [FarFarLeft]
 [<-] = [FarFarLeft]
 [v.....] = [FarLeft]

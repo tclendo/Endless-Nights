@@ -66,7 +66,6 @@ BeginningScene:
 
 LOAD1 1 PlayerUnits
 ENUN
-Text(PrologueOpenText)
 LOAD1 0 EnemyUnits
 ENUN
 CURSOR Eirika
