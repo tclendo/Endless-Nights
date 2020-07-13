@@ -1,0 +1,33 @@
+Transformation Speed Table - indexed by Class
+Label - TransformationSpeedTable
+Entry length - 0x4 bytes
++0x0  	Byte	Per Turn Gain (Untransformed)
++0x1	Byte	Per Battle Gain (Untransformed)
++0x2	Byte	Per Turn Loss (Transformed)
++0x3 	Byte	Per Battle Loss (Transformed)
+
+
+Transformation Stat Boost Table - indexed by Class
+Label - TransformationStatBoostTable
+Entry length - 0x8 bytes
++0x0	Byte	Str Boost
++0x1	Byte	Skl Boost
++0x2	Byte	Spd Boost
++0x3	Byte	Def Boost
++0x4	Byte	Res Boost
++0x5	Byte	Con Boost
++0x6	Byte	Mov Boost
++0x7	Byte	Mag Boost (if split)
+
+Transformation Bar Starting Position Table - indexed by Character
+Label - BarStartingPositionTable
+Entry length - 0x1 bytes
++0x0	Byte	Starting position (0-30)
+
+Laguz Class List - terminated with 0x0 0x0
+Label - LaguzClassList
+Entry length - 0x2 bytes
++0x0	Byte	Untransformed class
++0x1	Byte	Transformed class
+
+to see if a class is a laguz class in general, just go 1 byte at a time

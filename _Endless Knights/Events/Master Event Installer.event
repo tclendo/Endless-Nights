@@ -1,1 +1,8 @@
-#include "Worldmap/World Map Master Installer.event"
+ALIGN 4
+{
+	#include "Worldmap/World Map Master Installer.event"
+}
+ALIGN 4
+{
+	#include "Act 1/chapter1.event"
+}

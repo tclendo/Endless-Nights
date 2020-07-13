@@ -4,11 +4,11 @@
 	
 	#include "Tools/Tool Helpers.txt"
 	#include "Extensions/Hack Installation.txt"
-	#include "Tables/Table Installer.event"
-	//#include "Definitions.event"
+
+	#include "Definitions.event"
 
 	//Free space definitions
-	#define FreeSpace
+	//#define FreeSpace
 	#define Free_Space
 	#define FreeSpaceA $B2A610
 	#define FreeSpaceB $E47200
@@ -18,7 +18,7 @@
 	#define EndofRom EndOfRom
 
 	#define BLRange $1C2270
-	#define FreeSpaceBLRange BLRange
+	//#define FreeSpaceBLRange BLRange
 	#define BlRange BLRange
 
 	ORG FreeSpaceA // Normal master installer
@@ -27,22 +27,30 @@
 	//ClassTable:, CharacterTable:, LukasPortrait:,
 
 	// Install text
+	ALIGN 16
 	#include "Text/Install Text Data.event"
 	
 	// Install CSV tables
+	ALIGN 16
+	#include "Tables/Table Installer.event"
+
 
 	// Install graphics
+	ALIGN 16
+	#include "Graphics/Master Graphics Installer.event"
 
 	// Install ASM hacks
+	//#include "ASM/Master ASM Installer.event"
 
 	// Install music 
 
 	// Install maps
+	ALIGN 16
 	#include "Tileset and Animations/Tileset and Animations Installer.event"
-
 	#include "Maps/Master Map Installer.event"
 
 	// Install events
+	ALIGN 16
 	#include "Events/Master Event Installer.event"
 
 #endif

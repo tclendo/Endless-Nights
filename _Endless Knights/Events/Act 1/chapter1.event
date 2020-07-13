@@ -1,0 +1,97 @@
+//chapter 1
+
+EventPointerTable(7, MyEvents) //7 is prologue events
+
+MESSAGE "Am I a competent hacker?"
+MESSAGE "Not yet."
+
+MyEvents:
+
+POIN TurnBasedEvents
+
+POIN CharacterBasedEvents
+
+POIN LocationBasedEvents
+
+POIN MiscBasedEvents
+
+POIN Dunno Dunno Dunno
+
+POIN Tutorial
+
+POIN TrapData TrapData
+
+POIN Units Units
+
+POIN $0 $0 $0 $0 $0 $0
+
+POIN BeginningScene EndingScene
+
+///
+
+TurnBasedEvents:
+
+END_MAIN
+
+CharacterBasedEvents:
+
+END_MAIN
+
+LocationBasedEvents:
+
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN
+
+Dunno:
+
+END_MAIN
+
+Tutorial:
+
+END_MAIN
+
+TrapData:
+
+END_MAIN
+ALIGN 4
+
+Units:
+UNIT
+
+BeginningScene:
+
+LOAD1 1 PlayerUnits
+ENUN
+Text(PrologueOpenText)
+LOAD1 0 EnemyUnits
+ENUN
+CURSOR Eirika
+STAL 60
+REMOVE_CURSORS
+ENDA
+
+EndingScene:
+
+MoveToChapter(0x01)
+ENDA
+
+///
+
+PlayerUnits:
+
+UNIT Eirika Mauthedoog Eirika Level(1,Ally,False) [7,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
+UNIT Seth Mauthedoog Eirika Level(1,Ally,False) [6,6] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+
+UNIT ONeill Brigand ONeill Level(1,Enemy,False) [14,8] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] AttackInRangeAI
+UNIT
+
+///
+
+MESSAGE Ch1 events end at offset CURRENTOFFSET

@@ -1,0 +1,41 @@
+INTALLATION INSTRUCTIONS:
+1. `#include "LaguzBars.event"` 
+2. add `POIN IncDecLaguzBarsPerBattle` to the Post-Battle Calc Loop
+3. add to their respective stat getters `(Stat_TransformBoost-1)` where `Stat` is the given stat for the getter (Str, Skl, Spd, Def, Res, Con, Mov, Mag)
+4. In Debuffs, replace the procs with the following:
+```
+  ALIGN 4
+  MapMainClearProc:
+	WORD $02; POIN (UntransformTransformedLaguz|1)
+    WORD $02; POIN (ClearDebuffs|1)
+    WORD $02 $80155C5
+    WORD $0D $859A310
+
+  ALIGN 4
+  GameCtrlClearProc:
+	WORD $02; POIN (UntransformTransformedLaguz|1)
+    WORD $02; POIN (ClearDebuffs|1)
+    WORD $02 $8009D99
+    WORD $0D $8591924
+```
+5. add the unit menu command for Transform, with `TransformUsability` and `TransformEffect` funcs
+6. "MSS code.txt" contains information on setting up bar on the stat screen
+7. add tables to the proper directory
+8. add untransformed/transformed class pairs to the list in LaguzBars.event
+
+
+This hack does not control laguz weaponry, but you can do it very easily with class-based weapon locks & disallowing trading/removal of laguz weapons.
+
+Note that you CAN have a class that is both transformed and untransformed in different situations, that's perfectly legal; a unit is only treated as transformed if a flag is set either by using the unit menu command or automatically at the start of their phase if not a player unit. 
+
+
+KNOWN ISSUES:
+- bar as shown at prep screen is occasionally wrong; this is corrected as soon as the map starts.
+
+
+WIZARDRY & COMPATABILITY NOTICES:
+- this uses the lower 7 bits of external data +0x6; if something else also uses this area, they will conflict!
+- this hack requires debuffs to be set up, so that external data is saved through suspend!
+- this hack repoints the `TerrainHealLoop` and `PrepScreen` procs, but not the functions themselves; as long as you're hooking into the functions and not repointing the functions of either proc, your hacks will be automatically compatible. (If you are repointing them, just also repoint them in the repointed procs here and you'll be fine)
+- This is compatible with Str/Mag split, although it is not required. The last byte of each entry on the stat boost table will just be unused (alternatively, you could put the Mag boost in Luck's stat getter and get Luck transformation boosts from that location instead).
+- There are a series of laguz bar-related getters, if you want to reference the bar status/edit the status/check various aspects of this system elsewhere; they're globals, so they're just EA labels for your purposes. They're the first section in `LaguzBars.s`, inputs are designated in comments at the start of each.

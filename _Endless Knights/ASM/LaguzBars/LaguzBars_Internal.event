@@ -1,0 +1,53 @@
+
+#include "bin/ProcDefinitions.txt"
+
+#include "asm/LaguzBars.lyn.event"
+#include "asm/LaguzBarsMSS.lyn.event"
+
+DebuffTableLink:
+WORD DebuffTable
+
+PUSH
+	ORG $59A2B4
+		POIN TerrainHealLoopProc
+		
+	ORG $10988
+		POIN PrepScreenProc
+	ORG $1DB48
+		POIN PrepScreenProc
+	ORG $33C0C
+		POIN PrepScreenProc
+	ORG $342F0
+		POIN PrepScreenProc
+	ORG $34310
+		POIN PrepScreenProc
+		
+POP
+
+ALIGN 4
+TerrainHealLoopProc:
+PROC_CALL_ROUTINE(InitializeLaguzBarsIfFirstTurn) //doubled up on this so it inits with no prep
+PROC_CALL_ROUTINE(IncDecLaguzBarsPerPhase)
+PROC_CALL_ROUTINE(AutoTransformNonPlayerLaguz)
+
+PROC_CALL_ROUTINE($8035E21) 
+PROC_LABEL(0)
+PROC_CALL_ROUTINE($8035E51)
+PROC_CALL_ROUTINE($8035ED9)
+PROC_YIELD
+
+PROC_CALL_ROUTINE($8035EFD)
+PROC_YIELD
+
+PROC_CALL_ROUTINE($8035F41)
+
+PROC_LABEL(1)
+PROC_CALL_ROUTINE($8035F6D)
+PROC_GOTO(0)
+PROC_END
+
+ALIGN 4
+PrepScreenProc:
+PROC_CALL_ROUTINE(InitializeLaguzBarsIfPrepScreen)
+#incbin "bin/PrepScreenProc.dmp"
+

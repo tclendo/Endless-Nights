@@ -1,0 +1,13 @@
+//Portrait Installer.event
+//#include "Tools/Tool Helpers.txt"
+//setMugEntry(number, data, mouth_x, mouth_y, eye_x, eye_y)
+
+ALIGN 4
+Naiah_Mug:
+#incext PortraitFormatter "naiah.png"
+Idi_Mug:
+#incext PortraitFormatter "idi.png"
+
+setMugEntry(0x02, Naiah_Mug, 4, 5, 4, 3)
+setMugEntry(0x03, Naiah_Mug, 4, 5, 4, 3)
+setMugEntry(0x04, Idi_Mug, 3, 5, 3, 3)

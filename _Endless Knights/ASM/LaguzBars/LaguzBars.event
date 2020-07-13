@@ -1,0 +1,16 @@
+#ifndef LAGUZ_BARS_INSTALLED
+#define LAGUZ_BARS_INSTALLED
+
+#include "eastdlib.event"
+#include "Extensions/Hack Installation.txt"
+
+ALIGN 4
+LaguzClassList:
+BYTE EirikaLord Mauthedoog
+//BYTE Necromancer DemonKing
+BYTE 0 0 // terminator
+
+
+#include "LaguzBars_Internal.event"
+
+#endif // LAGUZ_BARS_INSTALLED

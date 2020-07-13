@@ -16,6 +16,6 @@ echo --------------------------------
 echo Assembling ROM. Please wait...
 echo --------------------------------
 
-Core A FE8 "-output:%OUTPUT%" "-input:%MASTER%"
+ColorzCore A FE8 "-output:%OUTPUT%" "-input:%MASTER%"
 
 pause

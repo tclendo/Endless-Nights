@@ -40,7 +40,6 @@ END_MAIN
 
 TrapData:
 ENDTRAP
-
 ALIGN 4
 
 Units:

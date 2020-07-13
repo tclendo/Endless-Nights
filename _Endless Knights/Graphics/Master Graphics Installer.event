@@ -1,0 +1,16 @@
+//Master Graphics Installer.event
+
+#include "Portraits/Portrait Installer.event"
+
+PUSH
+ORG $88638
+POIN NewStatScreen
+ORG $88640
+POIN NewStatScreenPal
+POP
+
+ALIGN 4
+NewStatScreen:
+#incext Png2Dmp "statscreen3.png" --lz77
+NewStatScreenPal:
+#incext Png2Dmp "statscreen3.png" --palette-only

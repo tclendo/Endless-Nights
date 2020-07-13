@@ -1,3 +1,7 @@
+#include "Skills/skilldesc_text.txt"
+#include "Skills/unitmenu_text.txt"
+#include "Skills/statscreen_text.txt"
+
 # 0x0356 SlimBladeNameText
 Slim Blade[X]
 
