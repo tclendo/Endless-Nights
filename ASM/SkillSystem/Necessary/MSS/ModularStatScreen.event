@@ -161,8 +161,7 @@
     WORD Growth_Options
     POIN Growth_Getter_Table
     POIN Get_Palette_Index
-
-	
+    POIN LaguzBarMSSGetter
   
   ALIGN 4
   MSS_page2:

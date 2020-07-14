@@ -34,3 +34,5 @@
 #include "ASM/SkillSystem/SkillSystem/skill_definitions.event"
 
 // #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+
+#define EndConvo "CALL $9EE2C4"

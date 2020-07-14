@@ -101,6 +101,9 @@ UnitMenuTable:
   UM_Summon_DK
   UM_Pick
 
+  //UM_Transform
+  MenuCommand(UM_Transform,UM_TransformDesc,OrangeText,TransformUsability,TransformEffect)
+
 #ifdef HAX_RALLIES
   // Rally preview conflicts with window semitransparency changes
   // So we only add that in if it is disabled
