@@ -94,8 +94,8 @@ This unit must escape last.[X]
 ## Mov_Text_ID
 Mov[X]
 
-#include "Chapters/Chapter Text Installer.event"
-
 #include "Skills/skilldesc_text.txt"
 
 #include "Skills/unitinfo_text.txt"
+
+#include "Chapters/Chapter Text Installer.event"

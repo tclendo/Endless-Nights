@@ -33,7 +33,6 @@
 .equ Const_200472C, 0x200472C
 .equ Const_2023D40, 0x2023D40
 .equ tile_origin, 0x2003c94
-
 .equ Green, 4
 .equ Yellow, 3
 .equ Blue, 2

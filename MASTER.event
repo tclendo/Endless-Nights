@@ -21,10 +21,9 @@
 	//#define FreeSpaceBLRange BLRange
 	#define BlRange BLRange
 
-	ORG FreeSpaceA // Normal master installer
+	ORG EndOfRom // Normal master installer
 
 	#include "_FE8EssentialFixes.event"
-	//ClassTable:, CharacterTable:, LukasPortrait:,
 
 	// Install text
 	ALIGN 16
@@ -52,6 +51,8 @@
 
 	// Install events
 	ALIGN 16
-	#include "Events/Master Event Installer.event"
+	//#include "Events/Master Event Installer.event"
+
+	MESSAGE Ends at offset CURRENTOFFSET
 
 #endif

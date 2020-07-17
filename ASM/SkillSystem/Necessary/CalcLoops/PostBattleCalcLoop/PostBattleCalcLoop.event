@@ -15,6 +15,4 @@ POIN SavageBlow BreathOfLife Despoil Lifetaker Fury PoisonStrike GrislyWound//li
 POIN Canto CantoPlus Galeforce ReMove Powerstaff CulturedPostCombat Gridmaster //this order for canto and friends is the only one I tested
 WORD 0 //Terminator
 
-POIN IncDecLaguzBarsPerBattle //For Laguz Bars
-
 PROTECT $1D308 $1D314

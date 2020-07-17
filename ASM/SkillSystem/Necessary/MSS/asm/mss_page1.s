@@ -93,7 +93,7 @@ draw_number_at 26, 15
 draw_textID_at 21, 17, 0x4f5 @avoid
 get_avoid
 draw_number_at 26, 17
-
+  
 @blh DrawBWLNumbers
 
 page_end
