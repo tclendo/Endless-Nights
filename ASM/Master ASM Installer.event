@@ -2,4 +2,7 @@
 
 #include "SkillSystem/_MasterHackInstaller.event"
 
+/*
+ALIGN 4
 #include "LaguzBars/LaguzBars.event"
+*/

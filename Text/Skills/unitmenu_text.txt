@@ -77,9 +77,3 @@ stats to capture an enemy.[X]
 
 ## UM_EditSkillDesc
 DEBUG: Edit this unit's skill set.[X]
-
-## UM_Transform
- Transform[X]
-
-## UM_TransformDesc
- Transform[X]

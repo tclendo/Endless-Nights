@@ -39,7 +39,6 @@
 	ALIGN 16
 	#include "Graphics/Master Graphics Installer.event"
 
-	ALIGN 16
 	// Install ASM hacks
 	#include "ASM/Master ASM Installer.event"
 

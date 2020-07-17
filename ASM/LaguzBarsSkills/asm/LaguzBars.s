@@ -192,6 +192,30 @@ beq GetLaguzBar_ReturnNil
 
 @we are laguz!
 
+@check for skills
+ldr r0,=SkillTester
+mov r14,r0
+mov r0,r4
+ldr r1,=WildheartIDLink
+ldrb r1,[r1]
+.short 0xF800
+cmp r0,#0
+bne GetLaguzBar_AlwaysFull
+
+ldr r0,=SkillTester
+mov r14,r0
+mov r0,r4
+ldr r1,=FormshiftIDLink
+ldrb r1,[r1]
+.short 0xF800
+cmp r0,#0
+beq GetLaguzBar_NoSkills
+
+GetLaguzBar_AlwaysFull:
+mov r0,#30
+b GetLaguzBar_GoBack
+
+
 GetLaguzBar_NoSkills:
 @get the external data byte
 
@@ -252,6 +276,30 @@ ldrb r0,[r0,#4]
 bl IsClassLaguz
 cmp r0,#0
 beq SetLaguzBar_GoBack
+
+@do we have Wildheart or Formshift?
+ldr r0,=SkillTester
+mov r14,r0
+mov r0,r4
+ldr r1,=WildheartIDLink
+ldrb r1,[r1]
+.short 0xF800
+cmp r0,#0
+bne SetLaguzBar_BarAlwaysFull
+
+ldr r0,=SkillTester
+mov r14,r0
+mov r0,r4
+ldr r1,=FormshiftIDLink
+ldrb r1,[r1]
+.short 0xF800
+cmp r0,#0
+beq SetLaguzBar_NoSkills
+
+SetLaguzBar_BarAlwaysFull:
+mov r5,#30
+b SetLaguzBar_SetBarValue
+
 
 SetLaguzBar_NoSkills:
 ldrb r0,[r4,#0xB] 	@allegiance byte
@@ -611,7 +659,24 @@ ldrb r1,[r0] 	@r0 = bar starting position
 mov r0,r4
 bl SetLaguzBar
 
-b InitializeLaguzBars_LoopRestart1
+@check if unit has either skill that denotes them needing to transform here
+ldr r0,=SkillTester
+mov r14,r0
+mov r0,r4
+ldr r1,=WildheartIDLink
+ldrb r1,[r1]
+.short 0xF800
+cmp r0,#0
+bne InitializeLaguzBars_AutotransformPlayerUnit
+
+ldr r0,=SkillTester
+mov r14,r0
+mov r0,r4
+ldr r1,=FormshiftIDLink
+ldrb r1,[r1]
+.short 0xF800
+cmp r0,#0
+beq InitializeLaguzBars_LoopRestart1
 
 InitializeLaguzBars_AutotransformPlayerUnit:
 mov r0,r4
@@ -1077,6 +1142,21 @@ add r0,r1
 add r0,r5
 ldrb r0,[r0]
 
+mov r6,r0
+@do we have Wildheart?
+
+ldr r0,=SkillTester
+mov r14,r0
+mov r0,r4
+ldr r1,=WildheartIDLink
+ldrb r1,[r1]
+.short 0xF800
+cmp r0,#0
+beq TransformationStatBoostCheck_DontHalveBonus
+lsr r6,r6,#1 @/2
+
+TransformationStatBoostCheck_DontHalveBonus:
+mov r0,r6
 b TransformationStatBoostCheck_GoBack
 
 TransformationStatBoostCheck_RetFalse:
@@ -1454,7 +1534,24 @@ ldrb r1,[r0] 	@r0 = bar starting position
 mov r0,r4
 bl SetLaguzBar
 
-b InitializeLaguzBars2_LoopRestart1
+@check if unit has either skill that denotes them needing to transform here
+ldr r0,=SkillTester
+mov r14,r0
+mov r0,r4
+ldr r1,=WildheartIDLink
+ldrb r1,[r1]
+.short 0xF800
+cmp r0,#0
+bne InitializeLaguzBars2_AutotransformPlayerUnit
+
+ldr r0,=SkillTester
+mov r14,r0
+mov r0,r4
+ldr r1,=FormshiftIDLink
+ldrb r1,[r1]
+.short 0xF800
+cmp r0,#0
+beq InitializeLaguzBars2_LoopRestart1
 
 InitializeLaguzBars2_AutotransformPlayerUnit:
 mov r0,r4
@@ -1550,74 +1647,4 @@ bx r0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@ ======================================================
-@ ========= UNTRANSFORM AT THE END OF CHAPTERS =========
-@ ======================================================
-
-
-.global UntransformTransformedLaguz
-.type UntransformTransformedLaguz, %function
-
-
-UntransformTransformedLaguz:
-
-@we need to check for each player unit to see if they are transformed
-@if so, we need to untransform them
-@should be lib funcs for both of these, after getting each unit ptr
-@so we can setup a loop for this then
-
-push {r4-r7,r14}
-
-ldr r4,=#0x202BE4C @start of player unit structs
-mov r5,#0 @number of units checked so far
-
-UntransformTransformedLaguz_LoopStart:
-@have we checked every unit?
-cmp r5,#62
-beq UntransformTransformedLaguz_LoopExit
-
-@does unit exist?
-ldr r0,[r4]
-cmp r0,#0
-beq UntransformTransformedLaguz_LoopExit
-
-@is unit transformed?
-mov r0,r4
-bl IsLaguzTransformed
-cmp r0,#0
-beq UntransformTransformedLaguz_LoopRestart
-
-@untransform them
-mov r0,r4
-bl LaguzUntransform
-
-UntransformTransformedLaguz_LoopRestart:
-add r4,#0x48 @size of unit struct
-add r5,#1
-b UntransformTransformedLaguz_LoopStart
-
-
-UntransformTransformedLaguz_LoopExit:
-
-pop {r4-r7}
-mov r0,#0
-pop {r1}
-bx r1
-
-
-.ltorg
-.align
 

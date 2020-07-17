@@ -3,13 +3,6 @@
 //Skills are categorized broadly by where their effect is applied, in no particular order within each category.
 
 
-//Additional Skills for Endless Knights:
-
-//LaguzBars
-//By Sme
-#define WildheartID 50
-#define FormshiftID 109
-
 //AI Skills
 
 //Provoke: Enemies are more likely to target this unit.
@@ -989,8 +982,8 @@
 //Display-Only Skills
 
 #define CunningID 12
-#define NiceThighsID 255
-#define PersonalityID 255
+#define NiceThighsID 50
+#define PersonalityID 109
 
 
 //Broken Skills

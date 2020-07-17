@@ -5,8 +5,8 @@ POP
 ALIGN 4
 PersonalSkillTable:
 csvmacro286(0x0)
-csvmacro286(WildheartID)
-csvmacro286(WildheartID)
+csvmacro286(CharismaID)
+csvmacro286(SaviorID)
 csvmacro286(RallyDefID)
 csvmacro286(SealStrID)
 csvmacro286(RallyResID)
