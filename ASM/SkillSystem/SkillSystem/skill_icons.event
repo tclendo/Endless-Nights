@@ -1,7 +1,6 @@
 ALIGN 4
 SkillIcons:
 
-
 //Icon graphics are uncompressed
 #define SkillIcon(skillID) "128*skillID+SkillIcons"
 
@@ -149,7 +148,7 @@ ORG SkillIcon(GaleforceID)
 ORG SkillIcon(RenewalID)
 #incbin "SkillIcons/Renewal.dmp"
 
-ORG SkillIcon(NiceThighsID)
+ORG SkillIcon(WildheartID)
 #incbin "SkillIcons/NiceThighs.dmp"
 
 ORG SkillIcon(DemoiselleID)
@@ -326,7 +325,7 @@ ORG SkillIcon(DragonsBloodID)
 ORG SkillIcon(GambleID)
 #incbin "SkillIcons/Gamble.dmp"
 
-ORG SkillIcon(PersonalityID)
+ORG SkillIcon(FormshiftID)
 #incbin "SkillIcons/Personality.dmp"
 
 ORG SkillIcon(QuickDrawID)

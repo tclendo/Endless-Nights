@@ -5,7 +5,6 @@ POP
 ALIGN 4
 BarStartingPositionTable:
 csvmacro162(0x0)
-csvmacro162(0x16)
 csvmacro162(0x0)
 csvmacro162(0x0)
 csvmacro162(0x0)
@@ -19,7 +18,8 @@ csvmacro162(0x0)
 csvmacro162(0x0)
 csvmacro162(0x0)
 csvmacro162(0x0)
-csvmacro162(0x1e)
+csvmacro162(0x0)
+csvmacro162(0x0)
 csvmacro162(0x0)
 csvmacro162(0x0)
 csvmacro162(0x0)

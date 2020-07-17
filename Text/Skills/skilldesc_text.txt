@@ -1231,3 +1231,10 @@ Vengeance: Add half of damage[N]
 taken to damage dealt.[N]
 (Skill % activation)[X]
 
+## SD_Wildheart
+Wildheart: This unit is always[N]
+transformed with half stat boosts.[X]
+
+## SD_Formshift
+Formshift: This unit is always[N]
+transformed with full stat boosts.[X]

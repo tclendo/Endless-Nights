@@ -8,87 +8,115 @@ MESSAGE "Not yet."
 MyEvents:
 
 POIN TurnBasedEvents
-
 POIN CharacterBasedEvents
-
 POIN LocationBasedEvents
-
 POIN MiscBasedEvents
-
 POIN Dunno Dunno Dunno
-
 POIN Tutorial
-
 POIN TrapData TrapData
-
 POIN Units Units
-
 POIN $0 $0 $0 $0 $0 $0
-
 POIN BeginningScene EndingScene
 
 ///
 
 TurnBasedEvents:
-
+//TurnEventPlayer(0x0,FriendsCome,2)
+//TurnEventPlayer(0x0,EnemiesCome,3)
 END_MAIN
 
-CharacterBasedEvents:
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
+CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-DefeatBoss(EndingScene)
+DefeatAll(EndingScene)
 END_MAIN
 
 Dunno:
-
 END_MAIN
 
 Tutorial:
-
 END_MAIN
 
 TrapData:
-
 END_MAIN
+
 ALIGN 4
 
 Units:
 UNIT
 
 BeginningScene:
-
 LOAD1 1 PlayerUnits
 ENUN
 LOAD1 0 EnemyUnits
 ENUN
+FADU 30
+MOVE 5 Eirika [13,7]
+MOVE 5 Seth [14,6]
+ENUN
 CURSOR Eirika
 STAL 60
 REMOVE_CURSORS
+SetBackground(0x30)
+Text(StartText)
+EndConvo
+NoFade
 ENDA
 
 EndingScene:
 
-MoveToChapter(0x01)
+MoveToChapter(0x1)
 ENDA
 
 ///
 
+FriendsCome:
+
+LOAD1 1 Buddies
+ENUN
+MOVE 5 Gilliam [9,1]
+MOVE 5 Franz [10,1]
+ENUN
+Text(BuddiesText)
+EndConvo
+ENDA
+
+EnemiesCome:
+
+LOAD1 0 EnemyReinforcements1
+ENUN
+ENDA
+
 PlayerUnits:
 
-UNIT Eirika Mauthedoog Eirika Level(1,Ally,False) [7,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
-UNIT Seth Mauthedoog Eirika Level(1,Ally,False) [6,6] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
+UNIT Eirika EirikaLord Eirika Level(1,Ally,False) [14,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
+UNIT Seth EphraimLord Eirika Level(1,Ally,False) [14,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
 
-UNIT ONeill Brigand ONeill Level(1,Enemy,False) [14,8] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] AttackInRangeAI
+UNIT ONeill Brigand ONeill Level(1,Enemy,False) [0,4] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] GuardTileAI
+UNIT Bandit Brigand ONeill Level(1,Enemy,False) [1,7] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT Bandit Brigand ONeill Level(1,Enemy,False) [5,9] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT Bandit Brigand ONeill Level(1,Enemy,False) [7,2] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT
+
+Buddies:
+UNIT Gilliam Cleric Eirika Level(1,Ally,False) [9,0] 0x0 0x0 0x0 0x1 [Heal,Vulnerary] NoAI
+UNIT Franz Archer_F Eirika Level(2,Ally,False) [10,0] 0x0 0x0 0x0 0x1 [IronBow] NoAI
+UNIT
+
+EnemyReinforcements1:
+UNIT Bandit Brigand ONeill Level(2,Enemy,False) [4,9] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT Bandit Brigand ONeill Level(2,Enemy,False) [5,9] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT Bandit Brigand ONeill Level(2,Enemy,False) [9,0] 0x0 0x0 0x0 0x1 [HandAxe,Vulnerary] DefaultAI
 UNIT
 
 ///

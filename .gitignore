@@ -5,6 +5,7 @@
 *.wav
 *.ups
 *.SNA
+*.sa1
 UPDATE.cmd
 !EA Avenir/*.exe
 !ParseDefinitions.txt

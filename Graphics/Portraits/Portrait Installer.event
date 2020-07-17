@@ -7,7 +7,13 @@ Naiah_Mug:
 #incext PortraitFormatter "naiah.png"
 Idi_Mug:
 #incext PortraitFormatter "idi.png"
+Safiyah_Mug:
+#incext PortraitFormatter "safiyah.png"
+Yvette_Mug:
+#incext PortraitFormatter "yvette.png"
 
 setMugEntry(0x02, Naiah_Mug, 4, 5, 4, 3)
 setMugEntry(0x03, Naiah_Mug, 4, 5, 4, 3)
 setMugEntry(0x04, Idi_Mug, 3, 5, 3, 3)
+setMugEntry(0x05, Safiyah_Mug, 3, 5, 3, 3)
+setMugEntry(0x06, Yvette_Mug, 2, 6, 2, 4)

@@ -7,9 +7,14 @@
 ALIGN 4
 LaguzClassList:
 BYTE EirikaLord Mauthedoog
-//BYTE Necromancer DemonKing
+BYTE EphraimLord Mauthedoog
 BYTE 0 0 // terminator
 
+ALIGN 4
+WildheartIDLink:
+BYTE WildheartID
+FormshiftIDLink:
+BYTE FormshiftID
 
 #include "LaguzBars_Internal.event"
 
