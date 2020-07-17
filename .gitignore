@@ -6,6 +6,8 @@
 *.ups
 *.SNA
 *.sa1
+*.sa2
+*.sg2
 UPDATE.cmd
 !EA Avenir/*.exe
 !ParseDefinitions.txt
