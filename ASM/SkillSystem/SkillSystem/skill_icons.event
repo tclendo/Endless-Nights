@@ -5,6 +5,16 @@ SkillIcons:
 //Icon graphics are uncompressed
 #define SkillIcon(skillID) "128*skillID+SkillIcons"
 
+//extra skill icon definitions
+
+ORG SkillIcon(WildheartID)
+#incbin "SkillIcons/NiceThighs.dmp"
+
+ORG SkillIcon(FormshiftID)
+#incbin "SkillIcons/Personality.dmp"
+
+// default
+
 ORG SkillIcon(AcrobatID)
 #incbin "SkillIcons/Acrobat.dmp"
 

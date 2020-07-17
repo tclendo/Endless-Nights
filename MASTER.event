@@ -51,7 +51,7 @@
 
 	// Install events
 	ALIGN 16
-	//#include "Events/Master Event Installer.event"
+	#include "Events/Master Event Installer.event"
 
 	MESSAGE Ends at offset CURRENTOFFSET
 

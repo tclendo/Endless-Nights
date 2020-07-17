@@ -21,8 +21,8 @@ POIN BeginningScene EndingScene
 ///
 
 TurnBasedEvents:
-//TurnEventPlayer(0x0,FriendsCome,2)
-//TurnEventPlayer(0x0,EnemiesCome,3)
+TurnEventPlayer(0x0,FriendsCome,2)
+TurnEventPlayer(0x0,EnemiesCome,3)
 END_MAIN
 
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
@@ -96,8 +96,8 @@ ENDA
 
 PlayerUnits:
 
-UNIT Eirika EirikaLord Eirika Level(1,Ally,False) [14,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
-UNIT Seth EphraimLord Eirika Level(1,Ally,False) [14,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
+UNIT Eirika Mauthedoog Eirika Level(1,Ally,False) [14,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
+UNIT Seth Mauthedoog Eirika Level(1,Ally,False) [14,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
