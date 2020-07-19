@@ -1,0 +1,11 @@
+//Animation Reference
+
+FemaleMonkAnim:
+LightAnim(MonkFMagic)
+UnarmedAnim(MonkFMagic)
+WORD 0x0 0x0
+
+FemaleBowAnim:
+BowAnim(ArcherFBow)
+UnarmedAnim(ArcherFUnarmed)
+WORD 0x0 0x0

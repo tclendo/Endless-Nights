@@ -21,8 +21,11 @@
 	//#define FreeSpaceBLRange BLRange
 	#define BlRange BLRange
 
-	ORG EndOfRom // Normal master installer
+	ORG FreeSpaceA
+	ALIGN 16
+	#include "Graphics/Battle Animations/Battle Animations 1.event"
 
+	ORG EndOfRom // Normal master installer
 	#include "_FE8EssentialFixes.event"
 
 	// Install text
@@ -31,8 +34,7 @@
 	
 	// Install CSV tables
 	ALIGN 16
-	#include "Tables/Table Installer.event"
-
+	#include "Tables/Master Table Installer.event"
 
 	// Install graphics
 	ALIGN 16

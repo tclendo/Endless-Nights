@@ -1,0 +1,12 @@
+{
+	#include "Female Monk Magic.event"
+}
+
+{
+	#include "Archer Twintail Bow.event"
+}
+
+{
+	#include "Archer Twintail Unarmed.event"
+}
+

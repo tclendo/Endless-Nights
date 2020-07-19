@@ -2,18 +2,31 @@
 
 #include "Portraits/Portrait Installer.event"
 
-/*
+#include "Map Sprites/Map Sprite Installer.event"
+
+#include "Battle Palettes/Palette Setup.event"
+
 PUSH
 ORG $88638
 POIN NewStatScreen
 ORG $88640
 POIN NewStatScreenPal
+ORG $88620
+POIN RemoveGlowy
+//ORG $59EE20
+//POIN PlayerMapPal
 POP
-
 
 ALIGN 4
 NewStatScreen:
-#incext Png2Dmp "statscreen3.png" --lz77
+#incext Png2Dmp "statscreen.png" --lz77
 NewStatScreenPal:
-#incext Png2Dmp "statscreen3.png" --palette-only
+#incext Png2Dmp "statscreen.png" --palette-only
+
+RemoveGlowy:
+#incext Png2Dmp "RemoveGlowy.png" --lz77
+
+/*
+PlayerMapPal:
+#incext Png2Dmp "PlayerMapPal.png" --palette-only
 */

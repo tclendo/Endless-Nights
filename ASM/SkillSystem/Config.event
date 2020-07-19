@@ -19,13 +19,13 @@
 
 // If uncommented, will use a full (EMS-based) save expansion instead of the "old" suspend expansion
 // Enabling this *will* break saves, but allows for higher stats and other things.
-// #define USE_SAVE_EXPANSION
+#define USE_SAVE_EXPANSION
 
 //If uncommented, will enable Battle Stats with Animations Off.
 #define BATTLE_STATS
 
 //If uncommented, will enable Casual Mode (set by flag 0xE0).
-#define CASUAL_MODE
+//#define CASUAL_MODE
 
 //If uncommented, will enable Contemporary Talk & Support.
 #define CONTEMPORARY_TALK_SUPPORT
@@ -63,7 +63,7 @@
 #define SEMITRANSPARENCY_CHANGES
 
 //If uncommented, will enable use of Supply during the prologue.
-#define PROLOGUE_SUPPLY
+//#define PROLOGUE_SUPPLY
 
 //If uncommented, will enable PC and Generic Music.
 //#define CHARACTER_CHAPTER_SPECIFIC_BATTTLETHEMES
@@ -91,7 +91,7 @@
 // If uncomented, ModularEXP will be implemented.
 // Go to "ModularEXP/ModularEXP.event" and "Tables/FE8 Nightmare modules/Misc/Modular EXP Class Table.csv" to edit experience gains.
 // This patch normally conflicts with Paragon, but installing here remedies this.
-// #define MODULAR_EXP
+ #define MODULAR_EXP
 
 // If uncommented, PortraitSelectionASM will be implemented.
 // Go to "PortraitSelectionASM/PortraitSelectionASM.event" to configure your modular portrait options.
@@ -191,9 +191,11 @@
 
 //If true, will use the vanilla check in addition to the skill check.
 #define ALSO_USE_VANILLA_DANCE_CHECK False
-#define ALSO_USE_VANILLA_SUPPLY_CHECK True
+#define ALSO_USE_VANILLA_SUPPLY_CHECK False
 #define ALSO_USE_VANILLA_SUMMON_CHECK False
 #define ALSO_USE_VANILLA_STEAL_CHECK True
 
+//
+//#define LAGUZ_BARS
 
 #endif // HAX_CONFIG

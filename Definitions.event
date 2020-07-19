@@ -36,3 +36,51 @@
 // #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
 #define EndConvo "CALL $9EE2C4"
+
+#ifndef ClassAnimTable
+  #ifdef _FE8_
+    #define ClassAnimTable (0xc00008-0x20)
+  #endif
+  #ifdef _FE7_
+    #define ClassAnimTable (0xe00008-0x20)
+  #endif
+#endif
+
+#define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
+
+#define Item 9
+
+//Units
+//Characters
+#define Naiah 0x01
+#define Idi 0x02
+#define Safiyah 0x03
+#define Ayanna 0x04
+
+#define Amani 0x64
+
+//Classes
+#define Monk_F 0x33
+
+//Battle Animations
+//Label Battle Animations
+#define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
+#define SpearAnim(Animation) "BYTE Spears 0x01 ; SHORT Animation"
+#define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation"
+#define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
+#define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
+#define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
+#define LightAnim(Animation) "BYTE Light 0x01 ; SHORT Animation"
+#define DarkAnim(Animation) "BYTE Dark 0x01 ; SHORT Animation"
+#define UnarmedAnim(Animation) "BYTE Item 0x01 ; SHORT Animation"
+#define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+
+#define ArcherFBow 0x28
+#define ArcherFUnarmed 0x29
+
+#define MonkFMagic 0x8f
+
+
+// Music
+#define WindTrack 0x4E

@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pSpeedModifiers: // Speed
-	POIN prAddUnitSpeed prHalveIfRescuing prHalveIfCapturing prDebuffSpd prAddEquipSpeed prItemPassiveSpeed prRallySpd prLifeAndDeathBonus prSkillFury prResolve prDefiantSpd prPushSpd
+	POIN prAddUnitSpeed prHalveIfRescuing prHalveIfCapturing prDebuffSpd prAddEquipSpeed prItemPassiveSpeed prRallySpd prLifeAndDeathBonus prSkillFury prResolve prDefiantSpd prPushSpd (Spd_TransformBoost-1)
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif

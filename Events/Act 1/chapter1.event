@@ -2,9 +2,6 @@
 
 EventPointerTable(7, MyEvents) //7 is prologue events
 
-MESSAGE "Am I a competent hacker?"
-MESSAGE "Not yet."
-
 MyEvents:
 
 POIN TurnBasedEvents
@@ -22,10 +19,12 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0x0,FriendsCome,2)
-TurnEventPlayer(0x0,EnemiesCome,3)
+TurnEventPlayer(0x0,EnemiesCome1,2)
+TurnEventPlayer(0x0,EnemiesCome2,3)
+TurnEventPlayer(0x0,EnemiesCome3,4)
 END_MAIN
 
-ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
 
 CharacterBasedEvents:
 END_MAIN
@@ -53,70 +52,132 @@ Units:
 UNIT
 
 BeginningScene:
-LOAD1 1 PlayerUnits
-ENUN
+LOMA 0x39 //cutscene map
+MUSC WindTrack //wind
+WEATHER 6
+FADU 2
+CURSOR [7,8]
+STAL 120
+REMOVE_CURSORS
+SetBackground(0x00)
+Text(Ch1CutsceneText)
+EndConvo
+MUSCSLOW Silent
+FADI 3
+WEATHER 0 
+LOMA 0x00 //playable map
 LOAD1 0 EnemyUnits
 ENUN
-FADU 30
-MOVE 5 Eirika [13,7]
-MOVE 5 Seth [14,6]
-ENUN
-CURSOR Eirika
+CAMERA [19,9]
+FADU 5
+CURSOR [17,3] //highlight house
 STAL 60
 REMOVE_CURSORS
-SetBackground(0x30)
-Text(StartText)
+SetBackground(0x01)
+Text(Ch1StartText)
 EndConvo
+CAMERA [0,0]
+CURSOR [0,6] //highlight boss
+STAL 60
+REMOVE_CURSORS
+MUSC Tension
+SetBackground(0x30)
+Text(Ch1BadGuyText)
+EndConvo
+MOVE 5 Amani [1,7]
+ENUN
+CAMERA [19,9]
+CURSOR [17,3] //highlight house
+STAL 60
+REMOVE_CURSORS
+SetBackground(0x00)
+Text(Ch1StartText)
+EndConvo
+LOAD1 1 PlayerUnits
+ENUN
+MOVE 5 Eirika [17,4]
+MOVE 5 Seth [16,3]
+ENUN
 NoFade
 ENDA
 
 EndingScene:
 
-MoveToChapter(0x1)
+MoveToChapter(0x0)
 ENDA
 
 ///
 
 FriendsCome:
 
+CAMERA [19,14]
 LOAD1 1 Buddies
 ENUN
-MOVE 5 Gilliam [9,1]
-MOVE 5 Franz [10,1]
+MOVE 5 Gilliam [13,8]
+MOVE 5 Franz [14,8]
 ENUN
-Text(BuddiesText)
+Text(Ch1BuddiesText)
 EndConvo
+NoFade
 ENDA
 
-EnemiesCome:
+EnemiesCome1:
 
+CAMERA [9,0]
 LOAD1 0 EnemyReinforcements1
 ENUN
+NoFade
+ENDA
+
+EnemiesCome2:
+
+CAMERA [0,10]
+LOAD1 0 EnemyReinforcements2
+ENUN
+NoFade
+ENDA
+
+EnemiesCome3:
+
+CAMERA [0,10]
+LOAD1 0 EnemyReinforcements3
+ENUN
+NoFade
 ENDA
 
 PlayerUnits:
 
-UNIT Eirika Mauthedoog Eirika Level(1,Ally,False) [14,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
-UNIT Seth Mauthedoog Eirika Level(1,Ally,False) [14,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
+UNIT Naiah EirikaLord Naiah Level(1,Ally,False) [17,3] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
+UNIT Idi EphraimLord Naiah Level(4,Ally,False) [17,3] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
 
-UNIT ONeill Brigand ONeill Level(1,Enemy,False) [0,4] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] GuardTileAI
-UNIT Bandit Brigand ONeill Level(1,Enemy,False) [1,7] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT Bandit Brigand ONeill Level(1,Enemy,False) [5,9] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT Bandit Brigand ONeill Level(1,Enemy,False) [7,2] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT ONeill Brigand ONeill Level(1,Enemy,False) [0,6] 0x0 0x0 0x0 0x1 [IronAxe] NeverMoveAI
+UNIT Amani EphraimLord ONeill Level(1,Enemy,False) [0,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NeverMoveAI
+UNIT Bandit Brigand ONeill Level(1,Enemy,False) [7,7] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT Bandit Brigand ONeill Level(1,Enemy,False) [10,5] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT Bandit Brigand ONeill Level(1,Enemy,False) [4,3] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
 UNIT
 
 Buddies:
-UNIT Gilliam Cleric Eirika Level(1,Ally,False) [9,0] 0x0 0x0 0x0 0x1 [Heal,Vulnerary] NoAI
-UNIT Franz Archer_F Eirika Level(2,Ally,False) [10,0] 0x0 0x0 0x0 0x1 [IronBow] NoAI
+UNIT Safiyah Archer_F Naiah Level(1,Ally,False) [16,9] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
+UNIT Ayanna Monk_F Naiah Level(2,Ally,False) [17,9] 0x0 0x0 0x0 0x1 [Lightning,Vulnerary] NoAI
 UNIT
 
 EnemyReinforcements1:
-UNIT Bandit Brigand ONeill Level(2,Enemy,False) [4,9] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT Bandit Brigand ONeill Level(2,Enemy,False) [5,9] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT Bandit Brigand ONeill Level(2,Enemy,False) [9,0] 0x0 0x0 0x0 0x1 [HandAxe,Vulnerary] DefaultAI
+UNIT Bandit Brigand ONeill Level(1,Enemy,False) [9,0] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT Bandit Brigand ONeill Level(1,Enemy,False) [10,0] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT
+
+EnemyReinforcements2:
+UNIT Bandit Brigand ONeill Level(1,Enemy,False) [8,9] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT Bandit Brigand ONeill Level(1,Enemy,False) [9,9] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT
+
+EnemyReinforcements3:
+UNIT Bandit Shaman ONeill Level(3,Enemy,True) [1,9] 0x0 0x0 0x0 0x1 [Flux,Vulnerary] DefaultAI
+UNIT Bandit Mage ONeill Level(3,Enemy,True) [2,9] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
 UNIT
 
 ///
