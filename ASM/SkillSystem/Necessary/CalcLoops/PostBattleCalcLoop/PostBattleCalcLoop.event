@@ -9,6 +9,7 @@ POP
 PostCombatLoop:
 #incbin "post_loop.dmp"
 POIN PostCombatSkills
+POIN IncDecLaguzBarsPerBattle //for laguz bars
 
 PostCombatSkills: //I like having savage blow as the first one because it makes the activation sound play first
 POIN SavageBlow BreathOfLife Despoil Lifetaker Fury PoisonStrike GrislyWound//lifetaker should probably go after any messages because it can mess with the palette a bit

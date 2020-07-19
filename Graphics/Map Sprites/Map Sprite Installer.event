@@ -1,0 +1,11 @@
+//Map Sprite Installer.event
+
+ALIGN 4
+
+MonkFSt:
+#incext Png2Dmp "MonkFSt.png" --lz77
+
+ALIGN 4
+
+MonkFMv:
+#incext Png2Dmp "MonkFMv.png" --lz77

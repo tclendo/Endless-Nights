@@ -1,5 +1,6 @@
-/*
+{
+	#include "Worldmap/World Map Events Installer.event"
+}
 {
 	#include "Act 1/chapter1.event"
 }
-*/

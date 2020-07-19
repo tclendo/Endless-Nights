@@ -16,7 +16,7 @@ Prologue[X]
 Learned  [X]
 
 #0x0928 LaguzBarText
-Chi[X]
+Bar[X]
 
 #include "Skills/statscreen_text.txt"
 
@@ -99,3 +99,4 @@ Mov[X]
 #include "Skills/unitinfo_text.txt"
 
 #include "Chapters/Chapter Text Installer.event"
+#include "Units/Character Text Installer.event"
