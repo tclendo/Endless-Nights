@@ -1,0 +1,3359 @@
+//Event file generated from Sappy .s format.
+
+	#define	LighthouseInAgustria_grp  voicegroup000
+	#define	LighthouseInAgustria_pri  0
+	#define	LighthouseInAgustria_rev  0
+	#define	LighthouseInAgustria_mvl  75
+	#define	LighthouseInAgustria_key  0
+	#define	LighthouseInAgustria_tbs  1
+	#define	LighthouseInAgustria_exg  0
+	#define	LighthouseInAgustria_cmp  1
+
+	// .rodata
+	//	LighthouseInAgustria
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+LighthouseInAgustria_1:
+	BYTE	KEYSH   LighthouseInAgustria_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   61*LighthouseInAgustria_tbs/2
+	BYTE		VOICE   34
+	BYTE		VOL     86*LighthouseInAgustria_mvl/mxv
+	BYTE	W12
+LighthouseInAgustria_1_B1:
+	BYTE	TEMPO   61*LighthouseInAgustria_tbs/2
+	BYTE	W84
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W12
+	BYTE		N03     Bn2   v072
+	BYTE	W06
+	BYTE		N32     Bn2   v080
+	BYTE	W42
+	BYTE		N02   
+	BYTE	W06
+	BYTE		N36   
+	BYTE	W30
+// 007   ----------------------------------------
+	BYTE	W12
+	BYTE		N02     Bn2   v076
+	BYTE	W06
+	BYTE		N36     Bn2   v080
+	BYTE	W42
+	BYTE		N02     Bn2   v076
+	BYTE	W06
+	BYTE		N17     Bn2   v080
+	BYTE	W18
+	BYTE		N19     An2   v076
+	BYTE	W12
+// 008   ----------------------------------------
+	BYTE	W12
+	BYTE		N92     Cn3   v060
+	BYTE	W84
+// 009   ----------------------------------------
+	BYTE	W12
+	BYTE		N44     Ds3   v076
+	BYTE	W48
+	BYTE		        Bn2 
+	BYTE	W36
+// 010   ----------------------------------------
+	BYTE	W12
+	BYTE		N92     Cn3   v068
+	BYTE	W84
+// 011   ----------------------------------------
+	BYTE	W12
+	BYTE		N44     Dn3   v064
+	BYTE	W48
+	BYTE		        Bn2 
+	BYTE	W36
+// 012   ----------------------------------------
+	BYTE	W12
+	BYTE		N36     Bn2   v068
+	BYTE	W48
+	BYTE		N42     Cn3   v056
+	BYTE	W36
+// 013   ----------------------------------------
+	BYTE	W12
+	BYTE		N40     Bn2   v068
+	BYTE	W48
+	BYTE		N42     Cn3   v056
+	BYTE	W36
+// 014   ----------------------------------------
+	BYTE	W12
+	BYTE		N40     Bn2   v072
+	BYTE	W48
+	BYTE	W01
+	BYTE		N44     An2   v084
+	BYTE	W32
+	BYTE	W03
+// 015   ----------------------------------------
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	LighthouseInAgustria_1_B1
+LighthouseInAgustria_1_B2:
+	BYTE	W06
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+LighthouseInAgustria_2:
+	BYTE	KEYSH   LighthouseInAgustria_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   127
+	BYTE		VOL     76*LighthouseInAgustria_mvl/mxv
+	BYTE	W12
+LighthouseInAgustria_2_B1:
+	BYTE	W84
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W12
+	BYTE		N42     Ds1   v052
+	BYTE	W48
+	BYTE		N44     Ds1   v060
+	BYTE	W36
+// 005   ----------------------------------------
+	BYTE	W12
+	BYTE		        Ds1   v064
+	BYTE	W48
+	BYTE		N42     Ds1   v052
+	BYTE	W36
+// 006   ----------------------------------------
+	BYTE	W12
+	BYTE		N03     Cn1   v064
+	BYTE	W06
+	BYTE		N32     Cn1   v068
+	BYTE	W42
+	BYTE		N02     Cn1   v072
+	BYTE	W06
+	BYTE		N36     Cn1   v068
+	BYTE	W30
+// 007   ----------------------------------------
+	BYTE	W12
+	BYTE		N02     Cn1   v064
+	BYTE	W06
+	BYTE		N36     Cn1   v068
+	BYTE	W42
+	BYTE		N02   
+	BYTE	W06
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N19     Ds2   v072
+	BYTE	W12
+// 008   ----------------------------------------
+	BYTE	W12
+	BYTE		N01     Dn1   v076
+	BYTE	W06
+	BYTE		        Dn1   v060
+	BYTE	W06
+	BYTE		        Dn1   v084
+	BYTE	W06
+	BYTE		        Dn1   v056
+	BYTE	W06
+	BYTE		        Dn1   v064
+	BYTE	W06
+	BYTE		        Dn1   v060
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v064
+	BYTE	W06
+	BYTE		        Dn1   v076
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Dn1   v092
+	BYTE	W06
+	BYTE		        Dn1   v060
+	BYTE	W06
+	BYTE		        Dn1   v068
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+// 009   ----------------------------------------
+	BYTE		        Dn1   v092
+	BYTE	W06
+	BYTE		        Dn1   v060
+	BYTE	W06
+	BYTE		        Dn1   v064
+	BYTE	W06
+	BYTE		        Dn1   v068
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Dn1   v060
+	BYTE	W06
+	BYTE		        Dn1   v068
+	BYTE	W06
+	BYTE		        Dn1   v072
+	BYTE	W06
+	BYTE		        Dn1   v084
+	BYTE	W06
+	BYTE		        Dn1   v044
+	BYTE	W06
+	BYTE		        Dn1   v068
+	BYTE	W06
+	BYTE		        Dn1   v056
+	BYTE	W06
+	BYTE		        Dn1   v088
+	BYTE	W06
+	BYTE		        Dn1   v064
+	BYTE	W06
+	BYTE		        Dn1   v076
+	BYTE	W06
+	BYTE		        Dn1   v068
+	BYTE	W06
+// 010   ----------------------------------------
+	BYTE		        Dn1   v092
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	LighthouseInAgustria_2_B1
+LighthouseInAgustria_2_B2:
+	BYTE	W06
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+LighthouseInAgustria_3:
+	BYTE	KEYSH   LighthouseInAgustria_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   71
+	BYTE	W12
+LighthouseInAgustria_3_B1:
+	BYTE		VOL     100*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W06
+	BYTE		N06     An3   v072
+	BYTE	W12
+	BYTE		PAN     c_v+14
+	BYTE		N06     An3   v068
+	BYTE	W12
+	BYTE		PAN     c_v+0
+	BYTE		N06     An3   v052
+	BYTE	W12
+	BYTE		PAN     c_v+14
+	BYTE		N06     An3   v068
+	BYTE	W12
+	BYTE		PAN     c_v+0
+	BYTE		N06     Bn3   v084
+	BYTE	W12
+	BYTE		PAN     c_v+14
+	BYTE		N06   
+	BYTE	W12
+	BYTE		PAN     c_v+0
+	BYTE		N06     An3   v068
+	BYTE	W06
+// 001   ----------------------------------------
+	BYTE	W06
+	BYTE		PAN     c_v+14
+	BYTE		N03     En3   v084
+	BYTE	W06
+	BYTE		PAN     c_v+14
+	BYTE	W06
+	BYTE		N13     Fs3 
+	BYTE	W24
+	BYTE		PAN     c_v-14
+	BYTE		N13     En3 
+	BYTE	W24
+	BYTE		PAN     c_v-25
+	BYTE		N13     Dn3   v076
+	BYTE	W24
+	BYTE		PAN     c_v-14
+	BYTE		N11     Fn3   v068
+	BYTE	W06
+// 002   ----------------------------------------
+	BYTE	W12
+	BYTE		PAN     c_v+0
+	BYTE	W06
+	BYTE		N06     An3   v072
+	BYTE	W12
+	BYTE		PAN     c_v+14
+	BYTE		N06   
+	BYTE	W12
+	BYTE		PAN     c_v+0
+	BYTE		N06     Bn3   v084
+	BYTE	W12
+	BYTE		PAN     c_v+14
+	BYTE		N06     Bn3   v080
+	BYTE	W12
+	BYTE		PAN     c_v+0
+	BYTE		N06     An3   v072
+	BYTE	W12
+	BYTE		PAN     c_v+14
+	BYTE		N06   
+	BYTE	W12
+	BYTE		PAN     c_v+0
+	BYTE		N06     An3   v068
+	BYTE	W06
+// 003   ----------------------------------------
+	BYTE	W06
+	BYTE		PAN     c_v+14
+	BYTE		N04     En3   v084
+	BYTE	W06
+	BYTE		PAN     c_v+14
+	BYTE	W06
+	BYTE		N21     Fs3   v088
+	BYTE	W24
+	BYTE		PAN     c_v-14
+	BYTE		N21     En3   v084
+	BYTE	W24
+	BYTE		PAN     c_v-25
+	BYTE		N13     Dn3   v076
+	BYTE	W24
+	BYTE		PAN     c_v-14
+	BYTE		N11     En3 
+	BYTE	W06
+// 004   ----------------------------------------
+	BYTE	W12
+	BYTE		VOL     102*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-14
+	BYTE		VOL     102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        116*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        118*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        121*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        122*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        123*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        124*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        125*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        126*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        127*LighthouseInAgustria_mvl/mxv
+	BYTE	W13
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        116*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        118*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        121*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        122*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        123*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        124*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        125*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        126*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        127*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+// 005   ----------------------------------------
+	BYTE	W12
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        116*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        118*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        121*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        122*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        123*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        124*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        125*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        126*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        127*LighthouseInAgustria_mvl/mxv
+	BYTE	W13
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        116*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        118*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        121*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        122*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        123*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        124*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        125*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        126*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        127*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+// 006   ----------------------------------------
+	BYTE	W12
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v+25
+	BYTE	W84
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W12
+	BYTE		VOL     100*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W68
+// 009   ----------------------------------------
+	BYTE	W12
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        92*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W30
+	BYTE	W01
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        92*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W19
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W12
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W32
+	BYTE	W02
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W24
+// 012   ----------------------------------------
+	BYTE	W12
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W01
+	BYTE		VOL     93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W32
+	BYTE	W01
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-25
+	BYTE	W01
+	BYTE		VOL     92*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W20
+// 013   ----------------------------------------
+	BYTE	W12
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W01
+	BYTE		VOL     93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W32
+	BYTE	W02
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-25
+	BYTE	W01
+	BYTE		VOL     92*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W19
+// 014   ----------------------------------------
+	BYTE	W12
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W01
+	BYTE		VOL     93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W32
+	BYTE	W02
+	BYTE		        76*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-25
+	BYTE	W01
+	BYTE		VOL     77*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        78*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        79*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        80*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        81*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        82*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        83*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        84*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        85*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        86*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        87*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        88*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        89*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        90*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        92*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+// 015   ----------------------------------------
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W08
+	BYTE	GoTo
+	 POIN2	LighthouseInAgustria_3_B1
+LighthouseInAgustria_3_B2:
+	BYTE	W06
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+LighthouseInAgustria_4:
+	BYTE	KEYSH   LighthouseInAgustria_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   71
+	BYTE	W12
+LighthouseInAgustria_4_B1:
+	BYTE		VOL     100*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-14
+	BYTE		N17     Fs3   v092
+	BYTE	W24
+	BYTE		N17   
+	BYTE	W24
+	BYTE		        Fs3   v088
+	BYTE	W24
+	BYTE		N13     Fs3   v092
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE	W12
+	BYTE		PAN     c_v+25
+	BYTE	W12
+	BYTE		N08     An3   v068
+	BYTE	W24
+	BYTE		PAN     c_v+14
+	BYTE		N07     Gs3   v080
+	BYTE	W24
+	BYTE		PAN     c_v-14
+	BYTE		N05     Fs3   v076
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE		PAN     c_v+14
+	BYTE		N07     Gs3 
+	BYTE	W12
+	BYTE		PAN     c_v-14
+	BYTE		N20     Fs3   v084
+	BYTE	W24
+	BYTE		        Fs3   v088
+	BYTE	W24
+	BYTE		        Fs3   v092
+	BYTE	W24
+	BYTE		N07     Fs3   v088
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE	W12
+	BYTE		PAN     c_v+25
+	BYTE	W12
+	BYTE		N14     An3   v072
+	BYTE	W24
+	BYTE		PAN     c_v+14
+	BYTE		N14     Gs3   v076
+	BYTE	W24
+	BYTE		PAN     c_v-14
+	BYTE		N14     Fs3   v072
+	BYTE	W24
+// 004   ----------------------------------------
+	BYTE		PAN     c_v+14
+	BYTE		N07     Gs3 
+	BYTE	W12
+	BYTE		VOL     100*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-25
+	BYTE		N02     Fs3 
+	BYTE	W12
+	BYTE		N16     Fs3   v084
+	BYTE	W24
+	BYTE		N02     Fs3   v080
+	BYTE	W12
+	BYTE		        Gn3   v060
+	BYTE	W12
+	BYTE		N19     Gn3   v064
+	BYTE	W24
+// 005   ----------------------------------------
+	BYTE		N02     Gn3   v060
+	BYTE	W12
+	BYTE		N03     Gn3   v068
+	BYTE	W12
+	BYTE		N19   
+	BYTE	W24
+	BYTE		N02     Gn3   v064
+	BYTE	W12
+	BYTE		N04     Fs3   v084
+	BYTE	W12
+	BYTE		N15   
+	BYTE	W24
+// 006   ----------------------------------------
+	BYTE		N04     Fs3   v092
+	BYTE	W12
+	BYTE		VOL     100*LighthouseInAgustria_mvl/mxv
+	BYTE		TIE     En4   v060
+	BYTE	W03
+	BYTE		VOL     101*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+// 007   ----------------------------------------
+	BYTE	W02
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W03
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        116*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        118*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        121*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        122*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        123*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        124*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        125*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        126*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        127*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        126*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        125*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        124*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        123*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        122*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        121*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        116*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		EOT   
+	BYTE		VOL     101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE		N23     Ds4 
+	BYTE	W01
+	BYTE		VOL     103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+// 008   ----------------------------------------
+	BYTE		        118*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        88*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        83*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        78*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        73*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        68*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        63*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        62*LighthouseInAgustria_mvl/mxv
+	BYTE		N44     En4   v072
+	BYTE	W01
+	BYTE		VOL     65*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        69*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        72*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        75*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        79*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        82*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        86*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        89*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W32
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE		N92     Fs4   v068
+	BYTE	W01
+	BYTE		VOL     97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W20
+// 009   ----------------------------------------
+	BYTE	W60
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE		N92     En4   v072
+	BYTE	W01
+	BYTE		VOL     92*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W20
+// 010   ----------------------------------------
+	BYTE	W60
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE		N92     Fs4   v068
+	BYTE	W01
+	BYTE		VOL     93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W23
+// 011   ----------------------------------------
+	BYTE	W60
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W36
+// 012   ----------------------------------------
+	BYTE	W12
+	BYTE		VOL     91*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v+14
+	BYTE	W01
+	BYTE		VOL     93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W32
+	BYTE	W02
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W17
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W05
+// 013   ----------------------------------------
+	BYTE	W12
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W32
+	BYTE	W03
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W17
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W05
+// 014   ----------------------------------------
+	BYTE	W12
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W36
+	BYTE	W01
+	BYTE		        85*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        86*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        87*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        88*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        89*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        90*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        92*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+// 015   ----------------------------------------
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	LighthouseInAgustria_4_B1
+LighthouseInAgustria_4_B2:
+	BYTE	W06
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+LighthouseInAgustria_5:
+	BYTE	KEYSH   LighthouseInAgustria_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   36
+	BYTE		VOL     87*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W12
+LighthouseInAgustria_5_B1:
+	BYTE		N03     Fs2   v084
+	BYTE	W06
+	BYTE		N36     Fs2   v092
+	BYTE	W42
+	BYTE		N02     Fs2   v088
+	BYTE	W06
+	BYTE		N32     Fs2   v096
+	BYTE	W30
+// 001   ----------------------------------------
+	BYTE	W06
+	BYTE		N04     En3   v072
+	BYTE	W06
+	BYTE		N15     Dn3   v068
+	BYTE	W18
+	BYTE		N04     Dn3   v072
+	BYTE	W06
+	BYTE		N14     Cs3   v084
+	BYTE	W18
+	BYTE		N04     Cs3   v072
+	BYTE	W06
+	BYTE		N14     Bn2   v080
+	BYTE	W18
+	BYTE		N04     Bn2   v076
+	BYTE	W06
+	BYTE		N10     Cs3   v080
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE		N04     Dn3   v056
+	BYTE	W06
+	BYTE		        En3   v076
+	BYTE	W06
+	BYTE		        Fs2   v088
+	BYTE	W06
+	BYTE		N32     Fs2   v084
+	BYTE	W36
+	BYTE		N04     Cs3   v068
+	BYTE	W06
+	BYTE		N03     Fs2   v084
+	BYTE	W06
+	BYTE		N32     Fs2   v096
+	BYTE	W30
+// 003   ----------------------------------------
+	BYTE	W06
+	BYTE		N04     En3   v072
+	BYTE	W06
+	BYTE		N14     Dn3   v068
+	BYTE	W18
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N14     Cs3   v084
+	BYTE	W18
+	BYTE		N05     Cs3   v088
+	BYTE	W06
+	BYTE		N14     Bn2   v076
+	BYTE	W18
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N11     Cs3   v080
+	BYTE	W12
+// 004   ----------------------------------------
+	BYTE	W06
+	BYTE		N04     Cs3   v076
+	BYTE	W06
+	BYTE		N08     Bn2 
+	BYTE	W12
+	BYTE		N21     Bn2   v088
+	BYTE	W24
+	BYTE		N06     Bn2   v084
+	BYTE	W12
+	BYTE		N05     Cn3   v080
+	BYTE	W12
+	BYTE		N20     Cn3   v092
+	BYTE	W24
+// 005   ----------------------------------------
+	BYTE		N06     Cn3   v084
+	BYTE	W12
+	BYTE		N04     Cs3   v088
+	BYTE	W12
+	BYTE		N20     Cs3   v092
+	BYTE	W24
+	BYTE		N10     Cs3   v088
+	BYTE	W12
+	BYTE		N06     Dn3   v076
+	BYTE	W12
+	BYTE		N22     Dn3   v084
+	BYTE	W24
+// 006   ----------------------------------------
+	BYTE		N10     Ds3   v080
+	BYTE	W12
+	BYTE		N02     En3   v088
+	BYTE	W06
+	BYTE		N18     En3   v096
+	BYTE	W42
+	BYTE		N02     Cn3   v076
+	BYTE	W06
+	BYTE		N36     Cn3   v088
+	BYTE	W30
+// 007   ----------------------------------------
+	BYTE	W12
+	BYTE		N01     Cs3   v084
+	BYTE	W06
+	BYTE		N36     Cs3   v092
+	BYTE	W42
+	BYTE		N02     Cn3   v080
+	BYTE	W06
+	BYTE		N17     Cn3   v084
+	BYTE	W18
+	BYTE		N19     Bn2   v088
+	BYTE	W12
+// 008   ----------------------------------------
+	BYTE	W12
+	BYTE		N12     Cn3   v076
+	BYTE	W18
+	BYTE		N20     Cn3   v088
+	BYTE	W24
+	BYTE		N02   
+	BYTE	W06
+	BYTE		        Cn3   v092
+	BYTE	W06
+	BYTE		N08     Cn3   v096
+	BYTE	W12
+	BYTE		N19   
+	BYTE	W18
+// 009   ----------------------------------------
+	BYTE	W06
+	BYTE		N05     Cn3   v088
+	BYTE	W06
+	BYTE		N14     Bn2   v100
+	BYTE	W18
+	BYTE		N07     Bn2   v096
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        Fs3 
+	BYTE	W06
+	BYTE		N14     En3   v104
+	BYTE	W18
+	BYTE		N22   
+	BYTE	W18
+// 010   ----------------------------------------
+	BYTE	W06
+	BYTE		N04     Ds3   v092
+	BYTE	W06
+	BYTE		N13     Cn3 
+	BYTE	W18
+	BYTE		N02     Cn3   v096
+	BYTE	W06
+	BYTE		N15   
+	BYTE	W18
+	BYTE		N07     Cn3   v080
+	BYTE	W12
+	BYTE		N08     Cn3   v092
+	BYTE	W12
+	BYTE		N02     Cn3   v084
+	BYTE	W06
+	BYTE		N16     Cn3   v092
+	BYTE	W12
+// 011   ----------------------------------------
+	BYTE	W06
+	BYTE		N05     Cn3   v080
+	BYTE	W06
+	BYTE		N14     Bn2   v096
+	BYTE	W18
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N04     Fs3   v088
+	BYTE	W06
+	BYTE		        Ds3   v092
+	BYTE	W06
+	BYTE		N14     En3   v096
+	BYTE	W18
+	BYTE		N03     En3   v100
+	BYTE	W06
+	BYTE		N06     En3   v104
+	BYTE	W08
+	BYTE		        Ds3 
+	BYTE	W04
+// 012   ----------------------------------------
+	BYTE	W03
+	BYTE		        Dn3   v096
+	BYTE	W09
+	BYTE		N12     Cs3   v104
+	BYTE		N36     En4   v076
+	BYTE	W18
+	BYTE		N02     Cs3   v096
+	BYTE	W06
+	BYTE		N22     Cs3   v100
+	BYTE	W24
+	BYTE		N13     Cn3   v088
+	BYTE		N20     En4   v068
+	BYTE	W18
+	BYTE		N02     Cn3   v092
+	BYTE	W06
+	BYTE		N21     Cn3   v096
+	BYTE		N11     En4   v068
+	BYTE	W12
+// 013   ----------------------------------------
+	BYTE	W12
+	BYTE		N12     Bn2   v104
+	BYTE		N40     Dn4   v072
+	BYTE	W18
+	BYTE		N02     Bn2   v096
+	BYTE	W06
+	BYTE		N22     Bn2   v104
+	BYTE	W24
+	BYTE		N02     An2   v096
+	BYTE		N20     En4   v068
+	BYTE	W06
+	BYTE		N07     An2   v100
+	BYTE	W12
+	BYTE		N21     An2   v104
+	BYTE	W06
+	BYTE		N11     En4   v068
+	BYTE	W12
+// 014   ----------------------------------------
+	BYTE	W06
+	BYTE		N02     An2   v092
+	BYTE	W06
+	BYTE		N14     Bn2   v108
+	BYTE		N40     Dn4   v068
+	BYTE	W18
+	BYTE		N02     Bn2   v100
+	BYTE	W06
+	BYTE		N17     Bn2   v104
+	BYTE	W19
+	BYTE		N05     Cn3   v100
+	BYTE	W06
+	BYTE		N02     Dn3   v096
+	BYTE		N44     Dn4   v064
+	BYTE	W07
+	BYTE		N06     Dn3   v096
+	BYTE	W12
+	BYTE		N14   
+	BYTE	W16
+// 015   ----------------------------------------
+	BYTE	W03
+	BYTE		N05     Dn3   v108
+	BYTE	W07
+	BYTE		        En3 
+	BYTE	W02
+	BYTE	GoTo
+	 POIN2	LighthouseInAgustria_5_B1
+LighthouseInAgustria_5_B2:
+	BYTE	W06
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+LighthouseInAgustria_6:
+	BYTE	KEYSH   LighthouseInAgustria_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   127
+	BYTE	W12
+LighthouseInAgustria_6_B1:
+	BYTE		VOL     115*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-49
+	BYTE		N01     Fs1   v068
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Fs1   v064
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Fs1   v068
+	BYTE	W12
+	BYTE		        Fs1   v056
+	BYTE	W12
+	BYTE		        Fs1   v060
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE		        Fs1   v064
+	BYTE	W12
+	BYTE		        Fs1   v068
+	BYTE	W12
+	BYTE		        Fs1   v060
+	BYTE	W12
+	BYTE		        Fs1   v068
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE		        Fs1   v076
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Fs1   v068
+	BYTE	W12
+	BYTE		        Fs1   v072
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Fs1   v068
+	BYTE	W12
+	BYTE		        Fs1   v072
+	BYTE	W12
+	BYTE		        Fs1   v068
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Fs1   v076
+	BYTE	W12
+	BYTE		        Fs1   v072
+	BYTE	W12
+	BYTE		        Fs1   v068
+	BYTE	W12
+	BYTE		        Fs1   v072
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+// 004   ----------------------------------------
+	BYTE	W12
+	BYTE		VOL     102*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v+14
+	BYTE		VOL     102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        116*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        118*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        121*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        122*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        123*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        124*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        125*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        126*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        127*LighthouseInAgustria_mvl/mxv
+	BYTE	W13
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        116*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        118*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        121*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        122*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        123*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        124*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        125*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        126*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        127*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+// 005   ----------------------------------------
+	BYTE	W12
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        116*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        118*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        121*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        122*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        123*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        124*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        125*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        126*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        127*LighthouseInAgustria_mvl/mxv
+	BYTE	W13
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        116*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        118*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        121*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        122*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        123*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        124*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        125*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        126*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        127*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+// 006   ----------------------------------------
+	BYTE	W12
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-25
+	BYTE	W84
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W12
+	BYTE	W84
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W12
+	BYTE		VOL     115*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-49
+	BYTE		N01     Fs1   v076
+	BYTE	W06
+	BYTE		        Fs1   v060
+	BYTE	W06
+	BYTE		        Fs1   v084
+	BYTE	W06
+	BYTE		        Fs1   v056
+	BYTE	W06
+	BYTE		        Fs1   v064
+	BYTE	W06
+	BYTE		        Fs1   v060
+	BYTE	W06
+	BYTE		        Fs1   v080
+	BYTE	W06
+	BYTE		        Fs1   v064
+	BYTE	W06
+	BYTE		        Fs1   v076
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Fs1   v092
+	BYTE	W06
+	BYTE		        Fs1   v060
+	BYTE	W06
+	BYTE		        Fs1   v068
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+// 011   ----------------------------------------
+	BYTE		        Fs1   v092
+	BYTE	W06
+	BYTE		        Fs1   v060
+	BYTE	W06
+	BYTE		        Fs1   v064
+	BYTE	W06
+	BYTE		        Fs1   v068
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Fs1   v060
+	BYTE	W06
+	BYTE		        Fs1   v068
+	BYTE	W06
+	BYTE		        Fs1   v072
+	BYTE	W06
+	BYTE		        Fs1   v084
+	BYTE	W06
+	BYTE		        Fs1   v044
+	BYTE	W06
+	BYTE		VOL     85*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-25
+	BYTE		VOL     106*LighthouseInAgustria_mvl/mxv
+	BYTE		N01     Fs1   v068
+	BYTE		N44     As1 
+	BYTE	W01
+	BYTE		VOL     107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE		N01     Fs1   v056
+	BYTE	W01
+	BYTE		VOL     115*LighthouseInAgustria_mvl/mxv
+	BYTE	W05
+	BYTE		N01     Fs1   v088
+	BYTE	W06
+	BYTE		        Fs1   v064
+	BYTE	W06
+	BYTE		        Fs1   v076
+	BYTE	W06
+	BYTE		        Fs1   v068
+	BYTE	W06
+// 012   ----------------------------------------
+	BYTE		        Fs1   v092
+	BYTE	W12
+	BYTE		VOL     115*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-49
+	BYTE		N01     Fs1   v076
+	BYTE	W06
+	BYTE		        Fs1   v060
+	BYTE	W06
+	BYTE		        Fs1   v084
+	BYTE	W06
+	BYTE		        Fs1   v056
+	BYTE	W06
+	BYTE		        Fs1   v064
+	BYTE	W06
+	BYTE		        Fs1   v060
+	BYTE	W06
+	BYTE		        Fs1   v080
+	BYTE	W06
+	BYTE		        Fs1   v064
+	BYTE	W06
+	BYTE		        Fs1   v076
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Fs1   v092
+	BYTE	W06
+	BYTE		        Fs1   v060
+	BYTE	W06
+	BYTE		        Fs1   v068
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+// 013   ----------------------------------------
+	BYTE		        Fs1   v092
+	BYTE	W06
+	BYTE		        Fs1   v060
+	BYTE	W06
+	BYTE		        Fs1   v064
+	BYTE	W06
+	BYTE		        Fs1   v068
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Fs1   v060
+	BYTE	W06
+	BYTE		        Fs1   v068
+	BYTE	W06
+	BYTE		        Fs1   v072
+	BYTE	W06
+	BYTE		        Fs1   v084
+	BYTE	W06
+	BYTE		        Fs1   v044
+	BYTE	W06
+	BYTE		        Fs1   v068
+	BYTE	W06
+	BYTE		        Fs1   v056
+	BYTE	W06
+	BYTE		        Fs1   v088
+	BYTE	W06
+	BYTE		        Fs1   v064
+	BYTE	W06
+	BYTE		        Fs1   v076
+	BYTE	W06
+	BYTE		        Fs1   v068
+	BYTE	W06
+// 014   ----------------------------------------
+	BYTE		        Fs1   v092
+	BYTE	W12
+	BYTE		VOL     115*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-49
+	BYTE		N01     Fs1   v076
+	BYTE	W06
+	BYTE		        Fs1   v060
+	BYTE	W06
+	BYTE		        Fs1   v084
+	BYTE	W06
+	BYTE		        Fs1   v056
+	BYTE	W06
+	BYTE		        Fs1   v064
+	BYTE	W13
+	BYTE		        Fs1   v080
+	BYTE	W12
+	BYTE		        Fs1   v076
+	BYTE	W13
+	BYTE		        Fs1   v092
+	BYTE	W13
+	BYTE		        Fs1   v068
+	BYTE	W09
+// 015   ----------------------------------------
+	BYTE	W04
+	BYTE		        Fs1   v092
+	BYTE	W08
+	BYTE	GoTo
+	 POIN2	LighthouseInAgustria_6_B1
+LighthouseInAgustria_6_B2:
+	BYTE	W06
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.7) ****************//
+
+LighthouseInAgustria_7:
+	BYTE	KEYSH   LighthouseInAgustria_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   71
+	BYTE		VOL     120*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N09     Cs4   v076
+	BYTE	W12
+LighthouseInAgustria_7_B1:
+	BYTE		VOL     100*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v+14
+	BYTE	W12
+	BYTE		N13     Cs4   v076
+	BYTE	W24
+	BYTE		        Cs4   v068
+	BYTE	W24
+	BYTE		        Ds4   v076
+	BYTE	W24
+// 001   ----------------------------------------
+	BYTE		N08     Cs4   v072
+	BYTE	W12
+	BYTE		PAN     c_v-14
+	BYTE		N17     Dn3   v088
+	BYTE	W18
+	BYTE		PAN     c_v+34
+	BYTE		N05     Cs4   v064
+	BYTE	W06
+	BYTE		PAN     c_v-25
+	BYTE		N17     Cs3   v092
+	BYTE	W18
+	BYTE		PAN     c_v+25
+	BYTE		N05     Bn3   v072
+	BYTE	W06
+	BYTE		PAN     c_v-34
+	BYTE		N17     Bn2   v084
+	BYTE	W18
+	BYTE		PAN     c_v+14
+	BYTE		N05     An3   v064
+	BYTE	W06
+	BYTE		PAN     c_v-25
+	BYTE		N17     Cs3   v088
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE	W06
+	BYTE		PAN     c_v+25
+	BYTE		N05     Bn3   v076
+	BYTE	W06
+	BYTE		PAN     c_v+14
+	BYTE	W12
+	BYTE		N13     Cs4   v080
+	BYTE	W24
+	BYTE		        Ds4   v072
+	BYTE	W24
+	BYTE		        Cs4 
+	BYTE	W24
+// 003   ----------------------------------------
+	BYTE		N08     Cs4   v076
+	BYTE	W12
+	BYTE		PAN     c_v-14
+	BYTE		N17     Dn3 
+	BYTE	W18
+	BYTE		PAN     c_v+34
+	BYTE		N05     Cs4 
+	BYTE	W06
+	BYTE		PAN     c_v-25
+	BYTE		N17     Cs3   v084
+	BYTE	W18
+	BYTE		PAN     c_v+25
+	BYTE		N05     Bn3   v068
+	BYTE	W06
+	BYTE		PAN     c_v-34
+	BYTE		N17     Bn2   v084
+	BYTE	W18
+	BYTE		PAN     c_v+14
+	BYTE		N05     An3   v056
+	BYTE	W06
+	BYTE		PAN     c_v-25
+	BYTE		N17     Cs3   v080
+	BYTE	W12
+// 004   ----------------------------------------
+	BYTE	W06
+	BYTE		PAN     c_v+25
+	BYTE		N05     Bn3   v052
+	BYTE	W06
+	BYTE		VOL     100*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v+25
+	BYTE		N02     An3   v056
+	BYTE	W12
+	BYTE		N16     An3   v060
+	BYTE	W24
+	BYTE		N02     An3   v056
+	BYTE	W12
+	BYTE		        Bn3   v072
+	BYTE	W12
+	BYTE		N19   
+	BYTE	W24
+// 005   ----------------------------------------
+	BYTE		N02     Bn3   v068
+	BYTE	W12
+	BYTE		N03     Bn3   v076
+	BYTE	W12
+	BYTE		N19     Bn3   v092
+	BYTE	W24
+	BYTE		N02     Bn3   v064
+	BYTE	W12
+	BYTE		N04     An3   v056
+	BYTE	W12
+	BYTE		N15     An3   v068
+	BYTE	W24
+// 006   ----------------------------------------
+	BYTE		N04   
+	BYTE	W12
+	BYTE		VOL     100*LighthouseInAgustria_mvl/mxv
+	BYTE		TIE     Bn4   v064
+	BYTE	W03
+	BYTE		VOL     101*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W06
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+// 007   ----------------------------------------
+	BYTE	W02
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W03
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        116*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        118*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        121*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        122*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        123*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        124*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        125*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        126*LighthouseInAgustria_mvl/mxv
+	BYTE	W04
+	BYTE		        127*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+	BYTE		        126*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        125*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        124*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        123*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        122*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        121*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        116*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		EOT   
+	BYTE		VOL     101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE		N23     An4 
+	BYTE	W01
+	BYTE		VOL     103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        117*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        119*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        120*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+// 008   ----------------------------------------
+	BYTE		        118*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        88*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        83*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        78*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        73*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        68*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        63*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        62*LighthouseInAgustria_mvl/mxv
+	BYTE		N44     Gn4   v060
+	BYTE	W01
+	BYTE		VOL     66*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        69*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        73*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        77*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        80*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        84*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        88*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W32
+	BYTE	W01
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE		N92     An4   v064
+	BYTE	W01
+	BYTE		VOL     97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W21
+// 009   ----------------------------------------
+	BYTE	W60
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE		N92     Gn4   v060
+	BYTE	W01
+	BYTE		VOL     93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W21
+// 010   ----------------------------------------
+	BYTE	W60
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE		N92     An4   v052
+	BYTE	W01
+	BYTE		VOL     93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W24
+// 011   ----------------------------------------
+	BYTE	W60
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE		N44     Gn4   v068
+	BYTE	W01
+	BYTE		VOL     93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W24
+// 012   ----------------------------------------
+	BYTE	W12
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE		N36     Gn4   v060
+	BYTE	W01
+	BYTE		VOL     93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W36
+	BYTE		N11     Bn4   v068
+	BYTE	W12
+	BYTE		VOL     101*LighthouseInAgustria_mvl/mxv
+	BYTE		N13     An4   v076
+	BYTE	W01
+	BYTE		VOL     103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W17
+// 013   ----------------------------------------
+	BYTE		N10     Fs4   v068
+	BYTE	W12
+	BYTE		VOL     91*LighthouseInAgustria_mvl/mxv
+	BYTE		N40     Gn4   v064
+	BYTE	W01
+	BYTE		VOL     93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        95*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        97*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        99*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W36
+	BYTE		N11     Bn4 
+	BYTE	W12
+	BYTE		VOL     101*LighthouseInAgustria_mvl/mxv
+	BYTE		N13     An4   v076
+	BYTE	W01
+	BYTE		VOL     103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W17
+// 014   ----------------------------------------
+	BYTE		N10     Fs4   v068
+	BYTE	W12
+	BYTE		VOL     86*LighthouseInAgustria_mvl/mxv
+	BYTE		N40     Gn4   v064
+	BYTE	W01
+	BYTE		VOL     88*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        89*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        91*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        93*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        94*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        96*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        98*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        100*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        101*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        103*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W32
+	BYTE		        104*LighthouseInAgustria_mvl/mxv
+	BYTE		N11     Gn4   v068
+	BYTE	W01
+	BYTE		VOL     106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W07
+	BYTE		        105*LighthouseInAgustria_mvl/mxv
+	BYTE		N12     Fs4   v072
+	BYTE	W01
+	BYTE		VOL     107*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        109*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        111*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        113*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W08
+	BYTE		        102*LighthouseInAgustria_mvl/mxv
+	BYTE		N15     En4   v068
+	BYTE	W01
+	BYTE		VOL     104*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        106*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        108*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        110*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        112*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        114*LighthouseInAgustria_mvl/mxv
+	BYTE	W01
+	BYTE		        115*LighthouseInAgustria_mvl/mxv
+	BYTE	W02
+// 015   ----------------------------------------
+	BYTE	W07
+	BYTE		N09     Dn4   v060
+	BYTE	W05
+	BYTE	GoTo
+	 POIN2	LighthouseInAgustria_7_B1
+LighthouseInAgustria_7_B2:
+	BYTE	W06
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.8) ****************//
+
+LighthouseInAgustria_8:
+	BYTE	KEYSH   LighthouseInAgustria_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   68
+	BYTE		VOL     107*LighthouseInAgustria_mvl/mxv
+	BYTE		PAN     c_v-10
+	BYTE	W12
+LighthouseInAgustria_8_B1:
+	BYTE		N24     Fs3   v104
+	BYTE	W13
+	BYTE	W11
+	BYTE		N06     Gs3 
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		N48     Cs4 
+	BYTE	W36
+// 001   ----------------------------------------
+	BYTE	W12
+	BYTE		N18     Dn4 
+	BYTE	W18
+	BYTE		N03     En4 
+	BYTE	W03
+	BYTE		        Fs4 
+	BYTE	W03
+	BYTE		N12     En4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE		N48     Cs4 
+	BYTE	W36
+// 002   ----------------------------------------
+	BYTE	W12
+	BYTE		N06     Bn3 
+	BYTE	W06
+	BYTE		        Cs4 
+	BYTE	W06
+	BYTE		N18     Fs3 
+	BYTE	W18
+	BYTE		N06     En3 
+	BYTE	W06
+	BYTE		N12     Fs3 
+	BYTE	W12
+	BYTE		N06     Bn3 
+	BYTE	W06
+	BYTE		        Cs4 
+	BYTE	W06
+	BYTE		N18     Fs3 
+	BYTE	W18
+	BYTE		N06     En3 
+	BYTE	W06
+// 003   ----------------------------------------
+	BYTE		        Fs3 
+	BYTE	W06
+	BYTE		        Gs3 
+	BYTE	W06
+	BYTE		N48     Fs3 
+	BYTE	W48
+	BYTE		N24   
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W12
+// 004   ----------------------------------------
+	BYTE	W13
+	BYTE		N05     Dn3   v072
+	BYTE	W06
+	BYTE		        En3   v084
+	BYTE	W06
+	BYTE		N16     Fs3   v080
+	BYTE	W18
+	BYTE		N05     Dn3   v072
+	BYTE	W06
+	BYTE		        En3   v084
+	BYTE	W06
+	BYTE		N04     Fs3   v076
+	BYTE	W06
+	BYTE		N05     En3   v084
+	BYTE	W06
+	BYTE		        Fs3 
+	BYTE	W06
+	BYTE		N15     Gn3   v076
+	BYTE	W18
+	BYTE		N05     En3   v088
+	BYTE	W05
+// 005   ----------------------------------------
+	BYTE	W01
+	BYTE		        Fs3   v080
+	BYTE	W06
+	BYTE		N04     Gn3   v068
+	BYTE	W06
+	BYTE		N05     En3   v080
+	BYTE	W06
+	BYTE		        Fs3   v076
+	BYTE	W06
+	BYTE		N14     Gn3   v068
+	BYTE	W18
+	BYTE		N05     En3   v084
+	BYTE	W06
+	BYTE		        Fs3 
+	BYTE	W06
+	BYTE		N04     Gn3   v068
+	BYTE	W06
+	BYTE		N05     Fs3   v084
+	BYTE	W06
+	BYTE		        Gn3   v080
+	BYTE	W06
+	BYTE		N14     An3   v068
+	BYTE	W18
+	BYTE		N05     Cn4   v080
+	BYTE	W05
+// 006   ----------------------------------------
+	BYTE	W01
+	BYTE		        Bn3   v084
+	BYTE	W06
+	BYTE		N04     An3   v064
+	BYTE	W06
+	BYTE		N10     Bn3   v072
+	BYTE	W12
+	BYTE		N11     Gn4   v080
+	BYTE	W12
+	BYTE		        Fs4   v088
+	BYTE	W12
+	BYTE		        En4   v080
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		N10     Cn4   v072
+	BYTE	W12
+	BYTE		N11     Gn3   v080
+	BYTE	W11
+// 007   ----------------------------------------
+	BYTE	W01
+	BYTE		N10     An3   v076
+	BYTE	W12
+	BYTE		N11     Bn3   v088
+	BYTE	W12
+	BYTE		        En4   v080
+	BYTE	W12
+	BYTE		        Fs4   v088
+	BYTE	W12
+	BYTE		        Gn4   v068
+	BYTE	W12
+	BYTE		        An4   v080
+	BYTE	W12
+	BYTE		        Gn4   v072
+	BYTE	W12
+	BYTE		N08     Fs4   v096
+	BYTE	W11
+// 008   ----------------------------------------
+	BYTE	W01
+	BYTE		N05     Gn4   v084
+	BYTE	W06
+	BYTE		        An4   v068
+	BYTE	W06
+	BYTE		N22     Bn4   v084
+	BYTE	W24
+	BYTE		N11     Cn5   v072
+	BYTE	W12
+	BYTE		N05     Dn5   v068
+	BYTE	W06
+	BYTE		        En5   v060
+	BYTE	W06
+	BYTE		N11     Bn4   v076
+	BYTE	W12
+	BYTE		N23     An4   v092
+	BYTE	W23
+// 009   ----------------------------------------
+	BYTE	W01
+	BYTE		N05     Fs4   v084
+	BYTE	W06
+	BYTE		        Gn4   v076
+	BYTE	W06
+	BYTE		N28     An4   v080
+	BYTE	W30
+	BYTE		N05     Cn5   v068
+	BYTE	W06
+	BYTE		        Bn4   v084
+	BYTE	W06
+	BYTE		N04     An4   v076
+	BYTE	W06
+	BYTE		N11     An4   v088
+	BYTE	W12
+	BYTE		        Gn4   v080
+	BYTE	W12
+	BYTE		        Fs4   v084
+	BYTE	W11
+// 010   ----------------------------------------
+	BYTE	W01
+	BYTE		        Gn4   v076
+	BYTE	W12
+	BYTE		N22     En4   v084
+	BYTE	W24
+	BYTE		N32     Bn4 
+	BYTE	W36
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        Bn4   v088
+	BYTE	W11
+// 011   ----------------------------------------
+	BYTE	W01
+	BYTE		        An4   v080
+	BYTE	W12
+	BYTE		N22     Dn5   v072
+	BYTE	W24
+	BYTE		N23     Dn4   v080
+	BYTE	W24
+	BYTE		N42     Gn4   v068
+	BYTE	W32
+	BYTE	W03
+// 012   ----------------------------------------
+	BYTE	W13
+	BYTE	W80
+	BYTE	W03
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	LighthouseInAgustria_8_B1
+LighthouseInAgustria_8_B2:
+	BYTE	W06
+	BYTE	FINE
+
+//**************** Track 9 (Midi-Chn.9) ****************//
+
+LighthouseInAgustria_9:
+	BYTE	KEYSH   LighthouseInAgustria_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   54
+	BYTE		VOL     105*LighthouseInAgustria_mvl/mxv
+	BYTE	W12
+LighthouseInAgustria_9_B1:
+	BYTE	W84
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE		N01     Cs3   v072
+	BYTE	W12
+	BYTE		N44     Fs3   v060
+	BYTE	W48
+	BYTE		        Gn3   v052
+	BYTE	W36
+// 005   ----------------------------------------
+	BYTE	W12
+	BYTE		        Gn3   v060
+	BYTE	W48
+	BYTE		        Fs3 
+	BYTE	W36
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	LighthouseInAgustria_9_B1
+LighthouseInAgustria_9_B2:
+	BYTE	W06
+	BYTE	FINE
+
+//**************** Track 10 (Midi-Chn.12) ****************//
+
+LighthouseInAgustria_10:
+	BYTE	KEYSH   LighthouseInAgustria_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   48
+	BYTE		VOL     76*LighthouseInAgustria_mvl/mxv
+	BYTE	W12
+LighthouseInAgustria_10_B1:
+	BYTE	W84
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W84
+	BYTE	W01
+	BYTE		N06     Gn4   v068
+	BYTE	W08
+	BYTE		        An4   v076
+	BYTE	W03
+// 012   ----------------------------------------
+	BYTE	W04
+	BYTE		N05     Bn4   v064
+	BYTE	W09
+	BYTE		N42     Bn4   v092
+	BYTE	W48
+	BYTE		N11     Bn4   v088
+	BYTE	W12
+	BYTE		        An4   v096
+	BYTE	W12
+	BYTE		        En4   v100
+	BYTE	W11
+// 013   ----------------------------------------
+	BYTE	W01
+	BYTE		        Fs4   v096
+	BYTE	W12
+	BYTE		N40     Gn4   v084
+	BYTE	W48
+	BYTE		N11     Bn4   v088
+	BYTE	W12
+	BYTE		        An4   v100
+	BYTE	W12
+	BYTE		        En4   v096
+	BYTE	W11
+// 014   ----------------------------------------
+	BYTE	W01
+	BYTE		        Fs4 
+	BYTE	W12
+	BYTE		N42     Gn4   v088
+	BYTE	W48
+	BYTE	W01
+	BYTE		N11     Gn4   v096
+	BYTE	W12
+	BYTE		N12     Fs4   v104
+	BYTE	W13
+	BYTE		        En4   v100
+	BYTE	W09
+// 015   ----------------------------------------
+	BYTE	W05
+	BYTE		        Dn4   v092
+	BYTE	W07
+	BYTE	GoTo
+	 POIN2	LighthouseInAgustria_10_B1
+LighthouseInAgustria_10_B2:
+	BYTE	W06
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+LighthouseInAgustria:
+	BYTE	10	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	LighthouseInAgustria_pri	// Priority
+	BYTE	LighthouseInAgustria_rev	// Reverb.
+
+	POIN2	LighthouseInAgustria_grp
+
+	POIN2	LighthouseInAgustria_1
+	POIN2	LighthouseInAgustria_2
+	POIN2	LighthouseInAgustria_3
+	POIN2	LighthouseInAgustria_4
+	POIN2	LighthouseInAgustria_5
+	POIN2	LighthouseInAgustria_6
+	POIN2	LighthouseInAgustria_7
+	POIN2	LighthouseInAgustria_8
+	POIN2	LighthouseInAgustria_9
+	POIN2	LighthouseInAgustria_10
+
+	

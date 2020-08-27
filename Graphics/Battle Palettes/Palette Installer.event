@@ -3,8 +3,8 @@
 
 ALIGN 4
 
-NaiahLycanthrope:
-	#incbin "./_palettes/NaiahLycanthrope.lzpal" 
+CyrusAxeLord:
+	#incbin "./_palettes/CyrusAxeLord.lzpal" 
 
 IdiLycanthrope:
 	#incbin "./_palettes/IdiLycanthrope.lzpal" 
@@ -14,4 +14,28 @@ SafiyahArcher:
 
 AyannaMonk:
 	#incbin "./_palettes/AyannaMonk.lzpal" 
+
+YakovBrigand:
+	#incbin "./_palettes/YakovBrigand.lzpal" 
+
+AshurThief:
+	#incbin "./_palettes/AshurThief.lzpal" 
+
+ElenaCleric:
+	#incbin "./_palettes/ElenaCleric.lzpal" 
+
+NaiahLycanthrope:
+	#incbin "./_palettes/NaiahLycanthrope.lzpal" 
+
+YvetteSwordstress:
+	#incbin "./_palettes/YvetteSwordstress.lzpal" 
+
+BulrenBrigand:
+	#incbin "./_palettes/BulrenBrigand.lzpal" 
+
+DanteMercenary:
+	#incbin "./_palettes/DanteMercenary.lzpal" 
+
+HystarGwyllgi:
+	#incbin "./_palettes/HystarGwyllgi.lzpal" 
 

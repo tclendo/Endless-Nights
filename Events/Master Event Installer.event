@@ -1,6 +1,18 @@
+
+#include "REDAs.event"
+
 {
 	#include "Worldmap/World Map Events Installer.event"
 }
 {
 	#include "Act 1/chapter1.event"
+}
+{
+	#include "Act 1/chapter2.event"
+}
+{
+	#include "Act 1/chapter3.event"
+}
+{
+	#include "Act 1/nightmare1.event"
 }

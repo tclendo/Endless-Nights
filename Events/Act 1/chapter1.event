@@ -1,4 +1,4 @@
-//chapter 1
+//chapter 1 events
 
 EventPointerTable(7, MyEvents) //7 is prologue events
 
@@ -18,10 +18,7 @@ POIN BeginningScene EndingScene
 ///
 
 TurnBasedEvents:
-TurnEventPlayer(0x0,FriendsCome,2)
-TurnEventPlayer(0x0,EnemiesCome1,2)
-TurnEventPlayer(0x0,EnemiesCome2,3)
-TurnEventPlayer(0x0,EnemiesCome3,4)
+TurnEventPlayer(0x0,EnemiesCome1,3)
 END_MAIN
 
 ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
@@ -30,10 +27,12 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Village(0x8,VillageEvent,1,7)
+House(0x9,RecruitElena,11,12)
 END_MAIN
 
 MiscBasedEvents:
-CauseGameOverIfLordDies
+AFEV 0x0 CheckNoUnits 0x0
 DefeatAll(EndingScene)
 END_MAIN
 
@@ -66,28 +65,28 @@ MUSCSLOW Silent
 FADI 3
 WEATHER 0 
 LOMA 0x00 //playable map
-LOAD1 0 EnemyUnits
+LOAD1 1 EnemyUnits
 ENUN
-CAMERA [19,9]
+CAMERA [19,0]
 FADU 5
-CURSOR [17,3] //highlight house
+CURSOR [16,4] //highlight house
 STAL 60
 REMOVE_CURSORS
 SetBackground(0x01)
 Text(Ch1StartText)
 EndConvo
-CAMERA [0,0]
-CURSOR [0,6] //highlight boss
+CAMERA [0,14]
+CURSOR [1,13] //highlight boss
 STAL 60
 REMOVE_CURSORS
 MUSC Tension
 SetBackground(0x30)
 Text(Ch1BadGuyText)
 EndConvo
-MOVE 5 Amani [1,7]
+MOVE 5 Amani6 [0,12]
 ENUN
-CAMERA [19,9]
-CURSOR [17,3] //highlight house
+CAMERA [19,0]
+CURSOR [16,4] //highlight house
 STAL 60
 REMOVE_CURSORS
 SetBackground(0x00)
@@ -95,26 +94,67 @@ Text(Ch1StartText)
 EndConvo
 LOAD1 1 PlayerUnits
 ENUN
-MOVE 5 Eirika [17,4]
-MOVE 5 Seth [16,3]
+CAMERA [19,9] // friends come in
+LOAD1 1 Buddies
 ENUN
+SetBackground(0x30)
+Text(Ch1BuddiesText)
+EndConvo
 NoFade
+CAMERA [19,14]
+CURSOR [11,12] //highlight house
+STAL 60
+REMOVE_CURSORS
+SetBackground(0x01)
+Text(Ch1ElenaOpening)
+EndConvo
+NoFade
+CAMERA [19,0]
 ENDA
 
 EndingScene:
+SetBackground(0x30)
+Text(Ch1EndingText)
+//EndConvo
+//FADI 3
+MNC2 0x1 //MNC2 works with prologue chapter
+ENDA
 
-MoveToChapter(0x0)
+CheckNoUnits:
+ASMC GetBlueUnitCountASMC
+SVAL 0x7 0x1
+BLT 0x0 0xC 0x7 // If there are less than 2 alive, game over.
+	GOTO 0x01
+LABEL 0x00 //GameOver
+//ENUT 0x65
+ASMC 0x00D391
+LABEL 0x01
+NoFade
 ENDA
 
 ///
 
-FriendsCome:
+VillageEvent:
+SetBackground(0x3)
+Text(Ch1VillageText)
+EndConvo
+NoFade
+SVAL 0x3 GoddessIcon
+GIVEITEMTO -1
+ENDA
 
+RecruitElena:
+SetBackground(0x0)
+Text(Ch1TalkElena)
+EndConvo
+LOAD1 1 ElenaSpawn
+ENUN
+NoFade
+ENDA
+
+FriendsCome:
 CAMERA [19,14]
 LOAD1 1 Buddies
-ENUN
-MOVE 5 Gilliam [13,8]
-MOVE 5 Franz [14,8]
 ENUN
 Text(Ch1BuddiesText)
 EndConvo
@@ -122,64 +162,49 @@ NoFade
 ENDA
 
 EnemiesCome1:
-
-CAMERA [9,0]
+CAMERA [0,14]
 LOAD1 0 EnemyReinforcements1
 ENUN
 NoFade
 ENDA
 
-EnemiesCome2:
-
-CAMERA [0,10]
-LOAD1 0 EnemyReinforcements2
-ENUN
-NoFade
-ENDA
-
-EnemiesCome3:
-
-CAMERA [0,10]
-LOAD1 0 EnemyReinforcements3
-ENUN
-NoFade
-ENDA
+///
 
 PlayerUnits:
 
-UNIT Naiah EirikaLord Naiah Level(1,Ally,False) [17,3] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
-UNIT Idi EphraimLord Naiah Level(4,Ally,False) [17,3] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
+UNIT Naiah AmaniFemaleClass Naiah Level(3,Ally,False) [16,4] 0x0 0x0 0x1 REDA15R4 [FireFang,Vulnerary] NoAI
+UNIT Idi AmaniMaleClass Naiah Level(5,Ally,False) [16,4] 0x0 0x0 0x1 REDA16R3 [FireFang,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
 
-UNIT ONeill Brigand ONeill Level(1,Enemy,False) [0,6] 0x0 0x0 0x0 0x1 [IronAxe] NeverMoveAI
-UNIT Amani EphraimLord ONeill Level(1,Enemy,False) [0,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NeverMoveAI
-UNIT Bandit Brigand ONeill Level(1,Enemy,False) [7,7] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT Bandit Brigand ONeill Level(1,Enemy,False) [10,5] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT Bandit Brigand ONeill Level(1,Enemy,False) [4,3] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT Bulren Brigand Bulren Level(5,Enemy,False) [1,13] 0x0 0x0 0x0 0x1 [HandAxe] NeverMoveAI
+UNIT Amani6 AmaniMaleClass Bulren Level(3,Enemy,True) [0,13] 0x0 0x0 0x0 0x1 [FireFang] NeverMoveAI
+UNIT Amani12 AmaniMaleClass Bulren Level(3,Enemy,True) [5,5] 0x0 0x0 0x0 0x1 [FireFang] GuardTileAI
+UNIT DarkMage Shaman Bulren Level(6,Enemy,True) [2,14] 0x0 0x0 0x0 0x1 [Flux] GuardTileAI
+UNIT AxeBandit Brigand Bulren Level(3,Enemy,True) [9,10] 0x0 0x0 0x0 0x1 [IronAxe] BrigandAI
+UNIT AxeBandit Brigand Bulren Level(3,Enemy,True) [13,6] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT AxeBandit Brigand Bulren Level(4,Enemy,True) [8,7] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Brigand Bulren Level(3,Enemy,True) [10,1] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+//UNIT BowBandit Archer Bulren Level(5,Enemy,True) [5,10] 0x0 0x0 0x0 0x1 [IronBow] AttackInRangeAI
+//UNIT BowBandit Archer Bulren Level(5,Enemy,True) [15,14] 0x0 0x0 0x0 0x1 [IronBow] AttackInRangeAI
+UNIT AnimaMage Mage Bulren Level(6,Enemy,True) [7,14] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
 UNIT
 
 Buddies:
-UNIT Safiyah Archer_F Naiah Level(1,Ally,False) [16,9] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
-UNIT Ayanna Monk_F Naiah Level(2,Ally,False) [17,9] 0x0 0x0 0x0 0x1 [Lightning,Vulnerary] NoAI
+UNIT Safiyah Archer_F Naiah Level(3,Ally,False) [19,9] 0x0 0x0 0x1 REDA16R9 [IronBow,Vulnerary] NoAI
+UNIT Ayanna Monk_F Naiah Level(2,Ally,False) [19,8] 0x0 0x0 0x1 REDA17R9 [Lightning,Vulnerary] NoAI
+UNIT
+
+ElenaSpawn:
+UNIT Elena Cleric Naiah Level(3,Ally,False) [11,12] 0x0 0x0 0x1 REDA11R13 [Mend, Vulnerary] NoAI
 UNIT
 
 EnemyReinforcements1:
-UNIT Bandit Brigand ONeill Level(1,Enemy,False) [9,0] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT Bandit Brigand ONeill Level(1,Enemy,False) [10,0] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT
-
-EnemyReinforcements2:
-UNIT Bandit Brigand ONeill Level(1,Enemy,False) [8,9] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT Bandit Brigand ONeill Level(1,Enemy,False) [9,9] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT
-
-EnemyReinforcements3:
-UNIT Bandit Shaman ONeill Level(3,Enemy,True) [1,9] 0x0 0x0 0x0 0x1 [Flux,Vulnerary] DefaultAI
-UNIT Bandit Mage ONeill Level(3,Enemy,True) [2,9] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
+UNIT AxeBandit Fighter Bulren Level(4,Enemy,True) [0,13] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Fighter Bulren Level(4,Enemy,True) [0,14] 0x0 0x0 0x1 REDA1R14 [IronAxe] DefaultAI
 UNIT
 
 ///
 
-MESSAGE Ch1 events end at offset CURRENTOFFSET
+MESSAGE Chapter1 ends at offset CURRENTOFFSET

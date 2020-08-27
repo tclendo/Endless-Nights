@@ -1,0 +1,33 @@
+//Refuge hack by Sme
+//Thanks to Stan for Heroes Movement Skills, which were a great reference and resource for the target selection parts
+
+#ifdef _FE8_
+
+ALIGN 4
+#include "Refuge.lyn.event"
+
+RefugeSelectorDefinition:
+POIN (Refuge_OnConstruction|1) // Constructor
+POIN (Selector_DestructMoveDisplay|1) // Destructor
+WORD 0 // idk (actually ik kinda, see my notes)
+POIN (Refuge_OnChange|1) // target change
+WORD 0 // idk (same)
+POIN (Refuge_OnSelection|1) // A Press
+POIN 0x22749 // B Press (Generic Vanilla One that calls the unit menu back)
+WORD 0 // idk (same)
+
+ALIGN 4
+Refuge_OnConstruction: //By Stan
+#incbin "TargetSelection_OnConstruction.dmp"
+WORD RefugeScrollText
+
+ALIGN 4
+Selector_DestructMoveDisplay: //By Stan
+#incbin "KillRangeDisplay.dmp"
+
+#else
+
+ERROR Refuge is only for FE8!
+
+#endif
+

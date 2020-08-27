@@ -3,6 +3,9 @@
 //setMugEntry(number, data, mouth_x, mouth_y, eye_x, eye_y)
 
 ALIGN 4
+//Player Units:
+Cyrus_Mug:
+#incext PortraitFormatter "cyrus.png"
 Naiah_Mug:
 #incext PortraitFormatter "naiah.png"
 Idi_Mug:
@@ -11,11 +14,48 @@ Safiyah_Mug:
 #incext PortraitFormatter "safiyah.png"
 Ayanna_Mug:
 #incext PortraitFormatter "ayanna.png"
+Yakov_Mug:
+#incext PortraitFormatter "yakov.png"
+Ashur_Mug:
+#incext PortraitFormatter "ashur.png"
+Elena_Mug:
+#incext PortraitFormatter "elena.png"
 Yvette_Mug:
 #incext PortraitFormatter "yvette.png"
 
-setMugEntry(0x02, Naiah_Mug, 4, 5, 4, 3)
-setMugEntry(0x03, Naiah_Mug, 4, 5, 4, 3)
-setMugEntry(0x04, Idi_Mug, 3, 5, 3, 3)
-setMugEntry(0x05, Safiyah_Mug, 3, 5, 3, 3)
-setMugEntry(0x06, Ayanna_Mug, 2, 6, 3, 4)
+Mokaya_Mug:
+#incext PortraitFormatter "mokaya.png"
+
+Dante_Mug:
+#incext PortraitFormatter "dante.png"
+Hystar_Mug:
+#incext PortraitFormatter "hystar.png"
+
+Bulren_Mug:
+#incext PortraitFormatter "Bulren.png"
+
+AmaniMale_Mug:
+#incext PortraitFormatter "amani_male.png"
+
+setMugEntry(0x02,Cyrus_Mug,2,4,3,2)
+setMugEntry(0x03,Cyrus_Mug,2,4,3,2)
+setMugEntry(0x04,Idi_Mug,3,5,3,3)
+setMugEntry(0x05,Safiyah_Mug,3,5,3,3)
+setMugEntry(0x06,Ayanna_Mug,2,6,3,4)
+setMugEntry(0x07,Yakov_Mug,2,4,2,2)
+setMugEntry(0x08,Ashur_Mug,2,4,3,2)
+setMugEntry(0x09,Elena_Mug,2,6,4,4)
+setMugEntry(0x0A,Naiah_Mug,4,5,4,3)
+setMugEntry(0x0B,Naiah_Mug,4,5,4,3)
+setMugEntry(0x0C,Yvette_Mug,2,6,2,4)
+setMugEntry(0x0D,Yvette_Mug,2,6,2,4)
+setMugEntry(0x25,Mokaya_Mug,2,5,3,2)
+
+setMugEntry(0x30,Bulren_Mug,3,5,2,3)
+setMugEntry(0x31,Dante_Mug,3,5,3,3)
+setMugEntry(0x32,Hystar_Mug,3,5,3,3)
+
+
+setMugEntry(0x59,AmaniMale_Mug,3,5,3,3)
+
+//Enemy Units

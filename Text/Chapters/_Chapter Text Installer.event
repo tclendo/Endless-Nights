@@ -1,0 +1,8 @@
+
+#include "Act 1/chapter1_text.event"
+#include "Act 1/chapter2_text.event"
+#include "Act 1/chapter3_text.event"
+
+#include "Act 1/nightmare1_text.event"
+
+#include "Objectives.event"

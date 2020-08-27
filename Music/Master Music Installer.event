@@ -1,0 +1,10 @@
+//Master Music Installer.event
+
+#include "Sappy2ea/MPlayDef.event"
+#include "Sappy2ea/drumfix_fe8.event"
+
+SongTable(0x5d,AcrossTheDesert,MapMusicGroup)
+
+AcrossTheDesert:
+#include "Songs/AcrossTheDesert.event"
+WORD 0 0

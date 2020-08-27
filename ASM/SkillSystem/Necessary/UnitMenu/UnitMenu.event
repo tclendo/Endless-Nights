@@ -162,6 +162,9 @@ UnitMenuTable:
   //UM_Supply
   MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)
   
+  //UM_Skip
+  MenuCommand(WinName, WinDesc, OrangeText, 0x0804F449, WinRoutine)
+  
   UM_Wait
 
   UM_Separator 

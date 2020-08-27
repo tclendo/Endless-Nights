@@ -33,41 +33,84 @@
 
 #include "ASM/SkillSystem/SkillSystem/skill_definitions.event"
 
-// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+#define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
+//EA Raws
 #define EndConvo "CALL $9EE2C4"
 
-#ifndef ClassAnimTable
-  #ifdef _FE8_
-    #define ClassAnimTable (0xc00008-0x20)
-  #endif
-  #ifdef _FE7_
-    #define ClassAnimTable (0xe00008-0x20)
-  #endif
-#endif
-
-#define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
-
+// Animation Macros
+#define AnimTableEntry(index) "ORG NewClassAnimTable -0x20 + (index * 0x20)"
 #define Item 9
 
 //Units
 //Characters
-#define Naiah 0x01
+#define Cyrus 0x01
 #define Idi 0x02
 #define Safiyah 0x03
 #define Ayanna 0x04
+#define Yakov 0x05
+#define Ashur 0x06
+#define Elena 0x07
+#define Naiah 0x08
+#define Yvette 0x09
 
-#define Amani 0x64
+#define Mokaya 0x1d
+
+#define MyrCutscene 0x40
+
+#define Dante 0x46
+#define Hystar 0x47
+#define VillageChild 0x48
+
+#define SwordBandit 0x65
+#define AxeBandit 0x66
+#define LanceBandit 0x67
+#define Bulren 0x68
+
+#define Amani6 0x6e
+#define Amani12 0x6f
+#define Amani18 0x70
+#define Amani24 0x71
+#define BowBandit 0x72
+#define AnimaMage 0x73
+#define DarkMage 0x74
+#define LightMage 0x75
+
+#define Monster 0xAA
+
+#define CivilianBoy 0xF4
+#define CivilianGirl 0xF5
+#define CivilianMan 0xF6
+#define CivilianWoman 0xF7
 
 //Classes
+
+#define Swordstress 0x10
+#define DestrierKnight 0x12
+
 #define Monk_F 0x33
+
+#define Deserter 0x4e
+
+#define LycanthropeM 0x5b
+#define GwyllgiM 0x5c
+#define LycanthropeF 0x5f
+#define GwyllgiF 0x60
+
+
+#define CivilianBoyClass 0x6D
+#define CivilianGirlClass 0x6E
+#define AmaniMaleClass 0x6F
+#define AmaniFemaleClass 0x70
+#define AmaniMalePromoted 0x71
+#define AmaniFemalePromoted 0x72
 
 //Battle Animations
 //Label Battle Animations
 #define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
 #define SpearAnim(Animation) "BYTE Spears 0x01 ; SHORT Animation"
 #define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
-#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation ; BYTE Hatchet 0x00 ; SHORT Animation"
 #define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
 #define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
 #define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
@@ -76,11 +119,40 @@
 #define UnarmedAnim(Animation) "BYTE Item 0x01 ; SHORT Animation"
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
 
-#define ArcherFBow 0x28
-#define ArcherFUnarmed 0x29
+//Battle Animation Pointers
+#define SwordstressSword 0x03
+#define SwordstressUnarmed 0x4
 
 #define MonkFMagic 0x8f
 
+#define DeserterLance 0x98
+#define DeserterUnarmed 0x99
 
-// Music
+#define AshurThiefSword 0xCA
+#define AshurThiefUnarmed 0xCB
+#define SafiyahArcherBow 0xCC
+#define SafiyahArcherUnarmed 0xCE
+#define ElenaClericStaff 0xCF
+#define ElenaClericUnarmed 0xD0
+#define AxeLordAxe 0xD1
+#define AxeLordUnarmed 0xD2
+#define AxeLordThrown 0xD3
+#define GreatAxeLordAxe 0xD4
+#define GreatAxeLordThrown 0xD5
+#define GreatAxeLordSpecial 0xD6
+#define GreatAxeLordUnarmed 0xD7
+#define VillagerMale 0xD8
+#define VillagerFemale 0xD9
+
+// Items //
+
+#define CyrusAxe 0x86
+
+// Music //
 #define WindTrack 0x4E
+
+// Chapters //
+#define Chapter1 0x0
+#define Chapter2 0x1
+#define Chapter3 0x2
+#define Nightmare1 0x3

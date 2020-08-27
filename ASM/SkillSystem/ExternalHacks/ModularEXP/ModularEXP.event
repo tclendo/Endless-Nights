@@ -8,6 +8,7 @@
 	ALIGN 4
 	#define ModularEXPEntry(Character,Chapter,EventID,Multiplier,Divisor) "BYTE Character Chapter EventID Multiplier Divisor 0x00 0x00 0x00"
 	ModularEXPChapterTable:
+	ModularEXPEntry(Cyrus,Nightmare1,0x0,0,1)
 	ModularEXPEntry(0,0,0,0,0)
 	
 #endif // MODULAR_EXP

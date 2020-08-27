@@ -62,10 +62,32 @@
 [FR] = [FarRight]
 [FFR] = [FarFarRight]
 
+[ConversationText] = [0x80][0x90]
+[BattleText] = [0x80][0x91]
+
 [LoadCurrent] = [LoadFace][0xFF][0xFF]
 
-[LoadNaiah] = [LoadFace][0x02][0x01]
-[LoadNaiahEyesClosed] = [LoadFace][0x03][0x01]
+[LoadCyrus] = [LoadFace][0x02][0x01]
+[LoadCyrusEyesClosed] = [LoadFace][0x03][0x01]
 [LoadIdi] = [LoadFace][0x04][0x01]
 [LoadSafiyah] = [LoadFace][0x05][0x01]
-[LoadYvette] = [LoadFace][0x06][0x01]
+[LoadAyanna] = [LoadFace][0x06][0x01]
+[LoadYakov] = [LoadFace][0x07][0x01]
+[LoadAshur] = [LoadFace][0x08][0x01]
+[LoadElena] = [LoadFace][0x09][0x01]
+[LoadNaiah] = [LoadFace][0x0A][0x01]
+[LoadNaiahEyesClosed] = [LoadFace][0x0B][0x01]
+[LoadYvette] = [LoadFace][0x0C][0x01]
+[LoadYvetteEyesClosed] = [LoadFace][0x0D][0x01]
+[LoadMokaya] = [LoadFace][0x25][0x01]
+
+[LoadO'Neill] = [LoadFace][0x30][0x01]
+[LoadBreguet] = [LoadFace][0x31][0x01]
+[LoadBone] = [LoadFace][0x32][0x01]
+
+[LoadMyrCutscene] = [LoadFace][0x4a][0x01]
+
+[LoadAmaniMale] = [LoadFace][0x59][0x01]
+
+[LoadTeenagerMale] = [LoadFace][0x5d][0x01]
+[LoadOldLady] = [LoadFace][0x5f][0x01]

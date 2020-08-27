@@ -14,7 +14,11 @@ POIN NewStatScreenPal
 ORG $88620
 POIN RemoveGlowy
 //ORG $59EE20
-//POIN PlayerMapPal
+//#incext Png2Dmp "PlayerMapPal.png" --palette-only // new player map sprite palette
+ORG $AACEDC
+#incext Png2Dmp "sacredstonesname.png" --lz77 //game title
+ORG $AADBA8
+#incext Png2Dmp "fireemblemname.png" --palette-only //fire emblem logo palette
 POP
 
 ALIGN 4
@@ -22,11 +26,5 @@ NewStatScreen:
 #incext Png2Dmp "statscreen.png" --lz77
 NewStatScreenPal:
 #incext Png2Dmp "statscreen.png" --palette-only
-
 RemoveGlowy:
 #incext Png2Dmp "RemoveGlowy.png" --lz77
-
-/*
-PlayerMapPal:
-#incext Png2Dmp "PlayerMapPal.png" --palette-only
-*/

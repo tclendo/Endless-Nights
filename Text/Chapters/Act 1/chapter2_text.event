@@ -1,0 +1,30 @@
+
+## Ch2StartText
+[MidRight][LoadIdi][MidLeft][LoadNaiah]Here is some text.[A][X]
+
+## Ch2TalkBreguet
+[MidRight][LoadBreguet]Here is some text.[A][X]
+
+## Ch2YakovOpening
+[MidLeft][LoadYakov]Here is some more text.[A][X]
+
+## Ch2TalkYakov
+[MidRight][LoadYakov][MidLeft][LoadCurrent]Here is some text.[A][X]
+
+## Ch2HutText
+[MidLeft][LoadCurrent]Here is some text.[A][X]
+
+## Ch2AshurText
+[MidLeft][LoadAshur]Here is some more text.[A][X]
+
+## Ch2YvetteText
+[MidLeft][LoadYvette]Here is some more text.[A][X]
+
+## Ch2YakovTalkAshur
+[MidRight][LoadAshur][MidLeft][LoadYakov]Here is some more text.[A][X]
+
+## Ch2AshurTalkYvette
+[MidLeft][LoadYvette][MidRight][LoadAshur]Here is some more text.[A][X]
+
+## Ch2EndingText
+[MidRight][LoadIdi][MidLeft][LoadNaiah]Here is some text.[A][X]

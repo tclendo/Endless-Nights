@@ -1,5 +1,8 @@
 // Table Master Installer
-
+ALIGN 4
 #include "CSV/Table Installer.event"
 
+ALIGN 4
 #include "Other/Animation Reference.event"
+#include "Other/Repointers.event"
+#include "Other/EscapePoints.event"

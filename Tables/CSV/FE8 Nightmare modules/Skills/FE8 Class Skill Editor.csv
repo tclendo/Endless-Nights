@@ -24,10 +24,10 @@ INLINE ClassSkillTable,Skill
 0x16 Swordmaster (F),CritUpID
 0x17 Assassin,LethalityID
 0x18 Assassin (F),LethalityID
-0x19 Archer,0x0
-0x1A Archer (F),0x0
-0x1B Sniper,0x0
-0x1C Sniper (F),0x0
+0x19 Archer,BowRangeUpID
+0x1A Archer (F),BowRangeUpID
+0x1B Sniper,BowRangeUpID
+0x1C Sniper (F),BowRangeUpID
 0x1D Ranger,0x0
 0x1E Ranger (F),0x0
 0x1F Wyvern Rider,CantoID
@@ -50,7 +50,7 @@ INLINE ClassSkillTable,Skill
 0x30 Druid (F),0x0
 0x31 Summoner,SummonID
 0x32 Summoner (F),SummonID
-0x33 Rogue,LockTouchID
+0x33 Rogue,0x0
 0x34 Gorgon Egg,0x0
 0x35 Great Knight,CantoID
 0x36 Great Knight (F),CantoID

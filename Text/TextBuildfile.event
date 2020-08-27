@@ -98,5 +98,6 @@ Mov[X]
 
 #include "Skills/unitinfo_text.txt"
 
-#include "Chapters/Chapter Text Installer.event"
+#include "Chapters/_Chapter Text Installer.event"
 #include "Units/Character Text Installer.event"
+#include "Units/Class Text Installer.event"

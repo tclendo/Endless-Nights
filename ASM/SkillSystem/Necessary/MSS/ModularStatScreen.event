@@ -169,7 +169,8 @@
 
   ALIGN 4
   MSS_page3:
-    #incbin "asm/mss_page3_original.dmp"
+    //#incbin "asm/mss_page3_original.dmp"
+    #incbin "asm/mss_page3_newranks.dmp"
 
   #ifdef ENABLE_PERSONAL_INFO
   

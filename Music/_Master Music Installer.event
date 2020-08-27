@@ -1,0 +1,11 @@
+//Master Music Installer.event
+
+#include "Sappy2ea/MPlayDef.event"
+#include "Sappy2ea/drumfix_fe8.event"
+#include "Sappy2ea/Music Installer.event"
+
+SongTable(0x5d,LighthouseInAgustria,MapMusicGroup)
+#include "Lighthouse in Agustria.event"
+
+SongTable(0x5e,LowerBrinstar,MapMusicGroup)
+#include "Lower Brinstar.event"

@@ -1,11 +1,41 @@
 //Map Sprite Installer.event
 
 ALIGN 4
-
 MonkFSt:
 #incext Png2Dmp "MonkFSt.png" --lz77
 
 ALIGN 4
-
 MonkFMv:
 #incext Png2Dmp "MonkFMv.png" --lz77
+
+ALIGN 4
+SwordstressSt:
+#incext Png2Dmp "SwordstressSt.png" --lz77
+
+ALIGN 4
+SwordstressMv:
+#incext Png2Dmp "SwordstressMv.png" --lz77
+
+ALIGN 4
+DeserterSt:
+#incext Png2Dmp "DeserterSt.png" --lz77
+
+ALIGN 4
+DeserterMv:
+#incext Png2Dmp "DeserterMv.png" --lz77
+
+ALIGN 4
+AxeLordSt:
+#incext Png2Dmp "LordSt.png" --lz77
+
+ALIGN 4
+AxeLordMv:
+#incext Png2Dmp "LordMv.png" --lz77
+
+ALIGN 4
+GreatAxeLordSt:
+#incext Png2Dmp "GreatLordSt.png" --lz77
+
+ALIGN 4
+GreatAxeLordMv:
+#incext Png2Dmp "GreatLordMv.png" --lz77

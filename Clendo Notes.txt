@@ -1,57 +1,65 @@
 Clendo Notes
 
-Background List:
-	00 House1
-	01 House2
-	02 DayVisitVllage
-	03 HillVillageDay
-	04 HillVillageEve
-	05 DaySerafew
-	06 FlashbackSerafew
-	07 Harbor
-	08 Boat
-	09 Inn
-	0A CastleBlueDay
-	0B CastleBlueNight
-	0C CastleBrownDay
-	0D CastleBrownTint
-	0E Fireplace
-	0F FireplaceTint
-	10 BuildingWindowsDay
-	11 BuildingWindowsNight
-	12 BuildingDoorDay
-	13 MossyTerraceDay
-	14 MossyTerraceFlashback
-	15 CastleYardDay
-	16 CastleYardFlashback
-	17 CastleCell
-	18 ForestOutskirtDay
-	19 ForestOutskirtEve
-	1A ForestOutskirtFog
-	1B MountainViewDay
-	1C HillyFieldDay
-	1D MountainOutskirtDay
-	1E MountainOutskirtFog
-	1F MountainOutskirtEve
-	20 MountainOutskirtNight
-	21 MarshDay
-	22 TallForestDay
-	23 ThickForestDay
-	24 OutsideSerafewDay
-	25 OutsideFortEve
-	26 InsideFortDay
-	27 InsideFortEve
-	28 InsideRuinEve
-	29 OutsideRuinDay
-	2A BrownCastleWalls
-	2B BrownCastleWallsFire
-	2C GrandTreasureRoom1
-	2D GrandTreasureRoom2
-	2E GrandTreasureRoom3
-	2F GrandTreasureRoom4
-	30 Desert
-	31 DenseForest
-	32 Lava
-	33 BlackTempleDoor
-	34 BlackTempleInside
+// Event file outline
+
+EventPointerTable(TableEntry, MyEvents) //10 is ch1 events
+
+
+MyEvents:
+
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+/// Pointer Data ///
+
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+Units:
+UNIT
+
+/// ASMC's ///
+
+/// Beginning/Ending Events ///
+
+BeginningScene:
+ENDA
+
+EndingScene:
+ENDA
+
+/// Other Events ///
+
+/// Unit Data ///
+
+// MESSAGE Chapter ends at offset CURRENTOFFSET
 

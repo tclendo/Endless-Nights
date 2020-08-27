@@ -1,13 +1,13 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
-Eirika,WildheartID
+Eirika,CharismaID
 Seth,WildheartID
 Gilliam,RallyDefID
-Franz,SealStrID
+Franz,ParagonID
 Moulder,RallyResID
 Vanessa,SpurSpdID
 Ross,ParagonID
-Neimi,RallyLukID
+Neimi,WildheartID
 Colm,RallySpdID
 Garcia,ColossusID
 Innes,BowRangeUpID
@@ -69,8 +69,8 @@ Orson (Ch 5x),0x0
 Valter (Ch 15),0x0
 Selena (Ch 10B & 13B),0x0
 Valter (Prologue),0x0
-Breguet (Ch 1),CounterMagicID
-Bone (Ch 2),AxefaireID
+Dante,AxebreakerID
+Hystar,FormshiftID
 Bazba (Ch 3),SwordbreakerID
 Entombed (Ch 4),0x0
 Saar (Ch 5),AxebreakerID
@@ -103,7 +103,7 @@ Hunter (Ch 16),0x0
 0,0x0
 Brigand,0x0
 0,0x0
-O'Neill (Prologue),CounterID
+Bulren,SealDefID
 Glen (Cutscene),0x0
 Zonta (Ch 5x),0x0
 Vigarde (Ch 14B),RenewalID

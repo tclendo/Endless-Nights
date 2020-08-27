@@ -1,4 +1,27 @@
 //Master ASM Installer
 
+#include "AutoNewline/Installer.event"
+//#include "256 colors titlebackground/titlebackgroundinstaller.event"
+#include "Skip Chapter/Installer.event"
+
 #include "SkillSystem/_MasterHackInstaller.event"
+
+#include "HPBars/HPBars.event"
 #include "LaguzBars/LaguzBars.event"
+#include "FillAIDangerMapFix/FillAIDangerMap.event"
+#include "Battle Anims By Character/FE8_Battle_ANims_By_Character_EA.event"
+#include "StatScreenBlink/SSBlink.event"
+#include "FE8 Walking Sounds Fix/FE8-Walking Sounds EA.event"
+
+// ASMC's
+
+//Get the count of the current units
+ALIGN 4
+PUSH
+ORG CURRENTOFFSET+$1
+GetBlueUnitCountASMC:
+POP
+SHORT $B500 $4803 $4686
+BYTE $0 $F8
+SHORT $4902 $6008 $BC01 $4700
+BYTE $F1 $8F $1 $8 $E8 $4 $0 $3

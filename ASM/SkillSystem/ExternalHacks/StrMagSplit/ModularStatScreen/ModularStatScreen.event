@@ -437,7 +437,7 @@ ALIGN 4
 #endif // ENABLE_PERSONAL_INFO
 
 //Remove glowy spinny circle thingy from stat screen
-
+/*
 PUSH
 ORG $88620
 POIN RemoveGlowy
@@ -447,6 +447,7 @@ ALIGN 4
 RemoveGlowy:
 //#incext Png2Dmp "RemoveGlowy.png" --lz77
 #incbin "RemoveGlowy.dmp"
+*/
 
 // POP
 #else // _FE8_

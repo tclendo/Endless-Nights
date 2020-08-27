@@ -18,63 +18,211 @@ POIN BeginningScene EndingScene
 ///
 
 TurnBasedEvents:
-
+TurnEventPlayer(0x0,EnemyReinforcementsLoad,4)
+TurnEventPlayer(0x0,YvetteReinforcementsLoad,6)
+TurnEventPlayer(0x0,LoadAshur,6)
 END_MAIN
 
-CharacterBasedEvents:
+ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
 
+CharacterBasedEvents:
+CharacterEvent(0x8,RecruitYakov,0x0,Yakov)
+CharacterEvent(0x9,RecruitAshur,Yakov,Ashur)
+CharacterEvent(0xa,RecruitYvette,Ashur,Yvette)
 END_MAIN
 
 LocationBasedEvents:
-
+House(0xb,VisitHut,6,11)
+Door(2,3)
 END_MAIN
 
 MiscBasedEvents:
-CauseGameOverIfLordDies
+AFEV 0x0 CheckNoUnits 0x0
+DefeatBoss(EndingScene)
 END_MAIN
 
 Dunno:
-
 END_MAIN
 
 Tutorial:
-
 END_MAIN
 
 TrapData:
-
 END_MAIN
+
 ALIGN 4
 
 Units:
 UNIT
 
-BeginningScene:
+///
 
-LOAD1 1 PlayerUnits
+BeginningScene:
+LOAD1 1 EnemyUnits
 ENUN
-LOAD1 0 EnemyUnits
+CAMERA [14,21]
+FADU 5
+LOAD1 0 PlayerUnits1
+ENUN
+STAL 30
+SetBackground(0x1c)
+Text(Ch2StartText)
+EndConvo
+LOAD1 0 PlayerUnits2
+ENUN
+STAL 10
+CAMERA [0,0]
+STAL 30
+SetBackground(0x26)
+Text(Ch2TalkBreguet) 
+EndConvo
+STAL 10
+CAMERA [0,13]
+CURSOR [6,11]
+STAL 60
+REMOVE_CURSORS
+SetBackground(0x0)
+Text(Ch2YakovOpening)
+EndConvo
+NoFade
+LOAD1 1 YakovSpawn
 ENUN
 ENDA
 
 EndingScene:
-
-MoveToChapter(0x02)
+SetBackground(0x26)
+Text(Ch2EndingText)
+FADI 3
+MoveToChapter(0x2)
 ENDA
 
 ///
 
-PlayerUnits:
-
-UNIT Eirika Mauthedoog Eirika Level(1,Ally,False) [7,7] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
-UNIT Seth Mauthedoog Eirika Level(1,Ally,False) [6,6] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
-UNIT
-
-EnemyUnits:
-
-UNIT ONeill Brigand ONeill Level(1,Enemy,False) [14,8] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] AttackInRangeAI
-UNIT
+CheckNoUnits:
+ASMC GetBlueUnitCountASMC
+SVAL 0x7 0x2
+BLT 0x0 0xC 0x7 // If there are less than 2 alive, game over.
+	GOTO 0x01
+LABEL 0x00 //GameOver
+//ENUT 0x65
+ASMC 0x00D391
+LABEL 0x01
+NoFade
+ENDA
 
 ///
 
-MESSAGE Ch2 events end at offset CURRENTOFFSET
+VisitHut:
+SetBackground(0x0)
+Text(Ch2HutText)
+EndConvo
+NoFade
+SVAL 0x3 Elixir
+GIVEITEMTO -1
+ENDA
+
+///
+
+RecruitYakov:
+Text(Ch2TalkYakov)
+NoFade
+CUSA Yakov
+ENDA
+
+RecruitAshur:
+Text(Ch2YakovTalkAshur)
+NoFade
+CUSA Ashur
+ENDA
+
+RecruitYvette:
+Text(Ch2AshurTalkYvette)
+NoFade
+CUSA Yvette
+ENDA
+
+LoadAshur:
+CAMERA [0,10]
+LOAD1 1 AshurSpawn
+ENUN
+Text(Ch2AshurText)
+NoFade
+ENDA
+ 
+YvetteReinforcementsLoad:
+CAMERA [0,0]
+LOAD1 1 YvetteReinforcements
+ENUN
+Text(Ch2YvetteText)
+NoFade
+ENDA
+
+EnemyReinforcementsLoad:
+CAMERA [0,8]
+LOAD1 1 EnemyReinforcements1
+ENUN
+STAL 10
+LOAD1 1 EnemyReinforcements2
+ENUN
+STAL 10
+NoFade
+ENDA
+
+//
+
+PlayerUnits1:
+UNIT Naiah Mauthedoog Eirika Level(1,Ally,False) [9,21] 0x0 0x0 0x1 REDA9R20 [FireFang,Vulnerary] NoAI
+UNIT Idi Mauthedoog Eirika Level(1,Ally,False) [10,21] 0x0 0x0 0x1 REDA9R19 [FireFang,Vulnerary] NoAI
+UNIT Safiyah Archer_F Naiah Level(1,Ally,False) [10,21] 0x0 0x0 0x1 REDA10R20 [IronBow,Vulnerary] NoAI
+UNIT
+
+PlayerUnits2:
+UNIT Ayanna Monk_F Naiah Level(2,Ally,False) [8,21] 0x0 0x0 0x1 REDA8R20 [Lightning,Vulnerary] NoAI
+UNIT Elena Cleric Naiah Level(5,Ally,False) [9,21] 0x0 0x0 0x0 0x1 [Mend,Vulnerary,GoddessIcon] NoAI
+UNIT
+
+YakovSpawn:
+UNIT Yakov Brigand Yakov Level(7,NPC,False) [6,11] 0x0 0x0 0x1 REDA6R12 [SteelAxe,Vulnerary] AttackInRangeAI
+UNIT
+
+AshurSpawn:
+UNIT Ashur Thief 0x0 Level(5,Enemy,False) [0,7] 0x0 0x0 0x0 0x1 [IronSword,Lockpick] LootingThiefAI
+UNIT
+
+EnemyUnits:
+UNIT Dante Mercenary Dante Level(7,Enemy,False) [9,1] 0x0 0x0 0x0 0x1 [SteelSword] NeverMoveAI
+UNIT AxeBandit Brigand Dante Level(5,Enemy,True) [11,1] DropItem 0x0 0x0 0x1 [Swordreaver] DefaultAI
+UNIT AxeBandit Brigand Dante Level(5,Enemy,True) [12,2] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT DarkMage Shaman Dante Level(7,Enemy,True) [7,1] 0x0 0x0 0x0 0x1 [Flux] GuardTileAI
+UNIT DarkMage Shaman Dante Level(7,Enemy,True) [6,2] 0x0 0x0 0x0 0x1 [Flux] GuardTileAI
+UNIT AxeBandit Fighter Dante Level(4,Enemy,True) [8,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT SwordBandit Mercenary Dante Level(5,Enemy,True) [9,3] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+UNIT AxeBandit Fighter Dante Level(4,Enemy,True) [10,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT Amani18 AmaniMaleClass Dante Level(4,Enemy,True) [1,15] 0x0 0x0 0x0 0x1 [FireFang] AttackInRangeAI
+UNIT Amani6 AmaniMaleClass Dante Level(4,Enemy,True) [6,1] 0x0 0x0 0x0 0x1 [FireFang] AttackInRangeAI
+UNIT AxeBandit Brigand Dante Level(4,Enemy,True) [2,8] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT AxeBandit Brigand Dante Level(4,Enemy,True) [10,13] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Brigand Dante Level(4,Enemy,True) [6,7] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Brigand Dante Level(4,Enemy,True) [3,20] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AnimaMage Mage Dante Level(5,Enemy,True) [9,8] 0x0 0x0 0x0 0x1 [Thunder] AttackInRangeAI
+UNIT AnimaMage Mage Dante Level(5,Enemy,True) [3,10] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
+//UNIT AnimaMage Mage Dante Level(5,Enemy,True) [0,18] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
+UNIT
+
+YvetteReinforcements:
+UNIT AnimaMage Mage Yvette Level(8,Enemy,True) [1,0] 0x0 0x0 0x0 0x1 [Thunder] GuardTileAI
+UNIT AnimaMage Mage Yvette Level(8,Enemy,True) [3,0] 0x0 0x0 0x0 0x1 [Thunder] GuardTileAI
+UNIT Yvette Swordstress Yvette Level(6,Enemy,True) [2,0] 0x0 0x0 0x1 REDA2R1 [SteelSword] GuardTileAI
+UNIT
+
+EnemyReinforcements1:
+UNIT AxeBandit Fighter Dante Level(4,Enemy,True) [0,6] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT SwordBandit Mercenary Dante Level(4,Enemy,True) [0,7] 0x0 0x0 0x0 0x1 [IronSword] DefaultAI
+UNIT
+
+EnemyReinforcements2:
+UNIT AnimaMage Mage Dante Level(4,Enemy,True) [14,5] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
+UNIT AnimaMage Mage Dante Level(5,Enemy,True) [14,9] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
+UNIT
+
+MESSAGE Chpater2 ends at offset CURRENTOFFSET

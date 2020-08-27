@@ -1,0 +1,19 @@
+Requires Skill System's post-action loop & Stan's Unit Action Rework (this comes with skill system as well)
+
+1. #include Refuge.event
+2. Set `ActionRoutine(ActionRefuge)` in entry 0x27 of Unit Action Rework's table (there's a macro for this as well, but using it kept giving errors and putting it in directly works fine)
+3. Add `PostActionRefugeCorrection` to the pointers in the Post Action Calc Loop
+4. Define text:
+```
+## RefugeScrollText
+Select a unit to refuge this unit.[X]
+
+##UM_Refuge
+ Refuge[X]
+ 
+##UM_RefugeDesc
+ Take refuge with target.[X]
+```
+5. Add an entry to the unit menu:
+`MenuCommand(UM_Refuge,UM_RefugeDesc,NormalText,RefugeUsability,RefugeEffect)`
+

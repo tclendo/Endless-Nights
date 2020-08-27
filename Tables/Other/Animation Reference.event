@@ -1,11 +1,32 @@
 //Animation Reference
 
-FemaleMonkAnim:
-LightAnim(MonkFMagic)
-UnarmedAnim(MonkFMagic)
+ALIGN 4
+SwordstressAnims:
+SwordAnim(SwordstressSword)
+UnarmedAnim(SwordstressUnarmed)
 WORD 0x0 0x0
 
-FemaleBowAnim:
-BowAnim(ArcherFBow)
-UnarmedAnim(ArcherFUnarmed)
+ALIGN 4
+AxeLordAnims:
+AxeAnim(AxeLordAxe)
+HandAxeAnim(AxeLordThrown)
+UnarmedAnim(AxeLordUnarmed)
+WORD 0x0 0x0
+
+ALIGN 4
+GreatAxeLordAnims:
+AxeAnim(GreatAxeLordAxe)
+HandAxeAnim(GreatAxeLordThrown)
+UnarmedAnim(GreatAxeLordUnarmed)
+SpecialAnim(GreatAxeLordSpecial,Garm)
+WORD 0x0 0x0
+
+ALIGN 4
+VillagerMaleAnims:
+UnarmedAnim(VillagerMale)
+WORD 0x0 0x0
+
+ALIGN 4
+VillagerFemaleAnims:
+UnarmedAnim(VillagerFemale)
 WORD 0x0 0x0

@@ -1,0 +1,17 @@
+## Ch3StartText
+[MidRight][LoadIdi][MidLeft][LoadNaiah]Here is some text.[A][X]
+
+## Ch3EnemyText
+[MidRight][LoadIdi][MidLeft][LoadNaiah]Here is some text.[A][X]
+
+## Ch3AshurText
+[MidRight][LoadAshur]Here is some text.[A][X]
+
+## Ch3TalkAshur
+[MidRight][LoadAshur][MidLeft][LoadCurrent]Here is some text.[A][X]
+
+## Ch3EndTextMyr
+[Right][LoadIdi][FarRight][LoadNaiah][MidLeft][LoadMyrCutscene]Here is some text.[A][X]
+
+## Ch3EndTextPlayer
+[MidRight][LoadIdi][MidLeft][LoadNaiah]Here is some text.[A][X]

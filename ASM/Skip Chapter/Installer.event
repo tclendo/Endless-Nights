@@ -1,0 +1,4 @@
+WinRoutine:
+
+#incbin "Skip effect.dmp"
+#include "text\InstallTextData.event"

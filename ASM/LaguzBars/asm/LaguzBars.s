@@ -783,7 +783,9 @@ bx r0
 
 IncDecLaguzBarsPerPhase:
 
-push {r4-r5,r14}
+push {r4-r7,r14}
+
+mov r6,#0
 
 @inc bars of units based on current phase
 ldr r0,=#0x202BCF0 @chapter data struct
@@ -798,20 +800,24 @@ beq IncDecLaguzBarsPerPhase_IsNPCPhase
 
 IncDecLaguzBarsPerPhase_IsPlayerPhase:
 ldr r4,=#0x202BE4C @start of player unit structs
+mov r7,#62 @# of times to loop through structs
 b IncDecLaguzBarsPerPhase_LoopStart
 
 IncDecLaguzBarsPerPhase_IsEnemyPhase:
 ldr r4,=#0x202CFBC @start of enemy unit structs
+mov r7,#49 @# of times to loop through structs
 b IncDecLaguzBarsPerPhase_LoopStart
 
 IncDecLaguzBarsPerPhase_IsNPCPhase:
 ldr r4,=#0x202DDCC @start of NPC unit structs
-
+mov r7,#19 @# of times to loop through structs
 
 IncDecLaguzBarsPerPhase_LoopStart:
+cmp r6,r7
+beq IncDecLaguzBarsPerPhase_LoopExit
 ldr r0,[r4]
 cmp r0,#0
-beq IncDecLaguzBarsPerPhase_LoopExit
+beq IncDecLaguzBarsPerPhase_LoopRestart
 
 mov r0,r4
 bl IsLaguzTransformed
@@ -850,12 +856,13 @@ bl SetLaguzBar
 IncDecLaguzBarsPerPhase_LoopRestart:
 add r4,#0x48
 mov r5,#0
+add r6,#1
 b IncDecLaguzBarsPerPhase_LoopStart
 
 
 IncDecLaguzBarsPerPhase_LoopExit:
 
-pop {r4-r5}
+pop {r4-r7}
 pop {r0}
 bx r0
 
@@ -1377,7 +1384,7 @@ bx r1
 .type AutoTransformNonPlayerLaguz, %function
 
 AutoTransformNonPlayerLaguz:
-push {r4,r14}
+push {r4-r5,r14}
 
 @loop through every enemy & npc unit
 @check if untransformed laguz
@@ -1386,11 +1393,14 @@ push {r4,r14}
 @restart loop
 
 ldr r4,=#0x202CFBC @start of enemy unit structs
+mov r5,#0
 
 AutoTransformNonPlayerLaguz_Loop1Start:
+cmp r5,#49
+beq AutoTransformNonPlayerLaguz_Loop1Exit
 ldr r0,[r4]
 cmp r0,#0
-beq AutoTransformNonPlayerLaguz_Loop1Exit
+beq AutoTransformNonPlayerLaguz_Loop1Restart
 
 @check if untransformed laguz
 mov r0,r4
@@ -1417,17 +1427,21 @@ bl ToggleLaguzTransformed
 
 AutoTransformNonPlayerLaguz_Loop1Restart:
 add r4,#0x48 @size of unit struct
+add r5,#1
 b AutoTransformNonPlayerLaguz_Loop1Start
 
 
 AutoTransformNonPlayerLaguz_Loop1Exit:
 
 ldr r4,=#0x202DDCC @start of NPC unit structs
+mov r5,#0
 
 AutoTransformNonPlayerLaguz_Loop2Start:
+cmp r5,#19
+beq AutoTransformNonPlayerLaguz_GoBack
 ldr r0,[r4]
 cmp r0,#0
-beq AutoTransformNonPlayerLaguz_GoBack
+beq AutoTransformNonPlayerLaguz_Loop2Restart
 
 @check if untransformed laguz
 mov r0,r4
@@ -1454,12 +1468,13 @@ bl ToggleLaguzTransformed
 
 AutoTransformNonPlayerLaguz_Loop2Restart:
 add r4,#0x48 @size of unit struct
+add r5,#1
 b AutoTransformNonPlayerLaguz_Loop2Start
 
 
 AutoTransformNonPlayerLaguz_GoBack:
 
-pop {r4}
+pop {r4-r5}
 pop {r0}
 bx r0
 

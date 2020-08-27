@@ -1,0 +1,104 @@
+// nightmare 1 events
+
+EventPointerTable(20, MyEvents) //20 is ch4 events
+
+MyEvents:
+
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+/// Pointer Data ///
+
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatAll(EndingScene)
+AFEV 0x8 ZombieVillagers 0x2
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+Units:
+UNIT
+
+/// ASMC's ///
+
+/// Beginning/Ending Events ///
+
+BeginningScene:
+LOAD1 1 VillagerSpawn
+ENUN
+STAL 30
+SetBackground(0x11)
+Text(Nm1StartText)
+EndConvo
+NoFade
+LOAD1 1 CyrusSpawn
+ENUN
+ENDA
+
+EndingScene:
+FADI 5
+MoveToChapter(0x4)
+ENDA
+
+/// Other Events ///
+
+ZombieVillagers:
+Text(Nm1StartText)
+EndConvo
+NoFade
+REMOVEALL_RED
+STAL 10
+Text(Nm1StartText)
+EndConvo
+NoFade
+LOAD1 1 MonsterSpawn
+ENUN
+ENDA
+
+/// Unit Data ///
+
+CyrusSpawn:
+UNIT Cyrus EirikaLord Cyrus Level(8,Ally,False) [9,7] 0x0 0x0 0x1 REDA9R8 [CyrusAxe] NoAI
+UNIT
+
+VillagerSpawn:
+UNIT VillageChild CivilianBoyClass 0x0 Level(1,Enemy,False) [1,8] 0x0 0x0 0x0 0x1 NoItems NeverMoveAI
+UNIT VillageChild CivilianBoyClass 0x0 Level(1,Enemy,False) [4,3] 0x0 0x0 0x0 0x1 NoItems NeverMoveAI
+UNIT VillageChild CivilianBoyClass 0x0 Level(1,Enemy,False) [11,1] 0x0 0x0 0x0 0x1 NoItems NeverMoveAI
+UNIT VillageChild CivilianBoyClass 0x0 Level(1,Enemy,False) [12,5] 0x0 0x0 0x0 0x1 NoItems NeverMoveAI
+UNIT
+
+MonsterSpawn:
+UNIT Monster Bael 0x0 Level(1,Enemy,True) [7,4] 0x0 0x0 0x0 0x1 [RottenClaw] DefaultAI
+UNIT
+
+MESSAGE Nightmare1 ends at offset CURRENTOFFSET
+

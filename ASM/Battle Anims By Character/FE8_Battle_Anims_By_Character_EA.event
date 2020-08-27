@@ -1,0 +1,66 @@
+//Battle animation lists based on character and class
+//By Tequila
+
+#ifndef _FE8_
+	ERROR This is intended for FE8.
+#endif
+
+#include EAStdlib.event
+#include "Extensions/Hack Installation.txt"
+#ifndef FreeSpace
+	#define FreeSpace 0xB2B000
+	ORG FreeSpace
+#endif
+
+PUSH
+
+ORG $573C6
+BL(0x57CAC)
+ORG $573F0
+BL(0x57CAC)
+
+ORG $57D04
+SHORT 0x4800 0x4700; POIN Battle_Anims_By_Character|1 
+
+POP
+
+ALIGN 4
+Battle_Anims_By_Character:
+#incbin "Battle_Anims_By_Character.dmp"
+POIN BattleAnimListByCharTable
+WORD 0
+
+ALIGN 4
+BattleAnimListByCharTable:
+BYTE Safiyah Archer_F 0 0; POIN SafiyahArcherAnimList
+BYTE Ayanna Monk_F 0 0; POIN AyannaMonkAnimList
+BYTE Elena Cleric 0 0; POIN ElenaClericAnimList
+BYTE Ashur Thief 0 0; POIN AshurThiefAnimList
+WORD 0
+
+// Custom Battle Animations //
+ALIGN 4
+SafiyahArcherAnimList:
+BowAnim(SafiyahArcherBow)
+UnarmedAnim(SafiyahArcherUnarmed)
+WORD 0x0 0x0
+
+ALIGN 4
+AyannaMonkAnimList:
+LightAnim(MonkFMagic)
+UnarmedAnim(MonkFMagic)
+WORD 0x0 0x0
+
+ALIGN 4
+ElenaClericAnimList:
+StaffAnim(ElenaClericStaff)
+UnarmedAnim(ElenaClericUnarmed)
+WORD 0x0 0x0
+
+ALIGN 4
+AshurThiefAnimList:
+SwordAnim(AshurThiefSword)
+UnarmedAnim(AshurThiefUnarmed)
+WORD 0x0 0x0
+
+//WORD 0x0

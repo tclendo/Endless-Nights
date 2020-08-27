@@ -9,8 +9,7 @@ WORD DebuffTable
 
 PUSH
 	ORG $59A2B4
-		POIN TerrainHealLoopProc
-		
+		POIN TerrainHealLoopProc		
 	ORG $10988
 		POIN PrepScreenProc
 	ORG $1DB48

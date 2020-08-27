@@ -1,7 +1,8 @@
 #define WorldMap1(Dest) "EVBIT_MODIFY 0x1; WM_SPAWNLORD 0x0 0x0 0x01 0x2 0x0; WM_LOADLOCATION2 0x0 Dest 0x0; WM_SETDESTINATION 0x0 Dest 0x0; _0xA640 0x0 0x0 Dest; SKIPWN; ENDA"
 
 WorldMapPointerTable(0,WM_1) //world map events
-WorldMapPointerTable(1,WM_1)
+//WorldMapPointerTable(1,WM_1)
+WorldMapPointerTable(1,WM_1_2)
 WorldMapPointerTable(2,WM_2)
 WorldMapPointerTable(3,WM_3)
 WorldMapPointerTable(4,WM_4)
@@ -31,6 +32,8 @@ WorldMapPointerTable(0x39,WM_10)
 
 WM_1:
 WorldMap1(0x0)
+WM_1_2:
+WorldMap1(0x1)
 WM_2:
 WorldMap1(0x2)
 WM_3:

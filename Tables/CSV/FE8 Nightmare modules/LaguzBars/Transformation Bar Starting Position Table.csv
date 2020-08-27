@@ -1,13 +1,13 @@
 INLINE BarStartingPositionTable,Bar Starting Position (0-30)
 None,0x0
 Eirika,0x0
-Seth,0x0
+Seth,30
 Gilliam,0x0
 Franz,0x0
 Moulder,0x0
 Vanessa,0x0
 Ross,0x0
-Neimi,0x0
+Neimi,30
 Colm,0x0
 Garcia,0x0
 Innes,0x0
@@ -69,8 +69,8 @@ Orson (Ch 5x),0x0
 Valter (Ch 15),0x0
 Selena (Ch 10B & 13B),0x0
 Valter (Prologue),0x0
-Breguet (Ch 1),30
-Bone (Ch 2),0x0
+Dante,0x0
+Hystar,30
 Bazba (Ch 3),0x0
 Entombed (Ch 4),0x0
 Saar (Ch 5),0x0
@@ -109,10 +109,10 @@ Zonta (Ch 5x),0x0
 Vigarde (Ch 14B),0x0
 Lyon (Ch Final),0x0
 Orson (Ch 16),0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
+Amani6,6
+Amani12,12
+Amani18,18
+Amani24,24
 0,0x0
 0,0x0
 0,0x0

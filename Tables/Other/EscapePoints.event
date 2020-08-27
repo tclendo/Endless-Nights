@@ -1,0 +1,15 @@
+//EscapePointerTable
+
+EscapePointPointerTable(0x1,Ch1EscapePoints)
+EscapePointPointerTable(0x2,Ch2EscapePoints)
+
+ALIGN 4
+Ch1EscapePoints:
+EscapePoint(2,0,MoveUp)
+EscapePointEnd
+
+ALIGN 4
+Ch2EscapePoints:
+EscapePoint(13,0,MoveUp)
+EscapePointEnd
+

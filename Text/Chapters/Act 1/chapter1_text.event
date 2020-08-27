@@ -1,0 +1,24 @@
+
+## Ch1CutsceneText
+[Right][LoadOldLady][MidLeft][LoadMokaya]Here is some text.[A][X]
+
+## Ch1StartText
+[MidRight][LoadIdi][MidLeft][LoadNaiah]Here is some text.[A][X]
+
+## Ch1BadGuyText
+[MidLeft][LoadAmaniMale][MidRight][LoadO'Neill]Here is some more text.[A][X]
+
+## Ch1BuddiesText
+[MidRight][LoadAyanna][MidLeft][LoadSafiyah]Here is some more text.[A][X]
+
+## Ch1ElenaOpening
+[MidRight][LoadElena]Here is some more text.[A][X]
+
+## Ch1TalkElena
+[MidLeft][LoadCurrent][MidRight][LoadElena]Here is some more text.[A][X]
+
+## Ch1VillageText
+[MidLeft][LoadCurrent][MidRight][LoadElena]Here is some more text.[A][X]
+
+## Ch1EndingText
+[MidRight][LoadIdi][MidLeft][LoadNaiah]Here is some text.[A][X]

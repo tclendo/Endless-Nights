@@ -6,8 +6,10 @@
 
 ALIGN 4
 LaguzClassList:
-BYTE EirikaLord Mauthedoog
-BYTE EphraimLord Mauthedoog
+BYTE AmaniMaleClass LycanthropeM
+BYTE AmaniFemaleClass LycanthropeF
+BYTE AmaniMalePromoted GwyllgiM
+BYTE AmaniFemalePromoted GwyllgiF
 BYTE 0 0 // terminator
 
 ALIGN 4
@@ -18,4 +20,4 @@ BYTE FormshiftID
 
 #include "LaguzBars_Internal.event"
 
-#endif // LAGUZ_BARS_INSTALLED
+#endif //LAGUZ_BARS_INSTALLED

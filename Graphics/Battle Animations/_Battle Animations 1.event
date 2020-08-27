@@ -1,0 +1,69 @@
+{
+	#include "Female Monk Magic.event"
+}
+///
+{
+	#include "Archer Twintail Bow.event"
+}
+{
+	#include "Archer Twintail Unarmed.event"
+}
+///
+{
+	#include "Ashur Thief Sword.event"
+}
+{
+	#include "Ashur Thief Unarmed.event"
+}
+///
+{
+	#include "Elena Cleric Staff.event"
+}
+{
+	#include "Elena Cleric Unarmed.event"
+}
+///
+{
+	#include "Swordstress Sword.event"
+}
+{
+	#include "Swordstress Unarmed.event"
+}
+///
+{
+	#include "Deserter Lance.event"
+}
+{
+	#include "Deserter Unarmed.event"
+}
+///
+{
+	#include "Axe Lord Axe.event"
+}
+{
+	#include "Axe Lord Thrown.event"
+}
+{
+	#include "Axe Lord Unarmed.event"
+}
+///
+{
+	#include "Great Axe Lord Axe.event"
+}
+{
+	#include "Great Axe Lord Thrown.event"
+}
+{
+	#include "Great Axe Lord Special.event"
+}
+{
+	#include "Great Axe Lord Unarmed.event"
+}
+///
+{
+	#include "Villager Male.event"
+}
+{
+	#include "Villager Female.event"
+}
+///
