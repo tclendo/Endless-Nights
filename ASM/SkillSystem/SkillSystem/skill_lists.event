@@ -360,3 +360,16 @@ DemonKingSkillList:
 // BYTE 255 AnathemaID
 BYTE 00 00
 ALIGN 4
+
+/// Character Skill Lists
+
+NaiahSkillList:
+BYTE 255 PatienceID
+BYTE 00 00
+ALIGN 4
+
+IdiSkillList:
+BYTE 255 ShoveID
+BYTE 00 00
+ALIGN 4
+

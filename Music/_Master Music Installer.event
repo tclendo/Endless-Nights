@@ -9,3 +9,6 @@ SongTable(0x5d,LighthouseInAgustria,MapMusicGroup)
 
 SongTable(0x5e,LowerBrinstar,MapMusicGroup)
 #include "Lower Brinstar.event"
+
+SongTable(0x22,FE7_Healing,BattleMusicGroup)
+#include "FE7_Healing.event"

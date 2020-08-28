@@ -1,5 +1,34 @@
-# 0x2ed DeserterText
+# 0x2ed DeserterName
 Deserter[X]
+
+# 0x339 DeserterDescription
+Deserters of the Bulren Army.[NL]
+Equip: lances.[X]
+
+# 0x2DB MonkFText
+Monk[X]
 
 # 0x2F9 LycanthropeText
 Lycanthrope[X]
+
+# 0x345 LycanthropeDescription
+An Amani tribesperson in their[NL]
+transformed state.[X]
+
+# 0x346 GwyllgiDescription
+A stronger Amani tribesperson in[NL]
+their transformed state.[X]
+
+# 0x2FD SwordstressText
+Swordstress[X]
+
+# 0x349 SwordstressDescription
+A skilled female swordswoman with[NL]
+beautiful technique. Equip: Swords.[X]
+
+# 0x2FE AmaniName
+Amani[X]
+
+# 0x34A AmaniDescription
+A member of a tribe of bestiars living[NL]
+in the Kalahari Desert.[X]

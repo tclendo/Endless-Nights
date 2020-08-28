@@ -1,41 +1,96 @@
-# 0x0212 CyrusText
+# 0x212 CyrusName
 Cyrus[X]
 
-# 0x0213 IdiText
+# 0x26E CyrusDescription
+Prince Cyrus of Valora.[X]
+
+# 0x213 IdiName
 Idi[X]
 
-# 0x0214 SafiyahText
+# 0x26F IdiDescription
+Son of Chief Mokaya. Strong,[NL]
+mature, and determined.[X]
+
+# 0x214 SafiyahName
 Safiyah[X]
 
-# 0x0215 AyannaText
+# 0x270 SafiyahDescription
+Born in the Kalahari Desert.[NL]
+A loyal, true friend of Naiah.[X]
+
+# 0x215 AyannaText
 Ayanna[X]
 
-# 0x0216 YakovText
+# 0x271 AyannaDescription
+A bright, young scholar who is[NL]
+fascinated by the Amani people.[X]
+
+# 0x216 YakovText
 Yakov[X]
 
-# 0x0217 AshurText
+# 0x272 YakovDescription
+A quiet fighter who hails from[NL]
+the lower mountains of Thea.[X]
+
+# 0x217 AshurText
 Ashur[X]
+
+# 0x273 AshurDescription
+A snark thief with an eye for[NL]
+trouble. Greedy, yet sensitive.[X]
 
 # 0x218 ElenaText
 Elena[X]
 
+# 0x274 ElenaDescription
+A young cleric from Valora.[NL]
+Holds a grudge against wanderers.[X]
+
 # 0x219 NaiahText
 Naiah[X]
+
+# 0x275 NaiahDescription
+Daughter of Chief Mokaya.[NL]
+Temperamental and protective.[X]
 
 # 0x21A YvetteText
 Yvette[X]
 
-# 0x21B ReginaldText
-Reginald[X]
+# 0x276 YvetteDescription
+A naive swordstress from[NL]
+Buldren. Skillful yet naive.[X]
 
-# 0x0239 DanteText
+# 0x239 DanteText
 Dante[X]
 
-# 0x023A HystarText
+# 0x294 DanteDescription
+An impatient mercenary who[NL]
+strongly dislikes the desert.[X]
+
+# 0x23A HystarText
 Hystar[X]
 
-# 0x0249 BulrenText
+# 0x295 HystarDescription
+A powerful Amani warrior.[NL]
+Entranced by an evil spell.[X]
+
+# 0x249 BulrenText
 Bulren[X]
 
-# 0x0250 AmaniText
-Amani[X]
+# 0x2A3 BulrenDescription
+A mean, ruthless wanderer[NL]
+from the desert.[X]
+
+# 0x250 BestiarText
+Bestiar[X]
+
+# 0x2AC BestiarDescription
+An ancient race of people who can[NL]
+transform into beasts.[X]
+
+# 0x24F WandererText
+Wanderer[X]
+
+# 0x2AD WandererDescription
+Hostile people who wander the[NL]
+continent of Mythros.[X]

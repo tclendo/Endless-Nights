@@ -7,9 +7,9 @@
 
 	#include "Definitions.event"
 
-	#include "_FE8EssentialFixes.event"
-	
 	//#define __DEBUG__
+
+	#include "_FE8EssentialFixes.event"
 
 	//Free space definitions
 	//#define FreeSpace

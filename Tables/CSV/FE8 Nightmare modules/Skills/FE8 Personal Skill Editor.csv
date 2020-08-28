@@ -1,14 +1,14 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
-Eirika,CharismaID
-Seth,WildheartID
-Gilliam,RallyDefID
-Franz,ParagonID
-Moulder,RallyResID
-Vanessa,SpurSpdID
-Ross,ParagonID
-Neimi,WildheartID
-Colm,RallySpdID
+Cyrus,CharismaID
+Idi,WildheartID
+Safiyah,SureShotID
+Ayanna,DazzleID
+Yakov,RallyResID
+Ashur,ShadeID
+Elena,MiracleID
+Naiah,WildheartID
+Yvette,VantageID
 Garcia,ColossusID
 Innes,BowRangeUpID
 Lute,ParagonID
@@ -69,7 +69,7 @@ Orson (Ch 5x),0x0
 Valter (Ch 15),0x0
 Selena (Ch 10B & 13B),0x0
 Valter (Prologue),0x0
-Dante,AxebreakerID
+Dante,SealSklID
 Hystar,FormshiftID
 Bazba (Ch 3),SwordbreakerID
 Entombed (Ch 4),0x0

@@ -62,8 +62,8 @@
 [FR] = [FarRight]
 [FFR] = [FarFarRight]
 
-[ConversationText] = [0x80][0x90]
-[BattleText] = [0x80][0x91]
+[ConversationText] = [0x90]
+[BattleText] = [0x91]
 
 [LoadCurrent] = [LoadFace][0xFF][0xFF]
 

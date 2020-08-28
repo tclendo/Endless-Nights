@@ -7,8 +7,14 @@
 ## Ch3AshurText
 [MidRight][LoadAshur]Here is some text.[A][X]
 
-## Ch3TalkAshur
+## Ch3YakovTalkAshur
 [MidRight][LoadAshur][MidLeft][LoadCurrent]Here is some text.[A][X]
+
+## Ch3TalkYvette
+[ConversationText]
+[MidLeft][LoadYvette][MidRight][LoadCurrent]Hello? Who are you?.
+[MidLeft]
+I am Yvette, there is a strange evil here. Allow me to join you.[X]
 
 ## Ch3EndTextMyr
 [Right][LoadIdi][FarRight][LoadNaiah][MidLeft][LoadMyrCutscene]Here is some text.[A][X]

@@ -19,8 +19,10 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0x0,EnemyReinforcementsLoad,4)
-TurnEventPlayer(0x0,YvetteReinforcementsLoad,6)
 TurnEventPlayer(0x0,LoadAshur,6)
+TurnEventPlayer(0x0,EnemyReinforcementsBottomLoad,6)
+TurnEventPlayer(0x0,YvetteReinforcementsLoad,8)
+TurnEventEnemy(0x0,YvetteLeaves,8)
 END_MAIN
 
 ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
@@ -136,13 +138,13 @@ CUSA Ashur
 ENDA
 
 RecruitYvette:
-Text(Ch2AshurTalkYvette)
+Text(Ch2TalkYvette)
 NoFade
 CUSA Yvette
 ENDA
 
 LoadAshur:
-CAMERA [0,10]
+CAMERA [0,8]
 LOAD1 1 AshurSpawn
 ENUN
 Text(Ch2AshurText)
@@ -157,12 +159,32 @@ Text(Ch2YvetteText)
 NoFade
 ENDA
 
+YvetteLeaves:
+CHECK_ALLEGIANCE Yvette
+BEQ 0x1 0xC 0x0
+	CAMERA [0,0]
+	Text(Ch2YvetteLeavesText)
+	NoFade
+	MOVE_1STEP 0x5 Yvette Up
+	ENUN
+	DISA Yvette
+LABEL 0x1
+ENDA
+
 EnemyReinforcementsLoad:
-CAMERA [0,8]
+CAMERA [0,6]
 LOAD1 1 EnemyReinforcements1
 ENUN
 STAL 10
 LOAD1 1 EnemyReinforcements2
+ENUN
+STAL 10
+NoFade
+ENDA
+
+EnemyReinforcementsBottomLoad:
+CAMERA [0,19]
+LOAD1 1 EnemyReinforcements3
 ENUN
 STAL 10
 NoFade
@@ -210,8 +232,6 @@ UNIT AnimaMage Mage Dante Level(5,Enemy,True) [3,10] 0x0 0x0 0x0 0x1 [Fire] Defa
 UNIT
 
 YvetteReinforcements:
-UNIT AnimaMage Mage Yvette Level(8,Enemy,True) [1,0] 0x0 0x0 0x0 0x1 [Thunder] GuardTileAI
-UNIT AnimaMage Mage Yvette Level(8,Enemy,True) [3,0] 0x0 0x0 0x0 0x1 [Thunder] GuardTileAI
 UNIT Yvette Swordstress Yvette Level(6,Enemy,True) [2,0] 0x0 0x0 0x1 REDA2R1 [SteelSword] GuardTileAI
 UNIT
 
@@ -223,6 +243,11 @@ UNIT
 EnemyReinforcements2:
 UNIT AnimaMage Mage Dante Level(4,Enemy,True) [14,5] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
 UNIT AnimaMage Mage Dante Level(5,Enemy,True) [14,9] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
+UNIT
+
+EnemyReinforcements3:
+UNIT AxeBandit Brigand Dante Level(4,Enemy,True) [8,21] 0x0 0x0 0x1 REDA9R18 [IronAxe] DefaultAI
+UNIT AxeBandit Brigand Dante Level(4,Enemy,True) [9,21] 0x0 0x0 0x1 REDA10R17 [IronAxe] DefaultAI
 UNIT
 
 MESSAGE Chpater2 ends at offset CURRENTOFFSET

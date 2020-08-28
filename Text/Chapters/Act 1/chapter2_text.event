@@ -1,12 +1,17 @@
 
 ## Ch2StartText
-[MidRight][LoadIdi][MidLeft][LoadNaiah]Here is some text.[A][X]
+[MidRight][LoadIdi][MidLeft][LoadNaiah]
+[MidRight]Here we are at the outer temple.[A][X]
+
 
 ## Ch2TalkBreguet
-[MidRight][LoadBreguet]Here is some text.[A][X]
+[MidRight][LoadBreguet]
+Grr I hate these filthy beasts.[NL]
+Why am I here?[A][X]
 
 ## Ch2YakovOpening
-[MidLeft][LoadYakov]Here is some more text.[A][X]
+[MidLeft][LoadYakov]
+I wonder where Ashur went off to...[A][X]
 
 ## Ch2TalkYakov
 [MidRight][LoadYakov][MidLeft][LoadCurrent]Here is some text.[A][X]
@@ -18,13 +23,28 @@
 [MidLeft][LoadAshur]Here is some more text.[A][X]
 
 ## Ch2YvetteText
-[MidLeft][LoadYvette]Here is some more text.[A][X]
+[MidLeft][LoadYvette]
+This is evil. This is pure evil.[NL]
+What's happening to me?[A][X]
+
+## Ch2YvetteLeavesText
+[ConversationText]
+[MidLeft][LoadYvette]
+Why am I being drawn into this place?[X]
 
 ## Ch2YakovTalkAshur
-[MidRight][LoadAshur][MidLeft][LoadYakov]Here is some more text.[A][X]
+[ConversationText]
+[MidRight][LoadAshur][MidLeft][LoadYakov]
+Hey there you are.[A]
+[MidRight]Sup dawg...[A][X]
 
-## Ch2AshurTalkYvette
-[MidLeft][LoadYvette][MidRight][LoadAshur]Here is some more text.[A][X]
+## Ch2TalkYvette
+[ConversationText]
+[MidLeft][LoadYvette][MidRight][LoadCurrent]
+Hello? Who are you?.[A]
+[MidLeft]
+I am Yvette, there is a strange evil inside.[A]
+Allow me to join you.[A][X]
 
 ## Ch2EndingText
 [MidRight][LoadIdi][MidLeft][LoadNaiah]Here is some text.[A][X]

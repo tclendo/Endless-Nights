@@ -1,6 +1,8 @@
 Clendo Notes
 
-// Event file outline
+// Free text spaces //
+
+// Event file outline //
 
 EventPointerTable(TableEntry, MyEvents) //10 is ch1 events
 

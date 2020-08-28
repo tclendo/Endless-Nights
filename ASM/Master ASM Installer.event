@@ -1,8 +1,11 @@
 //Master ASM Installer
 
-#include "AutoNewline/Installer.event"
+//#include "AutoNewline/Installer.event"
 //#include "256 colors titlebackground/titlebackgroundinstaller.event"
-#include "Skip Chapter/Installer.event"
+
+#ifdef __DEBUG__
+	#include "Skip Chapter/Installer.event"
+#endif
 
 #include "SkillSystem/_MasterHackInstaller.event"
 

@@ -20,18 +20,21 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 TurnEventEnemy(0x0,SpawnAshur,3)
 TurnEventEnemy(0x0,SpawnThief,5)
+TurnEventPlayer(0x0,SpawnEntranceReinforcements,6)
+TurnEventPlayer(0x0,SpawnTopReinforcements,8)
 END_MAIN
 
 ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
 
 CharacterBasedEvents:
 CharacterEvent(0x8,RecruitAshur,Yakov,Ashur)
-CharacterEvent(0x9,RecruitYvette,Ashur,Yvette)
+CharacterEvent(0x9,RecruitYvette,0x0,Yvette)
 END_MAIN
 
 LocationBasedEvents:
-Chest(SecretBook,7,9)
-Chest(WhiteGem,16,1)
+Chest(EnergyRing,7,9)
+Chest(Physic,16,1)
+Door(16,3)
 END_MAIN
 
 MiscBasedEvents:
@@ -156,7 +159,6 @@ SVAL 0x7 0x2
 BLT 0x8 0xC 0x7 // If there are less than 2 alive, game over.
 	GOTO 0x09
 LABEL 0x08 //GameOver
-//ENUT 0x65
 ASMC 0x00D391
 LABEL 0x09
 NoFade
@@ -168,6 +170,7 @@ SpawnAshur:
 CAMERA [0,5]
 CHECK_EVENTID 0x8 //check the status of ashur for player spawn
 BNE 0x6 0xC 0x0
+	CAMERA [0,12]
 	LOAD1 0 AshurEnemySpawn
 	ENUN
 	STAL 30
@@ -175,8 +178,10 @@ BNE 0x6 0xC 0x0
 	NoFade
 	GOTO 0x7
 LABEL 0x6
+CAMERA [0,12]
 LOAD1 1 AltAshurSpawn
 LABEL 0x7
+NoFade
 ENDA
 
 SpawnThief:
@@ -184,16 +189,33 @@ CAMERA [20,0]
 LOAD1 1 ThiefSpawn
 ENUN
 STAL 10
+NoFade
+ENDA
+
+SpawnEntranceReinforcements:
+CAMERA [0,21]
+LOAD1 1 EnemyReinforcementsEntrance
+ENUN
+STAL 10
+NoFade
+ENDA
+
+SpawnTopReinforcements:
+CAMERA [0,0]
+LOAD1 1 EnemyReinforcementsTop
+ENUN
+STAL 10
+NoFade
 ENDA
 
 RecruitAshur:
-Text(Ch3TalkAshur)
+Text(Ch3YakovTalkAshur)
 NoFade
 CUSA Ashur
 ENDA
 
 RecruitYvette:
-Text(Ch3TalkAshur)
+Text(Ch3TalkYvette)
 NoFade
 CUSA Yvette
 ENDA
@@ -223,13 +245,13 @@ UNIT
 
 EnemyUnits:
 UNIT Hystar AmaniMalePromoted Hystar Level(1,Enemy,False) [7,2] DropItem 0x0 0x0 0x1 [HellFang,HeroCrest] NeverMoveAI
-UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [5,3] 0x0 0x0 0x0 0x1 [Luna] NeverMoveAI
-UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [9,3] 0x0 0x0 0x0 0x1 [Luna] NeverMoveAI
+UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [5,3] 0x0 0x0 0x0 0x1 [Nosferatu] AttackInRangeAI
+UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [9,3] 0x0 0x0 0x0 0x1 [Nosferatu] AttackInRangeAI
 UNIT SwordBandit Swordstress Hystar Level(5,Enemy,True) [1,2] 0x0 0x0 0x0 0x1 [IronSword] DefaultAI
 UNIT SwordBandit Swordstress Hystar Level(5,Enemy,True) [1,4] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-UNIT AxeBandit Brigand Hystar Level(4,Enemy,True) [12,5] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
-UNIT AxeBandit Brigand Hystar Level(4,Enemy,True) [13,4] 0x0 0x0 0x0 0x1 [KillerAxe] AttackInRangeAI
-UNIT AxeBandit Brigand Hystar Level(4,Enemy,True) [13,6] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [12,5] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [13,4] 0x0 0x0 0x0 0x1 [KillerAxe] AttackInRangeAI
+UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [13,6] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
 UNIT Amani6 AmaniMaleClass Hystar Level(6,Enemy,True) [13,9] 0x0 0x0 0x0 0x1 [FireFang] AttackInRangeAI
 UNIT Amani6 AmaniMaleClass Hystar Level(6,Enemy,True) [7,4] 0x0 0x0 0x0 0x1 [FireFang] AttackInRangeAI
 UNIT LanceBandit Deserter Hystar Level(5,Enemy,True) [6,5] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
@@ -238,28 +260,39 @@ UNIT LanceBandit Deserter Hystar Level(5,Enemy,True) [8,5] 0x0 0x0 0x0 0x1 [Iron
 UNIT AxeBandit Brigand Hystar Level(4,Enemy,True) [12,14] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
 UNIT AnimaMage Mage Hystar Level(6,Enemy,True) [16,9] 0x0 0x0 0x0 0x1 [Fimbulvetr] NeverMoveAI
 UNIT SwordBandit Swordstress Hystar Level(8,Enemy,True) [1,4] 0x0 0x0 0x0 0x1 [KillingEdge] AttackInRangeAI
-UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [5,9] 0x0 0x0 0x0 0x1 [Flux] NeverMoveAI
-UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [9,9] 0x0 0x0 0x0 0x1 [Flux] NeverMoveAI
-UNIT SwordBandit Mercenary Hystar Level(5,Enemy,True) [7,12] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
-UNIT BowBandit Archer Hystar Level(6,Enemy,True) [4,13] 0x0 0x0 0x0 0x1 [IronBow] NeverMoveAI
-UNIT BowBandit Archer Hystar Level(6,Enemy,True) [4,14] 0x0 0x0 0x0 0x1 [IronBow] NeverMoveAI
-UNIT AxeBandit Brigand Hystar Level(4,Enemy,True) [12,14] DropItem 0x0 0x0 0x1 [IronAxe,Vulnerary] DefaultAI
-UNIT AxeBandit Brigand Hystar Level(4,Enemy,True) [13,13] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT AxeBandit Brigand Hystar Level(4,Enemy,True) [1,11] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
-UNIT AxeBandit Brigand Hystar Level(4,Enemy,True) [2,10] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [5,9] 0x0 0x0 0x0 0x1 [Luna] NeverMoveAI
+UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [9,9] 0x0 0x0 0x0 0x1 [Luna] NeverMoveAI
+UNIT SwordBandit Mercenary Hystar Level(7,Enemy,True) [7,12] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+UNIT BowBandit Archer Hystar Level(6,Enemy,True) [4,13] 0x0 0x0 0x0 0x1 [IronBow] AttackInRangeAI
+UNIT BowBandit Archer Hystar Level(6,Enemy,True) [4,14] 0x0 0x0 0x0 0x1 [IronBow] AttackInRangeAI
+UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [12,14] DropItem 0x0 0x0 0x1 [IronAxe,Vulnerary] DefaultAI
+UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [13,13] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [1,11] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [2,10] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
 UNIT AnimaMage Mage Hystar Level(6,Enemy,True) [1,16] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
 UNIT AnimaMage Mage Hystar Level(6,Enemy,True) [2,15] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
 UNIT Amani24 AmaniMaleClass Hystar Level(6,Enemy,True) [1,8] 0x0 0x0 0x0 0x1 [FireFang] DefaultAI
-UNIT SwordBandit Mercenary Hystar Level(5,Enemy,True) [12,18] 0x0 0x0 0x0 0x1 [SteelSword] DefaultAI
+UNIT SwordBandit Mercenary Hystar Level(6,Enemy,True) [12,18] 0x0 0x0 0x0 0x1 [SteelSword] DefaultAI
 UNIT LanceBandit Deserter Hystar Level(7,Enemy,True) [16,14] 0x0 0x0 0x0 0x1 [KillerLance] NeverMoveAI
 UNIT LanceBandit Deserter Hystar Level(5,Enemy,True) [15,15] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
 UNIT LanceBandit Deserter Hystar Level(5,Enemy,True) [17,15] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
 UNIT LanceBandit Deserter Hystar Level(5,Enemy,True) [16,16] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
 UNIT
 
-EnemyReinforcements:
-UNIT AxeBandit Fighter Hystar Level(4,Enemy,True) [12,14] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT AxeBandit Fighter Hystar Level(4,Enemy,True) [13,13] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+EnemyReinforcementsEntrance:
+
+UNIT Amani24 AmaniMaleClass Hystar Level(6,Enemy,True) [6,21] 0x0 0x0 0x1 REDA7R19 [FireFang] DefaultAI
+UNIT Amani24 AmaniMaleClass Hystar Level(6,Enemy,True) [8,21] 0x0 0x0 0x1 REDA7R20 [FireFang] DefaultAI
+//UNIT SwordBandit Mercenary Hystar Level(6,Enemy,True) [7,21] 0x0 0x0 0x0 0x1 [SteelSword] DefaultAI
+//UNIT AxeBandit Fighter Hystar Level(4,Enemy,True) [6,21] 0x0 0x0 0x1 REDA6R20 [IronAxe] DefaultAI
+//UNIT AxeBandit Fighter Hystar Level(4,Enemy,True) [8,21] 0x0 0x0 0x1 REDA8R20 [IronAxe] DefaultAI 
+UNIT
+
+EnemyReinforcementsTop:
+UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [0,1] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
+UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [0,2] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
+UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [0,12] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
+UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [0,13] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
 UNIT
 
 AshurEnemySpawn:

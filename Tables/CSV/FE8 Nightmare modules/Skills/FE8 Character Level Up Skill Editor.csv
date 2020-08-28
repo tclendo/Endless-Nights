@@ -1,14 +1,14 @@
 INLINE CharLevelUpSkillTable,Skill List Address
 None,0
-Eirika,0
-Seth,0
-Gilliam,0
-Franz,0
-Moulder,0
-Vanessa,0
-Ross,0
-Neimi,0
-Colm,0
+Cyrus,0
+Idi,IdiSkillList|IsPointer
+Safiyah,0
+Ayanna,0
+Yakov,0
+Ashur,0
+Elena,0
+Naiah,NaiahSkillList|IsPointer
+Yvette,0
 Garcia,0
 Innes,0
 Lute,0
