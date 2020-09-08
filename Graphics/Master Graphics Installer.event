@@ -4,6 +4,8 @@
 
 #include "Map Sprites/Map Sprite Installer.event"
 
+#include "Battle Animations/_Battle Animations 1.event"
+
 #include "Battle Palettes/Palette Setup.event"
 
 PUSH
@@ -13,13 +15,24 @@ ORG $88640
 POIN NewStatScreenPal
 ORG $88620
 POIN RemoveGlowy
-//ORG $59EE20
-//#incext Png2Dmp "PlayerMapPal.png" --palette-only // new player map sprite palette
+
+ORG $AAB414
+#incext Png2Dmp "EmptyDragons.png" --lz77
 ORG $AACEDC
 #incext Png2Dmp "sacredstonesname.png" --lz77 //game title
 ORG $AADBA8
 #incext Png2Dmp "fireemblemname.png" --palette-only //fire emblem logo palette
+
+ORG $B19DEC
+#incext Png2Dmp "ChapterBalls.png" --palette-only //chapter background palette
+ORG $B19854
+#incext Png2Dmp "ChapterBackground.png" --palette-only //chapter background palette
+ORG $A268D8
+#incext Png2Dmp "ChapterFog.png" --palette-only //chapter fog background palette
 POP
+
+//ORG $59EE20
+//#incext Png2Dmp "PlayerMapPal.png" --palette-only // new player map sprite palette
 
 ALIGN 4
 NewStatScreen:

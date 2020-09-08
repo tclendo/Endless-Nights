@@ -67,18 +67,17 @@ WEATHER 0
 LOMA 0x00 //playable map
 LOAD1 1 EnemyUnits
 ENUN
-CAMERA [19,0]
+CAMERA [0,14]
 FADU 5
-CURSOR [16,4] //highlight house
-STAL 60
-REMOVE_CURSORS
-SetBackground(0x01)
+STAL 30
+CAMERA [19,0]
+LOAD1 1 PlayerUnits
+ENUN
+SetBackground(0x30)
 Text(Ch1StartText)
 EndConvo
 CAMERA [0,14]
-CURSOR [1,13] //highlight boss
-STAL 60
-REMOVE_CURSORS
+STAL 30
 MUSC Tension
 SetBackground(0x30)
 Text(Ch1BadGuyText)
@@ -86,14 +85,10 @@ EndConvo
 MOVE 5 Amani6 [0,12]
 ENUN
 CAMERA [19,0]
-CURSOR [16,4] //highlight house
-STAL 60
-REMOVE_CURSORS
-SetBackground(0x00)
-Text(Ch1StartText)
+STAL 30
+SetBackground(0x30)
+Text(Ch1StartText2)
 EndConvo
-LOAD1 1 PlayerUnits
-ENUN
 CAMERA [19,9] // friends come in
 LOAD1 1 Buddies
 ENUN
@@ -113,6 +108,7 @@ CAMERA [19,0]
 ENDA
 
 EndingScene:
+MUSC 0x92
 SetBackground(0x30)
 Text(Ch1EndingText)
 //EndConvo
@@ -122,12 +118,11 @@ ENDA
 
 CheckNoUnits:
 ASMC GetBlueUnitCountASMC
-SVAL 0x7 0x1
+SVAL 0x7 0x4
 BLT 0x0 0xC 0x7 // If there are less than 2 alive, game over.
 	GOTO 0x01
-LABEL 0x00 //GameOver
-//ENUT 0x65
-ASMC 0x00D391
+LABEL 0x00
+ASMC 0x00D391 //GameOver
 LABEL 0x01
 NoFade
 ENDA
@@ -135,18 +130,16 @@ ENDA
 ///
 
 VillageEvent:
-SetBackground(0x3)
-Text(Ch1VillageText)
-EndConvo
-NoFade
-SVAL 0x3 GoddessIcon
-GIVEITEMTO -1
+VillageEventItem(Ch1VillageText,0x3,GoddessIcon)
 ENDA
 
 RecruitElena:
+MUSI
+MUSS 0x30 //comrades
 SetBackground(0x0)
 Text(Ch1TalkElena)
 EndConvo
+MURE 2
 LOAD1 1 ElenaSpawn
 ENUN
 NoFade
@@ -164,6 +157,7 @@ ENDA
 EnemiesCome1:
 CAMERA [0,14]
 LOAD1 0 EnemyReinforcements1
+STAL 10
 ENUN
 NoFade
 ENDA
@@ -172,16 +166,16 @@ ENDA
 
 PlayerUnits:
 
-UNIT Naiah AmaniFemaleClass Naiah Level(3,Ally,False) [16,4] 0x0 0x0 0x1 REDA15R4 [FireFang,Vulnerary] NoAI
-UNIT Idi AmaniMaleClass Naiah Level(5,Ally,False) [16,4] 0x0 0x0 0x1 REDA16R3 [FireFang,Vulnerary] NoAI
+UNIT Naiah AmaniFemaleClass Naiah Level(3,Ally,False) [19,4] 0x0 0x0 0x1 REDA15R4 [FireFang,Vulnerary] NoAI
+UNIT Idi AmaniMaleClass Naiah Level(5,Ally,False) [19,3] 0x0 0x0 0x1 REDA16R3 [FireFang,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
 
 UNIT Bulren Brigand Bulren Level(5,Enemy,False) [1,13] 0x0 0x0 0x0 0x1 [HandAxe] NeverMoveAI
 UNIT Amani6 AmaniMaleClass Bulren Level(3,Enemy,True) [0,13] 0x0 0x0 0x0 0x1 [FireFang] NeverMoveAI
-UNIT Amani12 AmaniMaleClass Bulren Level(3,Enemy,True) [5,5] 0x0 0x0 0x0 0x1 [FireFang] GuardTileAI
-UNIT DarkMage Shaman Bulren Level(6,Enemy,True) [2,14] 0x0 0x0 0x0 0x1 [Flux] GuardTileAI
+UNIT Amani12 AmaniMaleClass Bulren Level(3,Enemy,True) [5,5] 0x0 0x0 0x0 0x1 [FireFang] NeverMoveAI
+UNIT DarkMage Shaman Bulren Level(6,Enemy,True) [2,14] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
 UNIT AxeBandit Brigand Bulren Level(3,Enemy,True) [9,10] 0x0 0x0 0x0 0x1 [IronAxe] BrigandAI
 UNIT AxeBandit Brigand Bulren Level(3,Enemy,True) [13,6] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
 UNIT AxeBandit Brigand Bulren Level(4,Enemy,True) [8,7] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
@@ -197,7 +191,7 @@ UNIT Ayanna Monk_F Naiah Level(2,Ally,False) [19,8] 0x0 0x0 0x1 REDA17R9 [Lightn
 UNIT
 
 ElenaSpawn:
-UNIT Elena Cleric Naiah Level(3,Ally,False) [11,12] 0x0 0x0 0x1 REDA11R13 [Mend, Vulnerary] NoAI
+UNIT Elena Cleric Naiah Level(3,Ally,False) [11,12] 0x0 0x0 0x1 REDA11R13 [Heal, Vulnerary] NoAI
 UNIT
 
 EnemyReinforcements1:

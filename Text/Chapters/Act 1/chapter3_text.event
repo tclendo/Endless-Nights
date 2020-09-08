@@ -1,23 +1,33 @@
 ## Ch3StartText
-[MidRight][LoadIdi][MidLeft][LoadNaiah]Here is some text.[A][X]
-
-## Ch3EnemyText
-[MidRight][LoadIdi][MidLeft][LoadNaiah]Here is some text.[A][X]
+[MidRight][LoadIdi][MidLeft][LoadNaiah]
+Here is some text. We are in the temple.[A][X]
 
 ## Ch3AshurText
-[MidRight][LoadAshur]Here is some text.[A][X]
+[MidRight][LoadAshur]
+Here is some text. Ima loot this bitch.[A][X]
 
 ## Ch3YakovTalkAshur
-[MidRight][LoadAshur][MidLeft][LoadCurrent]Here is some text.[A][X]
+[MidLeft][LoadAshur][MidRight][LoadYakov]
+Hey there you are. Why are you here?[A]
+[MidRight]
+Sup dawg, I'm here for loot bitch.[A][X]
 
 ## Ch3TalkYvette
-[ConversationText]
-[MidLeft][LoadYvette][MidRight][LoadCurrent]Hello? Who are you?.
+[MidLeft][LoadYvette][MidRight][LoadCurrent]
+Hello? Who are you?.[A]
 [MidLeft]
-I am Yvette, there is a strange evil here. Allow me to join you.[X]
+I am Yvette, there is a strange evil here.[NL]
+Allow me to join you.[A][X]
 
 ## Ch3EndTextMyr
-[Right][LoadIdi][FarRight][LoadNaiah][MidLeft][LoadMyrCutscene]Here is some text.[A][X]
+[Right][LoadIdi][FarRight][LoadNaiah][MidLeft][LoadMyrCutscene]
+Here is some text. I broke something[NL]
+very important, else we wouldn't[A][NL]
+be starting the campaign without[NL]
+any of our main protagonists.[A][X]
 
 ## Ch3EndTextPlayer
-[MidRight][LoadIdi][MidLeft][LoadNaiah]Here is some text.[A][X]
+[MidRight][LoadIdi][MidLeft][LoadNaiah]
+Here is some text. Bitch bad.[A][NL]
+Let's leave and go north[NL]
+and start Cyrus's story.[A][X]

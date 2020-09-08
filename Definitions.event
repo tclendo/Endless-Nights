@@ -9,13 +9,21 @@
 #define ChapterTileAnims(chapter, anim1, anim2) "PUSH; ORG 0x8b0890 + (148* chapter) + 9; BYTE anim1 anim2; POP"
 
 #ifndef ItemTable
-  #define ItemTable 0x809B10
+  //#define ItemTable 0x809B10
+  #define ItemTable NewItemTable
 #endif
 
 #ifndef DebuffTable
   #define DebuffTable     0x0203F100
   #define DebuffTableSize 0x00000900
 #endif
+
+/*
+#ifdef ClassTable
+	MESSAGE Class table defined
+	#define ClassTable NewClassTable
+#endif
+*/
 
 #define LunarBrace MoonBracelet
 #define SolarBrace SunBracelet
@@ -37,7 +45,7 @@
 #define EndConvo "CALL $9EE2C4"
 
 // Animation Macros
-#define AnimTableEntry(index) "ORG NewClassAnimTable -0x20 + (index * 0x20)"
+#define AnimTableEntry(index) "ORG NewClassAnimTable - 0x20 + (index * 0x20)"
 #define Item 9
 
 //Units
@@ -55,7 +63,9 @@
 
 #define Mokaya 0x1d
 
-#define MyrCutscene 0x40
+#define CyrusNM1 0x21
+
+#define MyrNightmare 0x40
 
 #define Dante 0x46
 #define Hystar 0x47
@@ -81,6 +91,8 @@
 #define CivilianGirl 0xF5
 #define CivilianMan 0xF6
 #define CivilianWoman 0xF7
+
+#define CutsceneUnit 0xFF
 
 //Classes
 

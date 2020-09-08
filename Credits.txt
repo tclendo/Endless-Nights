@@ -1,0 +1,22 @@
+--Portraits--
+
+Naiah Portrait (Eve.png) - XVI
+Generic Amani portrait (Darrin 2.png) - XVI
+
+Yvette portrait (Capibarainspace_1.png) - Capibarainspace
+Safiyah portrait (GabrielKnight_11.png) - GabrielKnight
+Ayanna portrait (Der_10.png) - DerTheVaporeon
+
+Bulren portrait (RandomWizard_Aniki.png) - RandomWizard
+Dante portrait (LaurentLacroix_35.png) - LaurentLacroix
+Hystar portrait (LaurentLacroix_44.png) - LaurentLacroix
+
+--Animations--
+
+Swordstress animations (Beta Eirika Edit) - Eldritch Abomination
+Deserter animations (Deserter) - Alusq
+Safiyah archer animations (Der Twintails) - DerTheVaporeon
+Ayanna monk animations (Sister + Mag) - Mikey Seregon, Aviv
+Elena cleric animations (Cleric Long Hair) - Yangfly Master
+
+--Hacks--

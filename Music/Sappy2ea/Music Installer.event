@@ -14,8 +14,10 @@
 #ifdef _FE8_
   //#define SongTableOffset  0x224470
   #include "drumfix_fe8.event"
-  voicegroup000:
-  #incbin "FE8_NI_Map.bin"
+  //voicegroup000:
+  //#incbin "FE8_NI_Map.bin"
+  #include "NIMap/Installer.event"
+
 #endif
 
 

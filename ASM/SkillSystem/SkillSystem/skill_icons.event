@@ -8,10 +8,10 @@ SkillIcons:
 //extra skill icon definitions
 
 ORG SkillIcon(WildheartID)
-#incbin "SkillIcons/NiceThighs.dmp"
+#incbin "SkillIcons/Wildheart.dmp"
 
 ORG SkillIcon(FormshiftID)
-#incbin "SkillIcons/Personality.dmp"
+#incbin "SkillIcons/Formshift.dmp"
 
 // default
 

@@ -346,6 +346,8 @@
 
 #include "FE8 Nightmare modules\Misc\Personal Data Editor.event"
 
+#include "FE8 Nightmare modules\Music\Boss_Music_Editor.event"
+
 #include "FE8 Nightmare modules\Portrait Editors\FE8 Portrait Editor.event"
 
 #include "FE8 Nightmare modules\Promotion\Promotion Branch Editor.event"

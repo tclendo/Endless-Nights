@@ -1,6 +1,6 @@
-#define csvmacro242(arg000,arg001,arg002,arg003,arg004,arg005,arg006,arg007,arg008) "BYTE arg000 arg001 arg002 arg003 ;WORD arg004 ;BYTE arg005 arg006 arg007 arg008 "
+#define csvmacro243(arg000,arg001,arg002,arg003,arg004,arg005,arg006,arg007,arg008) "BYTE arg000 arg001 arg002 arg003 ;WORD arg004 ;BYTE arg005 arg006 arg007 arg008 "
 
 PUSH
 ORG 0x9eb780
-csvmacro242(0x2,0x0,0x0,0x0,0x89fdf18,0x2,0x6,0x0,0x0)
+csvmacro243(0x2,0x0,0x0,0x0,0x89fdf18,0x2,0x6,0x0,0x0)
 POP

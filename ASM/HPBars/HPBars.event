@@ -31,19 +31,19 @@
 	// Example palettes:
 	ALIGN 4
 	BlueDarkHPPalette:
-	#incbin "HPBarDarkBlue.dmp"
+	#incext Png2Dmp "HPBarDarkBlue.png" --palette-only
 
 	ALIGN 4
 	BlueLightHPPalette:
-	#incbin "HPBarLightBlue.dmp"
+	#incext Png2Dmp "HPBarLightBlue.png" --palette-only
 
 	ALIGN 4
 	RedDarkHPPalette:
-	#incbin "HPBarDarkRed.dmp"
+	#incext Png2Dmp "HPBarDarkRed.png" --palette-only
 
 	ALIGN 4
 	RedLightHPPalette:
-	#incbin "HPBarLightRed.dmp"
+	#incext Png2Dmp "HPBarLightRed.png" --palette-only
 
 	// Assembled ASM:
 	ALIGN 4

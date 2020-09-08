@@ -4,11 +4,62 @@
 #include "Sappy2ea/drumfix_fe8.event"
 #include "Sappy2ea/Music Installer.event"
 
-SongTable(0x5d,LighthouseInAgustria,MapMusicGroup)
-#include "Lighthouse in Agustria.event"
+//Title screen music//
+
+SongTable(0x43,EdgeOfDawn,BattleMusicGroup)
+#include "Edge of Dawn.event"
+
+/*
+SongTable(0x43,AnotherAssault,BattleMusicGroup)
+#include "Another Assault.event"
+*/
+
+//MapMusic//
+
+SongTable(0x5d,LandofSwirlingSand,MapMusicGroup)
+#include "LandofSwirlingSand.event"
 
 SongTable(0x5e,LowerBrinstar,MapMusicGroup)
 #include "Lower Brinstar.event"
 
+SongTable(0x58,GloryRuin,MapMusicGroup)
+#include "GloryRuin.event"
+
+SongTable(0x59,AcrossTheDesert,MapMusicGroup)
+#include "Across The Desert.event"
+
+SongTable(0x10,InSearchOfVictory,MapMusicGroup)
+#include "In Search of Victory.event"
+
+SongTable(0x93,PastBelowFlow,MapMusicGroup)
+#include "Past Below (Flow).event"
+
+SongTable(0x94,Frontier,MapMusicGroup)
+#include "Frontier.event"
+
+//Battle Music//
+
 SongTable(0x22,FE7_Healing,BattleMusicGroup)
 #include "FE7_Healing.event"
+
+SongTable(0x5f,OnTheHunt,BattleMusicGroup)
+#include "On The Hunt.event"
+
+SongTable(0x1a,Defence,BattleMusicGroup) //defend music
+#include "Defence.event"
+
+SongTable(0x19,SkyEvent,BattleMusicGroup) //attack music
+#include "Sky event.event"
+
+SongTable(0x1b,ADarkFall,BattleMusicGroup)
+#include "A Dark Fall.event"
+
+//Conversation Music//
+
+SongTable(0x92,Sileza,BattleMusicGroup) //attack music
+#include "Palace of Sileza.event"
+
+PUSH
+ORG $83628
+BYTE $44 // changes death track to lyon (organ arrangement)
+POP

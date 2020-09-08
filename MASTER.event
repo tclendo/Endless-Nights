@@ -1,4 +1,5 @@
 #ifdef _FE8_
+
 	#include "EAstdlib.event"
 	#include "EA Standard Library/Backward Compatibility.txt"
 	
@@ -7,7 +8,7 @@
 
 	#include "Definitions.event"
 
-	//#define __DEBUG__
+	#define __DEBUG__
 
 	#include "_FE8EssentialFixes.event"
 
@@ -28,19 +29,6 @@
 	//ORG FreeSpaceA
 
 	ORG EndOfRom // Normal master installer
-
-	ALIGN 16
-	ORG CURRENTOFFSET + 0x08
-	NewClassAnimTable:
-	ORG CURRENTOFFSET + 0x20 * 0x200 // Allocate 0x200 entries for the ClassAnimTable.
-	PUSH 
-	ORG NewClassAnimTable
-	#incbin "Tables/ClassAnimTable.dmp"
-	POP
-	
-	ALIGN 16
-	#include "Graphics/Battle Animations/_Battle Animations 1.event"
-	MESSAGE Animations One Installed
 
 	// Install text
 	ALIGN 16

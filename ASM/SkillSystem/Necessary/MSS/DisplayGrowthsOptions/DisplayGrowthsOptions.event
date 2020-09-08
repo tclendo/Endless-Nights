@@ -14,7 +14,7 @@
 #define Growth_Opt4 1
 
 //Write 0 if you don't want the color of the stat name to reflect the unit's growth in that stat, or 1 if you do (player units only)
-#define Stat_Colors 1
+#define Stat_Colors 0
 
 //Select the metis tome boost (applies to all growths)
 #define Metis_Tome_Boost 5

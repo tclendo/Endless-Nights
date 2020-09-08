@@ -1,7 +1,17 @@
 #define csvmacro167(arg000,arg001) "WORD arg000 arg001 "
 
 PUSH
-ORG 0x9a2e00
+ORG $79584
+POIN MovingMapAnimTable
+ORG $79598
+POIN MovingMapAnimTable
+ORG $BAC2C
+POIN MovingMapAnimTable
+ORG $BAC40
+POIN MovingMapAnimTable
+POP
+ALIGN 4
+MovingMapAnimTable:
 csvmacro167(0x81c33cc,0x81c3d7c)
 csvmacro167(AxeLordMv|IsPointer,0x81c46cc)
 csvmacro167(0x81c4824,0x81c52b4)
@@ -129,4 +139,4 @@ csvmacro167(0x81f40f8,0x81f49b8)
 csvmacro167(0x81f38ec,0x81f3fa0)
 csvmacro167(0x81e0f98,0x81e173c)
 csvmacro167(0x81e189c,0x81e2088)
-POP
+csvmacro167(0x81c5fe4,0x81c692c)

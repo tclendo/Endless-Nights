@@ -1,4 +1,17 @@
 // Table Master Installer
+
+
+//ClassAnimTable//
+
+ALIGN 16
+ORG CURRENTOFFSET + 0x08
+NewClassAnimTable:
+FILL 0x20 * 200 // Allocate 0x200 entries for the ClassAnimTable.
+PUSH 
+ORG NewClassAnimTable
+#incbin "ClassAnimTable.dmp"
+POP
+
 ALIGN 4
 #include "CSV/Table Installer.event"
 

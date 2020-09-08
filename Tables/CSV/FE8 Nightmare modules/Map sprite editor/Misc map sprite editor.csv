@@ -1,4 +1,4 @@
-0x9a2e00,Animation pointer,Another pointer
+INLINE MovingMapAnimTable,Animation pointer,Another pointer
 Ephraim Lord,0x81c33cc,0x81c3d7c
 Eirika Lord,AxeLordMv|IsPointer,0x81c46cc
 Ephraim Master Lord,0x81c4824,0x81c52b4
@@ -126,3 +126,4 @@ Cyclops,0x81f40f8,0x81f49b8
 Elder Bael,0x81f38ec,0x81f3fa0
 Trainee Fighter (2),0x81e0f98,0x81e173c
 Trainee Mage (2),0x81e189c,0x81e2088
+Socialknight,0x81c5fe4,0x81c692c

@@ -1,7 +1,8 @@
 
 #ifndef ClassTable
   #ifdef _FE8_
-    #define ClassTable 0x807110
+    //#define ClassTable 0x807110
+    #define ClassTable NewClassTable
   #endif
   #ifdef _FE7_
   #ifndef _FE7J_
