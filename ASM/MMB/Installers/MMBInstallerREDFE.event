@@ -118,13 +118,13 @@ After each set of module options are definitions that you can use to adjust the 
 		 * icons past the first to [MMBInventoryX+(16*n), MMBInventoryY].
 		 */
 
-	#define MMBEquippedWeapon
+	//#define MMBEquippedWeapon
 		/*
 		 * Draws a unit's equipped weapon, if they have one,
 		 * to [MMBInventoryX, MMBInventoryY].
 		 */
 
-	//#define MMBEquippedWeaponOrFirstStaff
+	#define MMBEquippedWeaponOrFirstStaff
 		/*
 		 * Draws a unit's equipped weapon, if they have one,
 		 * to [MMBInventoryX, MMBInventoryY]. If the unit does
@@ -428,7 +428,7 @@ After each set of module options are definitions that you can use to adjust the 
 		 * frames.
 		 */
 
-	#define MMBAVODOD
+	//#define MMBAVODOD
 		/*
 		 * Alternates between drawing AVO ## and
 		 * DOD ## to [MMBAVODODX, MMBAVODODY] every 64
@@ -454,7 +454,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// DEF/RES options
 	#define MMBDEFRESX 13
-	#define MMBDEFRESY 3
+	#define MMBDEFRESY 2
 	#define MMBDEFRESVRAMTile 0x10A
 	#define MMBDEFRESPaletteIndex 2
 
@@ -491,7 +491,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 // Affinity modules
 
-	//#define MMBAffinity
+	#define MMBAffinity
 		/*
 		 * Draws the unit's affinity, if they
 		 * have one, to [MMBAffinityX, MMBAffinityY].
@@ -501,8 +501,8 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// Coordinates are in pixels
 
-	#define MMBAffinityX 40
-	#define MMBAffinityY 24
+	#define MMBAffinityX 121
+	#define MMBAffinityY 23
 	#define MMBAffinityTile 0x30A
 
 // Skills modules (requires skill system)
@@ -527,12 +527,12 @@ After each set of module options are definitions that you can use to adjust the 
 		 * that slot.
 		 */
 
-	//#define MMBSkill1Alternate
-	//#define MMBSkill2Alternate
-	//#define MMBSkill3Alternate
-	//#define MMBSkill4Alternate
-	//#define MMBSkill5Alternate
-	//#define MMBSkill6Alternate
+	#define MMBSkill1Alternate
+	#define MMBSkill2Alternate
+	#define MMBSkill3Alternate
+	#define MMBSkill4Alternate
+	#define MMBSkill5Alternate
+	#define MMBSkill6Alternate
 		/*
 		 * Draws an icon to [MMBSkillsAlternateX, MMBSkillsAlternateY]
 		 * cycling between all selected skills. Each is shown for 64 frames.
@@ -573,8 +573,8 @@ After each set of module options are definitions that you can use to adjust the 
 	#define MMBSkill6X 180
 	#define MMBSkill6Y 8
 
-	#define MMBSkillsAlternateX 120
-	#define MMBSkillsAlternateY 8
+	#define MMBSkillsAlternateX 103
+	#define MMBSkillsAlternateY 24
 
 	#define MMBEquippedItemSkillTileIndex 0x318
 
@@ -583,7 +583,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 // Number modules
 
-	#define MMBASNumber
+	//#define MMBASNumber
 	#define MMBATKNumber
 	//#define MMBAVONumber
 	//#define MMBCHRNumber // Useless without skill system
@@ -665,7 +665,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 // Label modules
 
-	#define MMBASLabel
+	//#define MMBASLabel
 	#define MMBATKLabel
 	//#define MMBAVOLabel
 	//#define MMBCHRLabel

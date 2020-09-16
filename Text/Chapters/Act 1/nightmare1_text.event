@@ -1,2 +1,52 @@
-## Nm1StartText
-[MidRight][LoadCyrusEyesClosed]Here is some text.[A][X]
+ ## Nm1StartText
+[MidRight][LoadCyrusEyesClosed]
+Hmmm...?[NL][OpenEyes]
+What...What is this place?[ANL]
+Reginald? Reginald where are[NL]
+you?[A][X]
+
+## NM1OutsideText
+[MidRight][LoadCyrus]
+Where am I?[ANL]
+I've got to find Reginald,[NL]
+he'll know what's happening...[A][X]
+
+## NM1ChildText
+[MidRight][LoadCyrus]
+No...please don't...[A][X]
+
+## NM1AfterChildDeath
+[MidLeft][LoadCyrus]
+Why...Why did I do this?[ANL]
+What is happening to me?![A][X]
+
+## NM1Disappear
+[MidLeft][LoadCyrus]
+Wha...What was that?[A][X]
+
+## NM1RealCyrusText
+[MidRight][LoadCyrus]
+That...That figure.[ANL]
+Was that...Me?[A][X]
+
+## NM1WakeUpText
+[MidLeft][LoadCyrusEyesClosed][MidRight][LoadReginald]
+[MidLeft]
+Gah! Hah-haaaaa....[NL]
+No![OpenEyes][A]
+[MidRight]
+My lord, are you alright?![ANL]
+I heard you cry out,[NL]
+unusual for yourself.[ANL]
+What ails you?[A]
+[MidLeft]
+No, I'm fine, I'm fine.[ANL]
+I think it was just a dream.[NL]
+Nothing to worry yourself about.[ANL]
+Goodnight, Reginald,[NL]
+You'd do fine to get some rest[ANL]
+as well.[A]
+[MidRight]
+Indeed M'lord.[ANL]
+Should you need me for anything,[NL]
+I shall be there.[A][X]

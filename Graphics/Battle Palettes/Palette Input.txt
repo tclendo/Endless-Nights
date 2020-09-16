@@ -81,3 +81,10 @@
 	auto
 	auto
 	auto
+
+#char{0xD} "TheShadowGeneral" set{0x6B,0x1,0xB}
+	5553FF7FBD5FDA3A1109AC08B315A90059676E5AAA41967BAE496C390A31A514
+	auto
+	auto
+	auto
+	auto

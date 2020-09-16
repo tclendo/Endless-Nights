@@ -39,3 +39,6 @@ DanteMercenary:
 HystarGwyllgi:
 	#incbin "./_palettes/HystarGwyllgi.lzpal" 
 
+TheShadowGeneral:
+	#incbin "./_palettes/TheShadowGeneral.lzpal" 
+

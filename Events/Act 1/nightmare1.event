@@ -57,26 +57,30 @@ STAL 30
 SetBackground(0x11)
 Text(Nm1StartText)
 EndConvo
-NoFade
 LOAD1 1 CyrusSpawn
 ENUN
+Text(NM1OutsideText)
+NoFade
 ENDA
 
 EndingScene:
+MUSC BirdChirps
+SetBackground(0x11)
+Text(NM1WakeUpText)
 FADI 5
-MoveToChapter(0x4)
+MNC2(0x0)
+ENUT TempTheEndFlag
 ENDA
 
 /// Other Events ///
 
 ZombieVillagers:
-Text(Nm1StartText)
+Text(NM1AfterChildDeath)
 EndConvo
 NoFade
-
 REMOVEALL_RED
 STAL 10
-Text(Nm1StartText)
+Text(NM1Disappear)
 EndConvo
 NoFade
 FOGVISION 1
@@ -87,7 +91,7 @@ WARP_IN
 LOAD1 1 CyrusSpawnAgain
 ENUN
 ENDWARP
-Text(Nm1StartText)
+Text(NM1RealCyrusText)
 EndConvo
 NoFade
 SET_HASMOVED Cyrus

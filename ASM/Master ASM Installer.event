@@ -16,10 +16,12 @@
 #include "StatScreenBlink/SSBlink.event"
 #include "FE8 Walking Sounds Fix/FE8-Walking Sounds EA.event"
 #include "AutolevelTweaker/installer.event"
+#include "No Easy Mode/Installer.event"
+#include "DIsplayItemDrop/Display Droppable Item.event"
 
 PUSH
 ORG FreeSpaceA
-#include "MMB/Installers/MMBInstallerKaitou.event"
+#include "MMB/Installers/MMBInstallerREDFE.event"
 POP
 
 // ASMC's

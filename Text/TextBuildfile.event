@@ -15,6 +15,10 @@ Learned  [X]
 #0x0928 LaguzBarText
 Bar[X]
 
+#include "Units/Character Text Installer.event"
+#include "Units/Class Text Installer.event"
+#include "Chapters/Objectives.event"
+
 #include "Skills/statscreen_text.txt"
 
 #include "Skills/unitmenu_text.txt"
@@ -96,5 +100,3 @@ Mov[X]
 #include "Skills/unitinfo_text.txt"
 
 #include "Chapters/_Chapter Text Installer.event"
-#include "Units/Character Text Installer.event"
-#include "Units/Class Text Installer.event"

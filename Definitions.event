@@ -48,6 +48,7 @@
 #define AnimTableEntry(index) "ORG NewClassAnimTable - 0x20 + (index * 0x20)"
 #define Item 9
 
+#define TempTheEndFlag 0x86
 //Units
 
 //Characters
@@ -75,6 +76,8 @@
 #define AxeBandit 0x66
 #define LanceBandit 0x67
 #define Bulren 0x68
+
+#define TheShadow 0x6B
 
 #define Amani6 0x6e
 #define Amani12 0x6f
@@ -154,12 +157,16 @@
 #define GreatAxeLordUnarmed 0xD7
 #define VillagerMale 0xD8
 #define VillagerFemale 0xD9
+#define NecromancerMagic 0xDA
+#define NecromancerStaff 0xDB
 
 // Items //
 
 #define CyrusAxe 0x86
 
 // Music //
+
+#define BirdChirps 0x4C
 #define WindTrack 0x4E
 
 // Chapters //

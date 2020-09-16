@@ -1,0 +1,14 @@
+// No Easy Mode Installer by nintenlord
+
+PUSH
+ORG $AC144
+#incbin "000AC144.bin"
+ORG $AC28E
+#incbin "000AC28E.bin"
+ORG $AC29A
+#incbin "000AC29A.bin"
+ORG $8B40E1
+#incbin "008B40E1.bin"
+ORG $8B41BC
+#incbin "008B41BC.bin"
+POP

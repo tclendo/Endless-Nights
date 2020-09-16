@@ -4,6 +4,11 @@ Cyrus[X]
 # 0x26E CyrusDescription
 Prince Cyrus of Valora.[X]
 
+# 0xc43 CyrusNMDeathQuote
+[MidRight][LoadCyrus]
+Wha... No![NL]
+This...Can't...Be...[A][ClearFace][X]
+
 # 0x213 IdiName
 Idi[X]
 
@@ -94,3 +99,37 @@ Wanderer[X]
 # 0x2AD WandererDescription
 Hostile people who wander the[NL]
 continent of Mythros.[X]
+
+# 0x24C TheShadowText
+Shadow[X]
+
+# 0x2A6 TheShadowDescription
+The Shadow[X]
+
+# 0x23b ChildName
+Child[X]
+
+# 0x296 ChildDesc
+An innocent child[X]
+
+# 0x234 MyrName
+Myr[X]
+
+# 0x28f MyrDescription
+An evil dark lord.[X]
+
+# 0x993 MyrNightmareBattle
+[MidLeft][LoadMyrCutscene]
+Good, princeling.[ANL]
+Soon, the night shall[NL]
+take you. This nightmare[ANL]
+is only just beginning[NL]
+for you, dear prince...[A][ClearFace]
+[MidRight][LoadCyrus]
+You? You must be the[NL]
+one making this happen.[ANL]
+I'll make you end it![A][ClearFace][X]
+
+# 0x994 ChildDeath
+[MidLeft][LoadChild]
+N-Nooo![A][ClearFace][X]

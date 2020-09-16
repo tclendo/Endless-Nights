@@ -37,6 +37,15 @@ Bulren_Mug:
 AmaniMale_Mug:
 #incext PortraitFormatter "amani_male.png"
 
+TheShadow_Mug:
+#incext PortraitFormatter "theshadow.png"
+
+MyrHooded_Mug:
+#incext PortraitFormatter "myrhooded.png"
+
+Reginald_Mug:
+#incext PortraitFormatter "reginald.png"
+
 setMugEntry(0x02,Cyrus_Mug,2,4,3,2)
 setMugEntry(0x03,Cyrus_Mug,2,4,3,2)
 setMugEntry(0x04,Idi_Mug,3,5,3,3)
@@ -48,14 +57,17 @@ setMugEntry(0x09,Elena_Mug,2,6,4,4)
 setMugEntry(0x0A,Naiah_Mug,4,5,4,3)
 setMugEntry(0x0B,Naiah_Mug,4,5,4,3)
 setMugEntry(0x0C,Yvette_Mug,2,6,2,4)
-setMugEntry(0x0D,Yvette_Mug,2,6,2,4)
+setMugEntry(0x0D,Idi_Mug,2,6,2,4)
+setMugEntry(0x0E,Reginald_Mug,2,5,3,3)
+
 setMugEntry(0x25,Mokaya_Mug,2,5,3,2)
 
 setMugEntry(0x30,Bulren_Mug,3,5,2,3)
 setMugEntry(0x31,Dante_Mug,3,5,3,3)
 setMugEntry(0x32,Hystar_Mug,3,5,3,3)
 
-
+setMugEntry(0x4A,MyrHooded_Mug,3,6,3,4)
+setMugEntry(0x50,TheShadow_Mug,3,5,3,3)
 setMugEntry(0x59,AmaniMale_Mug,3,5,3,3)
 
 //Enemy Units

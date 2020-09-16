@@ -51,6 +51,16 @@ Units:
 UNIT
 
 BeginningScene:
+CHECK_EVENTID TempTheEndFlag
+BEQ 0x1 0xC 0x0
+	FADU 10
+	SOLOTEXTBOXSTART
+	TEXTSHOW NewPlaythroughText
+	TEXTEND
+	REMA
+	MNC2(0x0)
+	GOTO 0x2
+LABEL 0x1
 LOMA 0x39 //cutscene map
 MUSC WindTrack //wind
 WEATHER 6
@@ -105,6 +115,7 @@ Text(Ch1ElenaOpening)
 EndConvo
 NoFade
 CAMERA [19,0]
+LABEL 0x2
 ENDA
 
 EndingScene:

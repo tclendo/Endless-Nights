@@ -3,15 +3,6 @@
 #include eastdlib.event
 
 SetChapterData(0x01,0x8b,0,0x8c,0x8d,0x08,Map,0x05,0,0x9)
-EventPointerTable(0x9, MapChanges)
 
 Map:
 #incbin "Chapter 2 Better2_data.dmp"
-
-MapChanges:
-TileMap(0,2,3,1,1,Map_Change_0)
-TileMapEnd
-
-Map_Change_0:
-SHORT 0xeac 
-ALIGN 4

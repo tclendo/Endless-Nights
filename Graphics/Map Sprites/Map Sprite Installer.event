@@ -39,3 +39,12 @@ GreatAxeLordSt:
 ALIGN 4
 GreatAxeLordMv:
 #incext Png2Dmp "GreatLordMv.png" --lz77
+
+ALIGN 4
+NecromancerSt:
+#incext Png2Dmp "NecromancerSt.png" --lz77
+
+ALIGN 4
+NecromancerMv:
+#incext Png2Dmp "NecromancerMv.png" --lz77
+

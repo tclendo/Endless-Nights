@@ -67,3 +67,9 @@
 	#include "Villager Female.event"
 }
 ///
+{
+	#include "Necromancer Magic.event"
+}
+{
+	#include "Necromancer Staff.event"
+}

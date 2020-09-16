@@ -19,16 +19,17 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventEnemy(0x0,SpawnAshur,1)
-//TurnEventEnemy(0x0,SpawnThief,4)
-TurnEventPlayer(0x0,SpawnEntranceReinforcements,6)
-//TurnEventPlayer(0x0,SpawnTopReinforcements,8)
+TurnEventPlayer(0x0,SpawnThief,2)
+//TurnEventPlayer(0x0,SpawnEntranceReinforcements,6)
+//TurnEventPlayer(0x0,SpawnYvette,2)
+TurnEventPlayer(0x0,SpawnTopReinforcements,7)
 END_MAIN
 
 ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
 
 CharacterBasedEvents:
 CharacterEvent(0x8,RecruitAshur,Yakov,Ashur)
-CharacterEvent(0x9,RecruitYvette,0x0,Yvette)
+CharacterEvent(0x9,RecruitYvette,Ashur,Yvette)
 END_MAIN
 
 LocationBasedEvents:
@@ -61,20 +62,8 @@ CHECK_EXISTS Ashur //check if Ashur was recruited previously
 BEQ 0x0 0xC 0x0
 	ENUT 0x8
 LABEL 0x0
-CHECK_EXISTS Yvette //check if Yvette was recruited previously
-BEQ 0x1 0xC 0x0
-	ENUT 0x9
-LABEL 0x1
 LOAD1 1 EnemyUnits
 ENUN
-CHECK_EVENTID 0x9 //check the status of yvette for enemy spawn
-BNE 0x2 0xC 0x0
-	LOAD1 0 YvetteEnemySpawn
-	ENUN
-	GOTO 0x3
-LABEL 0x2
-LOAD1 1 AltYvetteSpawn
-LABEL 0x3
 FADU 5
 STAL 30
 //put in enemy text here
@@ -85,7 +74,6 @@ STAL 30
 SetBackground(0x2A)
 Text(Ch3StartText)
 EndConvo
-NoFade
 LOAD1 0 PlayerUnits2
 ENUN
 CHECK_EVENTID 0x8 //check the status of ashur for player spawn
@@ -93,11 +81,11 @@ BEQ 0x4 0xC 0x0
 	LOAD1 1 AshurPlayerSpawn
 	ENUN
 LABEL 0x4
-CHECK_EVENTID 0x9 //check the status of yvette for player spawn
-BEQ 0x5 0xC 0x0
-	LOAD1 1 YvettePlayerSpawn
-	ENUN
-LABEL 0x5
+CAMERA [0,0]
+SetBackground(0x2A)
+Text(Ch3BossText)
+EndConvo
+NoFade
 ENDA
 
 EndingScene:
@@ -121,13 +109,40 @@ SCOORD 0xb [7,2]
 WARP_OUT
 REMOVEUNIT CutsceneUnit
 ENDWARP
+STAL 10
+MOVE_1STEP 5 Idi 3
+ENUN
+SCOORD 0xb [7,4]
+WARP_IN
+LOAD1 1 EndShadow
+ENUN
+ENDWARP
+ENUT 0x84
 STAL 30
-MOVE_1STEP 5 Naiah 3
+Text(Ch3EndIdi)
+StartBattle
+CriticalHit(TheShadow,40)
+EndAttack
+FIGHT TheShadow Idi Vidofnir 0
+SCOORD 0xb [7,4]
+WARP_OUT
+REMOVEUNIT TheShadow
+MOVE_1STEP 5 Naiah 1
+ENUN
 STAL 30
 SetBackground(0x2C)
 Text(Ch3EndTextPlayer)
 EndConvo
-FADI 2
+EARTHQUAKE 0 1
+STAL 60
+Text(Ch3EarthquakeText)
+STAL 10
+LOAD1 0 EndBuddies
+ENUN
+Text(Ch3EarthquakeBuddies)
+FADI 5
+REMOVEALL_BLUE
+EARTHQUAKE_END
 REMU Naiah
 REMU Idi
 REMU Safiyah
@@ -148,6 +163,7 @@ CHECK_EXISTS Yvette
 BEQ 0xD 0xC 0x0
 	REMU Yvette
 LABEL 0xD
+ENUF 0x84
 MoveToChapter(0x3)
 ENDA
 
@@ -170,16 +186,13 @@ SpawnAshur:
 CHECK_EVENTID 0x8 //check the status of ashur for player spawn
 BNE 0x6 0xC 0x0
 	MUSI
+	CAMERA [0,20]
 	LOAD1 0 AshurEnemySpawn
 	ENUN
 	STAL 30
 	Text(Ch3AshurText)
 	MUNO
-	GOTO 0x7
 LABEL 0x6
-CAMERA [0,12]
-LOAD1 1 AltAshurSpawn
-LABEL 0x7
 NoFade
 ENDA
 
@@ -229,56 +242,56 @@ ENDA
 
 PlayerUnits1:
 
-UNIT Naiah Mauthedoog Eirika Level(1,Ally,False) [6,21] 0x0 0x0 0x1 REDA6R18 [FireFang,Vulnerary] NoAI
-UNIT Idi Mauthedoog Eirika Level(1,Ally,False) [8,21] 0x0 0x0 0x1 REDA8R18 [FireFang,Vulnerary] NoAI
-UNIT Safiyah Archer_F Naiah Level(1,Ally,False) [7,21] 0x0 0x0 0x1 REDA7R19 [IronBow,Vulnerary] NoAI
+UNIT Naiah Mauthedoog Eirika Level(1,Ally,False) [6,21] 0x0 0x0 0x1 REDA6R19 [FireFang,Vulnerary] NoAI
+UNIT Idi Mauthedoog Eirika Level(1,Ally,False) [8,21] 0x0 0x0 0x1 REDA8R19 [FireFang,Vulnerary] NoAI
+UNIT Safiyah Archer_F Naiah Level(1,Ally,False) [7,21] 0x0 0x0 0x1 REDA7R18 [IronBow,Vulnerary] NoAI
 UNIT
 
 PlayerUnits2:
 UNIT Yakov Brigand Naiah Level(7,Ally,False) [8,21] 0x0 0x0 0x1 REDA8R20 [SteelAxe,Vulnerary] NoAI
 UNIT Ayanna Monk_F Naiah Level(2,Ally,False) [6,21] 0x0 0x0 0x1 REDA6R20 [Lightning,Vulnerary] NoAI
-UNIT Elena Cleric Naiah Level(3,Ally,False) [7,21] 0x0 0x0 0x1 REDA7R20 [Mend,Vulnerary] NoAI
+UNIT Elena Cleric Naiah Level(3,Ally,False) [7,21] 0x0 0x0 0x1 REDA7R19 [Mend,Vulnerary] NoAI
 UNIT
 
 AshurPlayerSpawn:
-UNIT Ashur Thief 0 Level(6,Ally,False) [8,21] 0x0 0x0 0x0 0x1 [IronSword,Lockpick] NoAI
-UNIT
-
-YvettePlayerSpawn:
-UNIT Yvette Swordstress Yvette Level(6,Ally,True) [6,21] 0x0 0x0 0x0 0x1 [SteelSword] NoAI
+UNIT Ashur Thief 0 Level(6,Ally,False) [7,21] 0x0 0x0 0x1 REDA7R20 [IronSword,Lockpick] NoAI
 UNIT
 
 EnemyUnits:
 UNIT Hystar AmaniMalePromoted Hystar Level(1,Enemy,False) [7,2] DropItem 0x0 0x0 0x1 [HellFang,HeroCrest] NeverMoveAI
+UNIT Yvette Swordstress Yvette Level(6,Enemy,True) [2,3] 0x0 0x0 0x0 0x1 [SteelSword,Vulnerary] AttackInRangeAI
+UNIT SwordBandit Swordstress Hystar Level(5,Enemy,True) [1,2] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+UNIT SwordBandit Swordstress Hystar Level(5,Enemy,True) [1,4] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
 UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [5,3] 0x0 0x0 0x0 0x1 [Nosferatu] AttackInRangeAI
 UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [9,3] 0x0 0x0 0x0 0x1 [Nosferatu] AttackInRangeAI
-UNIT SwordBandit Swordstress Hystar Level(5,Enemy,True) [1,2] 0x0 0x0 0x0 0x1 [IronSword] DefaultAI
-UNIT SwordBandit Swordstress Hystar Level(5,Enemy,True) [1,4] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [12,5] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
-UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [13,4] 0x0 0x0 0x0 0x1 [KillerAxe] AttackInRangeAI
-UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [13,6] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+//UNIT SwordBandit Swordstress Hystar Level(5,Enemy,True) [1,2] 0x0 0x0 0x0 0x1 [IronSword] DefaultAI
+//UNIT SwordBandit Swordstress Hystar Level(5,Enemy,True) [1,4] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [12,6] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [13,5] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+//UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [13,6] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
 UNIT Amani6 AmaniMaleClass Hystar Level(6,Enemy,True) [13,9] 0x0 0x0 0x0 0x1 [FireFang] AttackInRangeAI
 UNIT Amani6 AmaniMaleClass Hystar Level(6,Enemy,True) [7,4] 0x0 0x0 0x0 0x1 [FireFang] AttackInRangeAI
 UNIT LanceBandit Deserter Hystar Level(5,Enemy,True) [6,5] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
-UNIT LanceBandit Deserter Hystar Level(5,Enemy,True) [7,6] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
+//UNIT LanceBandit Deserter Hystar Level(5,Enemy,True) [7,6] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
 UNIT LanceBandit Deserter Hystar Level(5,Enemy,True) [8,5] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
-UNIT AxeBandit Brigand Hystar Level(4,Enemy,True) [12,14] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
-UNIT AnimaMage Mage Hystar Level(6,Enemy,True) [16,9] 0x0 0x0 0x0 0x1 [Fimbulvetr] NeverMoveAI
-UNIT SwordBandit Swordstress Hystar Level(8,Enemy,True) [1,4] 0x0 0x0 0x0 0x1 [KillingEdge] AttackInRangeAI
+UNIT AnimaMage Mage Hystar Level(6,Enemy,True) [16,9] 0x0 0x0 0x0 0x1 [Fimbulvetr] AttackInRangeAI
+//UNIT SwordBandit Swordstress Hystar Level(8,Enemy,True) [1,4] 0x0 0x0 0x0 0x1 [KillingEdge] AttackInRangeAI
 UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [5,9] 0x0 0x0 0x0 0x1 [Luna] NeverMoveAI
 UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [9,9] 0x0 0x0 0x0 0x1 [Luna] NeverMoveAI
-UNIT SwordBandit Mercenary Hystar Level(7,Enemy,True) [7,12] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+UNIT SwordBandit Mercenary Hystar Level(7,Enemy,True) [7,12] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+//UNIT SwordBandit Mercenary Hystar Level(7,Enemy,True) [6,11] 0x0 0x0 0x0 0x1 [IronBlade] AttackInRangeAI
+//UNIT SwordBandit Mercenary Hystar Level(7,Enemy,True) [8,11] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
 //UNIT BowBandit Archer Hystar Level(6,Enemy,True) [4,13] 0x0 0x0 0x0 0x1 [IronBow] AttackInRangeAI
 //UNIT BowBandit Archer Hystar Level(6,Enemy,True) [4,14] 0x0 0x0 0x0 0x1 [IronBow] AttackInRangeAI
-UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [12,14] DropItem 0x0 0x0 0x1 [IronAxe,Vulnerary] DefaultAI
+UNIT AxeBandit Brigand Hystar Level(4,Enemy,True) [12,14] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
 UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [13,13] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
 UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [1,11] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
 UNIT AxeBandit Brigand Hystar Level(6,Enemy,True) [2,10] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
-UNIT AnimaMage Mage Hystar Level(6,Enemy,True) [1,16] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
-UNIT AnimaMage Mage Hystar Level(6,Enemy,True) [2,15] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
+UNIT AnimaMage Mage Hystar Level(6,Enemy,True) [1,15] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
+UNIT AnimaMage Mage Hystar Level(6,Enemy,True) [2,14] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
 UNIT Amani24 AmaniMaleClass Hystar Level(6,Enemy,True) [1,8] 0x0 0x0 0x0 0x1 [FireFang] DefaultAI
 UNIT SwordBandit Mercenary Hystar Level(6,Enemy,True) [12,18] 0x0 0x0 0x0 0x1 [SteelSword] DefaultAI
-UNIT LanceBandit Deserter Hystar Level(7,Enemy,True) [16,14] 0x0 0x0 0x0 0x1 [KillerLance] NeverMoveAI
+UNIT LanceBandit Deserter Hystar Level(7,Enemy,True) [16,14] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
 UNIT LanceBandit Deserter Hystar Level(5,Enemy,True) [15,15] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
 UNIT LanceBandit Deserter Hystar Level(5,Enemy,True) [17,15] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
 UNIT LanceBandit Deserter Hystar Level(5,Enemy,True) [16,16] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
@@ -295,12 +308,12 @@ UNIT
 EnemyReinforcementsTop:
 UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [1,0] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
 UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [2,0] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
-UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [12,0] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
-UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [13,0] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
+UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [1,0] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
+UNIT DarkMage Shaman Hystar Level(6,Enemy,True) [2,0] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
 UNIT
 
 AshurEnemySpawn:
-UNIT Ashur Thief 0 Level(6,Enemy,False) [8,21] 0x0 0x0 0x1 REDA8R19 [IronSword,Lockpick] LootingThiefAI
+UNIT Ashur Thief 0 Level(6,Enemy,False) [8,21] 0x0 0x0 0x1 REDA8R19 [IronSword,Lockpick,Vulnerary] LootingThiefAI
 UNIT
 
 AltAshurSpawn:
@@ -309,14 +322,6 @@ UNIT
 
 ThiefSpawn:
 UNIT SwordBandit Thief 0 Level(6,Enemy,False) [13,0] 0x0 0x0 0x0 0x1 [IronSword,Lockpick] LootingThiefAI
-UNIT
-
-YvetteEnemySpawn:
-UNIT Yvette Swordstress Yvette Level(6,Enemy,True) [2,3] 0x0 0x0 0x0 0x1 [SteelSword,Vulnerary] AttackInRangeAI
-UNIT
-
-AltYvetteSpawn:
-UNIT SwordBandit Swordstress Hystar Level(6,Enemy,True) [2,3] 0x0 0x0 0x0 0x1 [KillingEdge] NeverMoveAI
 UNIT
 
 /// End Cutscene ///
@@ -328,6 +333,29 @@ UNIT
 
 EndMyr:
 UNIT CutsceneUnit Necromancer CutsceneUnit Level(1,Enemy,False) [7,3] 0x0 0x0 0x0 0x1 [FireFang,Vulnerary] NoAI
+UNIT
+
+EndShadow:
+UNIT TheShadow General 0x0 Level(20,Enemy,False) [7,4] 0x0 0x0 0x0 0x1 [Vidofnir] NoAI
+UNIT
+
+EndBuddies:
+UNIT Yakov Brigand Naiah Level(7,Ally,False) [1,9] 0x0 0x0 0x1 REDA6R6 [SteelAxe,Vulnerary] NoAI
+UNIT Safiyah Archer_F Naiah Level(1,Ally,False) [2,9] 0x0 0x0 0x1 REDA7R6 [IronBow,Vulnerary] NoAI
+UNIT
+
+OutsidePlayers:
+UNIT Naiah EirikaLord Naiah Level(3,Ally,False) [7,0] 0x0 0x0 0x1 REDA9R3 [FireFang,Vulnerary] NoAI
+UNIT Idi EphraimLord Naiah Level(5,Ally,False) [7,0] 0x0 0x0 0x1 REDA8R2 [FireFang,Vulnerary] NoAI
+UNIT Yakov Brigand Naiah Level(7,Ally,False) [11,0] 0x0 0x0 0x1 REDA10R2 [SteelAxe,Vulnerary] NoAI
+UNIT Safiyah Archer_F Naiah Level(1,Ally,False) [11,0] 0x0 0x0 0x1 REDA10R3 [IronBow,Vulnerary] NoAI
+UNIT
+
+OutsideOther:
+UNIT Ashur Thief 0 Level(6,Ally,False) [8,4] 0x0 0x0 0x0 0x1 [IronSword,Lockpick] NoAI
+UNIT Yvette Swordstress Yvette Level(6,Ally,True) [9,5] 0x0 0x0 0x0 0x1 [SteelSword,Vulnerary] AttackInRangeAI
+UNIT Ayanna Monk_F Naiah Level(2,Ally,False) [9,1] 0x0 0x0 0x0 0x1 [Lightning,Vulnerary] NoAI
+UNIT Elena Cleric Naiah Level(3,Ally,False) [10,5] 0x0 0x0 0x0 0x1 [Mend,Vulnerary] NoAI
 UNIT
 
 ///

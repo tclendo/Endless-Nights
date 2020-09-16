@@ -5,12 +5,12 @@
 	ALIGN 4
 
 	titlebackgroundimage:
-	#incext compress "TitleBackground.img.bin"
+	#incext compress "Beach Night.img.bin"
 	
 	ALIGN 4
 	
 	titlebackgroundpalette:
-	#incext png2dmp "TitleBackground.png" --palette-only
+	#incext png2dmp "Beach Night.png" --palette-only
 	
 	ALIGN 4
 	
@@ -23,7 +23,6 @@
 	PUSH; ORG $C6714; SHORT 0; POP
 	
 	//make an alternative option to just skip the problematic part?
-	
 	
 	PUSH
 	//draw our thing instead of the regular background

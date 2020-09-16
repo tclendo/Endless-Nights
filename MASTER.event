@@ -6,11 +6,10 @@
 	#include "Tools/Tool Helpers.txt"
 	#include "Extensions/Hack Installation.txt"
 
+	#include "_FE8EssentialFixes.event"
 	#include "Definitions.event"
 
 	#define __DEBUG__
-
-	#include "_FE8EssentialFixes.event"
 
 	//Free space definitions
 	//#define FreeSpace
@@ -67,7 +66,7 @@
 	MESSAGE Events Installed
 
 	ALIGN 16
-	WORD 0 0 0 0
+	WORD 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0
 	
 	MESSAGE ROM Ends at CURRENTOFFSET
 

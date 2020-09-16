@@ -9,15 +9,7 @@
 SongTable(0x43,EdgeOfDawn,BattleMusicGroup)
 #include "Edge of Dawn.event"
 
-/*
-SongTable(0x43,AnotherAssault,BattleMusicGroup)
-#include "Another Assault.event"
-*/
-
 //MapMusic//
-
-SongTable(0x5d,LandofSwirlingSand,MapMusicGroup)
-#include "LandofSwirlingSand.event"
 
 SongTable(0x5e,LowerBrinstar,MapMusicGroup)
 #include "Lower Brinstar.event"
@@ -58,6 +50,9 @@ SongTable(0x1b,ADarkFall,BattleMusicGroup)
 
 SongTable(0x92,Sileza,BattleMusicGroup) //attack music
 #include "Palace of Sileza.event"
+
+SongTable(0x5d,LandOfSwirlingSands,BattleMusicGroup)
+#include "Land of Swirling Sands.event"
 
 PUSH
 ORG $83628

@@ -1,3 +1,8 @@
+Fire Emblem: The Sacred Stones - Intelligent Systems, Nintento
+
+
+Fire Emblem: Endless Nights:
+
 --Portraits--
 
 Naiah Portrait (Eve.png) - XVI
@@ -6,10 +11,14 @@ Generic Amani portrait (Darrin 2.png) - XVI
 Yvette portrait (Capibarainspace_1.png) - Capibarainspace
 Safiyah portrait (GabrielKnight_11.png) - GabrielKnight
 Ayanna portrait (Der_10.png) - DerTheVaporeon
+Elena portrait - ???
 
 Bulren portrait (RandomWizard_Aniki.png) - RandomWizard
 Dante portrait (LaurentLacroix_35.png) - LaurentLacroix
 Hystar portrait (LaurentLacroix_44.png) - LaurentLacroix
+
+Shadow portrait (Lenh_2.png) - Lenh
+Myr portrait (Yang Kai - Dark Mage.png) - Yang Kai
 
 --Animations--
 
@@ -18,5 +27,44 @@ Deserter animations (Deserter) - Alusq
 Safiyah archer animations (Der Twintails) - DerTheVaporeon
 Ayanna monk animations (Sister + Mag) - Mikey Seregon, Aviv
 Elena cleric animations (Cleric Long Hair) - Yangfly Master
+Myr necromancer animations (Generic Necromancer) - Eldritch Abomination, Shin19
 
---Hacks--
+--Map Anims--
+
+Necromancer - Rasdell
+Deserter - Alusq
+
+--Tilesets--
+
+Desert Bastion - HyperGammaSpaces
+
+--Icons--
+
+Formshift Icon - Epicer
+
+--Music--
+
+(FE14) A Dark Fall - Mychael
+(FE14) Glory Ruin - Mychael
+(FE11) Defend - Sme
+(FE16) Edge of Dawn - Sme
+(DOOM) On the Hunt - Sme
+(Pokemon Ranger) Sky Event - Sme
+(FE5) In Search of Victory - SurfingKyogre
+(Super Metroid) Lower Brinstar - MrGreen3339
+
+--ASM--
+
+Skillsystem - Lots of people
+Laguz Bars - Sme
+256 Color Background - Leonarth
+AutoLevel Tweaker - Zeta/Gilgamesh
+Battle Anims by Character - Tequila
+FE8 Walking Sounds Fix - Tequila
+AI Speed Fix - HyperGammaSpaces
+ModularEXP - Snakey1
+HPBar Palettes - Snakey1
+Modular Minimug Box - Zane Avernathy
+Statscreen Blink - ???
+Remove Easy Mode - Nintenlord
+Display Droppable Item - Mkol
