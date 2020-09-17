@@ -169,11 +169,11 @@ ORG $1C1FB8
 POIN NewItemTable
 ORG $1C20E0
 POIN NewItemTable
-
+/*
 ORG $8472C
 POIN NewDeathQuoteTable
 
 ORG $846AC
 POIN NewBattleQuoteTable
-
+*/
 POP

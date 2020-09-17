@@ -16,12 +16,20 @@ Idi[X]
 Son of Chief Mokaya. Strong,[NL]
 mature, and determined.[X]
 
+# 0xC25 IdiDeathQuote
+[MidRight][LoadIdi]
+Grr... No...[A][X]
+
 # 0x214 SafiyahName
 Safiyah[X]
 
 # 0x270 SafiyahDescription
 Born in the Kalahari Desert.[NL]
 A loyal, true friend of Naiah.[X]
+
+# 0xc27 SafiyahDeathQuote
+[MidRight][LoadSafiyah]
+I'm sorry... Naiah...[A][X]
 
 # 0x215 AyannaText
 Ayanna[X]
@@ -30,12 +38,21 @@ Ayanna[X]
 A bright, young scholar who is[NL]
 fascinated by the Amani people.[X]
 
+# 0xC26 AyannaDeathQuote
+[MidRight][LoadAyanna]
+This is the end... So dark...[A][X]
+
 # 0x216 YakovText
 Yakov[X]
 
 # 0x272 YakovDescription
 A quiet fighter who hails from[NL]
 the lower mountains of Thea.[X]
+
+# 0xC28 YakovDeathQuote
+[MidRight][LoadYakov]
+My time has come. I have[NL]
+no regrets...[A][X]
 
 # 0x217 AshurText
 Ashur[X]
@@ -44,12 +61,21 @@ Ashur[X]
 A snark thief with an eye for[NL]
 trouble. Greedy, yet sensitive.[X]
 
+# 0xC29 AshurDeathQuote
+[MidRight][LoadAshur]
+Couldn't find a way out...[NL]
+this... time...[A][X]
+
 # 0x218 ElenaText
 Elena[X]
 
 # 0x274 ElenaDescription
 A young cleric from Valora.[NL]
 Holds a grudge against wanderers.[X]
+
+# 0xC2B ElenaDeathQuote
+[MidRight][LoadElena]
+Ahhh... Goodbye...[A][X]
 
 # 0x219 NaiahText
 Naiah[X]
@@ -58,12 +84,22 @@ Naiah[X]
 Daughter of Chief Mokaya.[NL]
 Temperamental and protective.[X]
 
+# 0xC2D NaiahDeathQuote
+[MidRight][LoadNaiah]
+No... My Father... My[NL]
+People... Idi... I'm sorry...[A][X]
+
 # 0x21A YvetteText
 Yvette[X]
 
 # 0x276 YvetteDescription
+[MidRight][LoadYvette]
 A naive swordstress from[NL]
 Buldren. Skillful yet naive.[X]
+
+# 0xC2C YvetteDeathQuote
+I figured this day would[NL]
+come... someday...[A][X]
 
 # 0x239 DanteText
 Dante[X]

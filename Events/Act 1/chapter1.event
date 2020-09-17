@@ -32,7 +32,7 @@ House(0x9,RecruitElena,11,12)
 END_MAIN
 
 MiscBasedEvents:
-AFEV 0x0 CheckNoUnits 0x0
+AFEV 0x0 CheckLords 0x0
 DefeatAll(EndingScene)
 END_MAIN
 
@@ -129,12 +129,24 @@ ENDA
 
 CheckNoUnits:
 ASMC GetBlueUnitCountASMC
-SVAL 0x7 0x4
-BLT 0x0 0xC 0x7 // If there are less than 2 alive, game over.
+SVAL 0x7 0x3
+BLT 0x0 0xC 0x7 // If there are less than 3 alive, game over.
 	GOTO 0x01
 LABEL 0x00
 ASMC 0x00D391 //GameOver
 LABEL 0x01
+NoFade
+ENDA
+
+CheckLords:
+CHECK_ALIVE Naiah
+BNE 0x3 0xC 0x0
+	ASMC 0x00D391 //GameOver
+LABEL 0x3
+CHECK_ALIVE Idi
+BNE 0x4 0xC 0x0
+	ASMC 0x00D391 //GameOver
+LABEL 0x4
 NoFade
 ENDA
 
@@ -184,7 +196,7 @@ UNIT
 EnemyUnits:
 
 UNIT Bulren Brigand Bulren Level(5,Enemy,False) [1,13] 0x0 0x0 0x0 0x1 [HandAxe] NeverMoveAI
-UNIT Amani6 AmaniMaleClass Bulren Level(3,Enemy,True) [0,13] 0x0 0x0 0x0 0x1 [FireFang] NeverMoveAI
+UNIT Amani6 AmaniMaleClass Bulren Level(3,Enemy,True) [0,13] 0x0 0x0 0x0 0x1 [FireFang] AttackInRangeAI
 UNIT Amani12 AmaniMaleClass Bulren Level(3,Enemy,True) [5,5] 0x0 0x0 0x0 0x1 [FireFang] NeverMoveAI
 UNIT DarkMage Shaman Bulren Level(6,Enemy,True) [2,14] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
 UNIT AxeBandit Brigand Bulren Level(3,Enemy,True) [9,10] 0x0 0x0 0x0 0x1 [IronAxe] BrigandAI

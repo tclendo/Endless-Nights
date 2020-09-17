@@ -39,7 +39,7 @@ Door(16,3)
 END_MAIN
 
 MiscBasedEvents:
-AFEV 0x0 CheckNoUnits 0x0
+AFEV 0x0 CheckLords 0x0
 DefeatBoss(EndingScene)
 END_MAIN
 
@@ -177,6 +177,18 @@ BLT 0x0 0xC 0x7 // If there are less than 2 alive, game over.
 LABEL 0x00
 ASMC 0x00D391 //GameOver
 LABEL 0x01
+NoFade
+ENDA
+
+CheckLords:
+CHECK_ALIVE Naiah
+BNE 0x3 0xC 0x0
+	ASMC 0x00D391 //GameOver
+LABEL 0x3
+CHECK_ALIVE Idi
+BNE 0x4 0xC 0x0
+	ASMC 0x00D391 //GameOver
+LABEL 0x4
 NoFade
 ENDA
 

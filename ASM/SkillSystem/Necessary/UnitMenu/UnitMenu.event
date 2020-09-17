@@ -109,7 +109,7 @@ UnitMenuTable:
   // So we only add that in if it is disabled
 
 #ifdef SEMITRANSPARENCY_CHANGES
-  MenuCommand(UM_Rally, UM_RallyDesc, NormalText, RallyCommandUsability, RallyCommandEffect)
+  MenuCommand(UM_Rally, UM_RallyDesc, BlueText, RallyCommandUsability, RallyCommandEffect)
 #else
   MenuCommand(UM_Rally, UM_RallyDesc, NormalText, RallyCommandUsability, RallyCommandEffect, RallyCommandSwitchIn, RallyCommandSwitchOut)
 #endif

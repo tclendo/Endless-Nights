@@ -22,24 +22,23 @@ TurnEventEnemy(0x0,DanteTalks,1)
 TurnEventPlayer(0x0,EnemyReinforcementsLoad,4)
 TurnEventPlayer(0x0,EnemyReinforcementsBottomLoad,4)
 TurnEventPlayer(0x0,LoadAshur,6)
-TurnEventPlayer(0x0,EnemyReinforcements4,8)
-
+TurnEventPlayer(0x0,EnemyReinforcementsTopLoad,8)
 END_MAIN
 
 ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
 
 CharacterBasedEvents:
 CharacterEvent(0x8,RecruitYakov,Safiyah,Yakov)
+CharacterEvent(0x8,RecruitYakov,Naiah,Yakov)
 CharacterEvent(0x9,RecruitAshur,Yakov,Ashur)
 END_MAIN
 
 LocationBasedEvents:
 House(0xb,VisitHut,6,11)
-Door(2,3)
 END_MAIN
 
 MiscBasedEvents:
-AFEV 0x0 CheckNoUnits 0x0
+AFEV 0x0 CheckLords 0x0
 DefeatAll(EndingScene)
 END_MAIN
 
@@ -124,6 +123,17 @@ LABEL 0x01
 NoFade
 ENDA
 
+CheckLords:
+CHECK_ALIVE Naiah
+BNE 0x3 0xC 0x0
+	ASMC 0x00D391 //GameOver
+LABEL 0x3
+CHECK_ALIVE Idi
+BNE 0x4 0xC 0x0
+	ASMC 0x00D391 //GameOver
+LABEL 0x4
+NoFade
+ENDA
 ///
 
 VisitHut:
@@ -234,7 +244,7 @@ UNIT AxeBandit Fighter Dante Level(4,Enemy,True) [8,3] 0x0 0x0 0x0 0x1 [IronAxe]
 UNIT SwordBandit Mercenary Dante Level(5,Enemy,True) [9,3] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
 UNIT AxeBandit Fighter Dante Level(4,Enemy,True) [10,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
 UNIT Amani18 AmaniMaleClass Dante Level(4,Enemy,True) [1,15] 0x0 0x0 0x0 0x1 [FireFang] AttackInRangeAI
-UNIT Amani6 AmaniMaleClass Dante Level(4,Enemy,True) [7,1] 0x0 0x0 0x0 0x1 [FireFang] AttackInRangeAI
+UNIT Amani6 AmaniMaleClass Dante Level(4,Enemy,True) [6,1] 0x0 0x0 0x0 0x1 [FireFang] AttackInRangeAI
 UNIT AxeBandit Brigand Dante Level(4,Enemy,True) [2,8] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
 UNIT AxeBandit Brigand Dante Level(4,Enemy,True) [10,13] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
 UNIT AxeBandit Brigand Dante Level(4,Enemy,True) [6,7] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
@@ -255,14 +265,14 @@ UNIT AnimaMage Mage Dante Level(5,Enemy,True) [14,9] 0x0 0x0 0x0 0x1 [Fire] Defa
 UNIT
 
 EnemyReinforcements3:
-UNIT LanceBandit Deserter Dante Level(4,Enemy,True) [1,0] 0x0 0x0 0x0 0x1 [IronLance] DefaultAI
-UNIT LanceBandit Deserter Dante Level(4,Enemy,True) [2,0] 0x0 0x0 0x1 REDA2R1 [SteelLance] DefaultAI
-UNIT LanceBandit Deserter Dante Level(4,Enemy,True) [3,0] 0x0 0x0 0x0 0x1 [IronLance] DefaultAI
+UNIT LanceBandit Deserter Dante Level(4,Enemy,True) [1,0] 0x0 0x0 0x1 REDA1R2 [IronLance] DefaultAI
+//UNIT LanceBandit Deserter Dante Level(4,Enemy,True) [2,0] 0x0 0x0 0x1 REDA2R1 [SteelLance] DefaultAI
+UNIT LanceBandit Deserter Dante Level(4,Enemy,True) [3,0] 0x0 0x0 0x1 REDA3R2 [IronLance] DefaultAI
 UNIT
 
 EnemyReinforcements4:
-UNIT DarkMage Shaman Dante Level(5,Enemy,True) [0,7] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
-UNIT DarkMage Shaman Dante Level(5,Enemy,True) [0,11] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
+UNIT DarkMage Shaman Dante Level(5,Enemy,True) [7,0] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
+UNIT DarkMage Shaman Dante Level(5,Enemy,True) [11,0] 0x0 0x0 0x0 0x1 [Flux] AttackInRangeAI
 UNIT
 
 MESSAGE Chpater2 ends at offset CURRENTOFFSET
