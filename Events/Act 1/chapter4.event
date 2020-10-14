@@ -1,0 +1,100 @@
+//chapter 4 events
+
+EventPointerTable(23, MyEvents) //23 is ch4 events
+
+MyEvents:
+
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+///
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+House(0x8,HouseNorth,7,1)
+House(0x9,HouseMid,7,10)
+House(0xA,HouseSouth,10,14)
+// TODO Add vendor
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+Units:
+UNIT
+
+BeginningScene:
+/*
+Load castle Valora, with Cyrus, Reginald, Tact, and Jerome
+Have a talk convo and leave castle to go to nearby village,
+Change to nearby village, spawn enemies and allies
+*/
+LOAD1 1 PlayerUnits
+ENUN
+LOAD1 1 NicoleFriends
+ENUN
+LOAD1 1 EnemyUnits
+ENUN
+ENDA
+
+EndingScene:
+ENDA
+
+// Misc Events //
+
+HouseNorth:
+ENDA
+
+HouseMid:
+ENDA
+
+HouseSouth:
+ENDA
+
+// Unit Data //
+
+PlayerUnits:
+UNIT Cyrus EirikaLord Cyrus Level(3,Ally,False) [0,6] 0x0 0x0 0x1 REDA4R6 [CyrusAxe,Vulnerary] NoAI
+UNIT Reginald Paladin Cyrus Level(1,Ally,False) [0,5] 0x0 0x0 0x1 REDA3R5 [SilverSword,SteelLance] NoAI
+UNIT Jerome SoldierM Cyrus Level(2,Ally,False) [0,7] 0x0 0x0 0x1 REDA3R6 [IronLance,Javelin,Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Judson Fighter Judson Level(6,Enemy,False) [17,0] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe] NeverMoveAI
+UNIT AxeBandit Fighter Judson Level(3,Enemy,True) [12,4] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Fighter Judson Level(3,Enemy,True) [8,7] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Fighter Judson Level(3,Enemy,True) [9,1] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Fighter Judson Level(3,Enemy,True) [12,10] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Fighter Judson Level(3,Enemy,True) [16,14] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Fighter Judson Level(3,Enemy,True) [18,16] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT
+
+NicoleFriends:
+UNIT Nicole Troubadour Cyrus Level(1,Ally,False) [16,22] 0x0 0x0 0x1 REDA16R17 [Mend,Vulnerary] NoAI
+UNIT Jerran Archer Cyrus Level(2,Ally,False) [17,22] 0x0 0x0 0x1 REDA17R18 [SteelBow,Vulnerary] NoAI
+UNIT Erron Mage Cyrus Level(3,Ally,False) [15,22] 0x0 0x0 0x1 REDA16R18 [Thunder,Vulnerary] NoAI
+UNIT

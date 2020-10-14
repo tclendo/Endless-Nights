@@ -73,3 +73,11 @@
 {
 	#include "Necromancer Staff.event"
 }
+///
+{
+	#include "Soldier Lance.event"
+}
+{
+	#include "Soldier Unarmed.event"
+}
+///

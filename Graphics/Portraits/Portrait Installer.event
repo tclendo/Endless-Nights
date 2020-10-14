@@ -46,6 +46,24 @@ MyrHooded_Mug:
 Reginald_Mug:
 #incext PortraitFormatter "reginald.png"
 
+Jerome_Mug:
+#incext PortraitFormatter "jerome.png"
+
+Jerran_Mug:
+#incext PortraitFormatter "jerran.png"
+
+Nicole_Mug:
+#incext PortraitFormatter "nicole.png"
+
+Erron_Mug:
+#incext PortraitFormatter "erron.png"
+
+Bjorn_Mug:
+#incext PortraitFormatter "bjorn.png"
+
+Wayne_Mug:
+#incext PortraitFormatter "wayne.png"
+
 setMugEntry(0x02,Cyrus_Mug,2,4,3,2)
 setMugEntry(0x03,Cyrus_Mug,2,4,3,2)
 setMugEntry(0x04,Idi_Mug,3,5,3,3)
@@ -53,12 +71,22 @@ setMugEntry(0x05,Safiyah_Mug,3,5,3,3)
 setMugEntry(0x06,Ayanna_Mug,2,6,3,4)
 setMugEntry(0x07,Yakov_Mug,2,4,2,2)
 setMugEntry(0x08,Ashur_Mug,2,4,3,2)
-setMugEntry(0x09,Elena_Mug,2,6,4,4)
+setMugEntry(0x09,Elena_Mug,3,5,3,3)
 setMugEntry(0x0A,Naiah_Mug,4,5,4,3)
 setMugEntry(0x0B,Naiah_Mug,4,5,4,3)
 setMugEntry(0x0C,Yvette_Mug,2,6,2,4)
 setMugEntry(0x0D,Idi_Mug,2,6,2,4)
 setMugEntry(0x0E,Reginald_Mug,2,5,3,3)
+setMugEntry(0x0F,Jerome_Mug,3,5,3,3)
+setMugEntry(0x10,Jerran_Mug,3,5,3,3)
+setMugEntry(0x11,Nicole_Mug,2,6,3,4)
+setMugEntry(0x12,Nicole_Mug,2,6,3,4)
+setMugEntry(0x13,Erron_Mug,2,5,3,3)
+//setMugEntry(0x14,Rei_Mug,2,5,3,3)
+//setMugEntry(0x15,Rei_Mug,2,5,3,3)
+setMugEntry(0x16,Bjorn_Mug,2,5,3,3)
+setMugEntry(0x17,Bjorn_Mug,2,5,3,3)
+setMugEntry(0x18,Wayne_Mug,2,5,3,3)
 
 setMugEntry(0x25,Mokaya_Mug,2,5,3,2)
 

@@ -2,49 +2,60 @@
 
 ALIGN 4
 MonkFSt:
-#incext Png2Dmp "MonkFSt.png" --lz77
+#incbin "MonkFSt.dmp"
 
 ALIGN 4
 MonkFMv:
-#incext Png2Dmp "MonkFMv.png" --lz77
+#incbin "MonkFMv.dmp"
 
 ALIGN 4
 SwordstressSt:
-#incext Png2Dmp "SwordstressSt.png" --lz77
+#incbin "SwordstressSt.dmp"
 
 ALIGN 4
 SwordstressMv:
-#incext Png2Dmp "SwordstressMv.png" --lz77
+#incbin "SwordstressMv.dmp"
 
 ALIGN 4
 DeserterSt:
-#incext Png2Dmp "DeserterSt.png" --lz77
+#incbin "DeserterSt.dmp"
 
 ALIGN 4
 DeserterMv:
-#incext Png2Dmp "DeserterMv.png" --lz77
+#incbin "DeserterMv.dmp"
 
 ALIGN 4
 AxeLordSt:
-#incext Png2Dmp "LordSt.png" --lz77
+#incbin "LordSt.dmp"
 
 ALIGN 4
 AxeLordMv:
-#incext Png2Dmp "LordMv.png" --lz77
+#incbin "LordMv.dmp"
 
 ALIGN 4
 GreatAxeLordSt:
-#incext Png2Dmp "GreatLordSt.png" --lz77
+#incbin "GreatLordSt.dmp"
 
 ALIGN 4
 GreatAxeLordMv:
-#incext Png2Dmp "GreatLordMv.png" --lz77
+#incbin "GreatLordMv.dmp"
 
 ALIGN 4
 NecromancerSt:
-#incext Png2Dmp "NecromancerSt.png" --lz77
+#incbin "NecromancerSt.dmp"
 
 ALIGN 4
 NecromancerMv:
-#incext Png2Dmp "NecromancerMv.png" --lz77
+#incbin "NecromancerMv.dmp"
 
+ALIGN 4
+SoldierMSt:
+#incbin "SoldierMSt.dmp"
+
+ALIGN 4
+SoldierMMv:
+#incbin "SoldierMMv.dmp"
+
+ALIGN 4
+Soldier2MSt:
+#incbin "Soldier2MSt.dmp"

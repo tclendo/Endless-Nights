@@ -1,5 +1,6 @@
 //Tileset and Animations Installer
 
+// Night Village
 ALIGN 4
 NightVillageObjects:
 #incext Png2Dmp "Map Objects/NightVillage.png" --lz77
@@ -7,20 +8,34 @@ ALIGN 4
 NightVillagePalette:
 #incext Png2Dmp "Map Objects/NightVillage.png" --palette-only
 
+// DesertBastion
 ALIGN 4
 DesertObjects:
 #incext Png2Dmp "Map Objects/DesertObjects.png" --lz77
-
 ALIGN 4
 DesertPalette:
 #incext Png2Dmp "Map Objects/DesertObjects.png" --palette-only
-
 ALIGN 4
 DesertTiles:
 #incext compress "Map Configs/DesertTiles.mapchip_config"
 
+// UpdatedFort
+ALIGN 4
+FortObjects:
+#incext Png2Dmp "Map Objects/Fuck This.png" --lz77
+ALIGN 4
+FortPalette:
+#incext Png2Dmp "Map Objects/Fuck This.png" --palette-only
+ALIGN 4
+FortTiles:
+#incext compress "Map Configs/Updated Fort.mapchip_config"
+
+
 EventPointerTable(0xE,NightVillageObjects)
 EventPointerTable(0xF,NightVillagePalette)
-EventPointerTable(0x8b, DesertObjects)
-EventPointerTable(0x8c, DesertPalette)
-EventPointerTable(0x8d, DesertTiles)
+EventPointerTable(0x3C,FortObjects)
+EventPointerTable(0x3D,FortPalette)
+EventPointerTable(0x3E,FortTiles)
+EventPointerTable(0x8b,DesertObjects)
+EventPointerTable(0x8c,DesertPalette)
+EventPointerTable(0x8d,DesertTiles)

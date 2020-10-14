@@ -7,7 +7,7 @@ rem png2dmp.exe: Calls png2dmp.exe for all .png files in folder & subfolders
 rem does not call png2dmp for files where the existing .dmp file is newer than the .png file
 
 set FILE_MATCH=*.png
-set png2dmp=%~dp0Png2Dmp.exe
+set png2dmp=%~dp0Tools/Png2Dmp.exe
 
 for /R %%F in (%FILE_MATCH%) do (
     SET SHOULD_COMPILE=0

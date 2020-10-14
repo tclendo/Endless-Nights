@@ -16,3 +16,6 @@
 {
 	#include "Act 1/nightmare1.event"
 }
+{
+	#include "Act 1/chapter4.event"
+}

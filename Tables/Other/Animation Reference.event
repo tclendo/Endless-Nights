@@ -36,3 +36,9 @@ NecromancerAnims:
 DarkAnim(NecromancerMagic)
 StaffAnim(NecromancerStaff)
 WORD 0x0 0x0
+
+ALIGN 4
+SoldierAnims:
+LanceAnim(SoldierLance)
+UnarmedAnim(SoldierUnarmed)
+WORD 0x0 0x0

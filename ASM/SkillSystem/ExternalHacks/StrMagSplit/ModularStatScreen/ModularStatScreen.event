@@ -176,6 +176,7 @@
 		POIN GetLeadershipStarCount
 	#endif
 	POIN MagClassTable
+  POIN LaguzBarMSSGetter
   
   ALIGN 4
   MSS_page2:
@@ -183,7 +184,8 @@
 
   ALIGN 4
   MSS_page3:
-    #incbin "asm/mss_page3_newranks.dmp"
+    //#incbin "asm/mss_page3_newranks.dmp"
+    #incbin "asm/mss_page3_original.dmp"
 	
   #ifdef ENABLE_PERSONAL_INFO
   

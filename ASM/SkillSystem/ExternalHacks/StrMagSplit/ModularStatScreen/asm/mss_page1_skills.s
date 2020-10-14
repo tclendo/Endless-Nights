@@ -14,6 +14,7 @@
 .set Growth_Getters_Table, Display_Growths_options+4
 .set Get_Palette_Index, Growth_Getters_Table+4
 .equ MagClassTable, Get_Palette_Index+4
+.equ LaguzBarMSSGetter, MagClassTable+4 @Get_Palette_Index+4
 
 page_start
 
@@ -199,6 +200,41 @@ beq SkillEnd
 draw_skill_icon_at 27, 17
 
 SkillEnd:
+
+@put this in your desired MSS page
+@with LaguzBarMSSGetter as an EA literal
+@will draw a bar for laguz, or '--' for everyone else
+
+draw_textID_at 21, 9, 0x0928
+
+  mov r0, r8
+  ldr r0,LaguzBarMSSGetter
+  mov r14,r0
+  .short 0xF800
+  
+  cmp r0,#0xFF
+  bne DrawLaguzBar
+  
+DoNotDrawLaguzBar:
+
+draw_number_at 25,9   @you want the x coord here to be 1 more than below
+b PostLaguzBar
+
+.ltorg
+
+DrawLaguzBar:  
+  mov r1, r8  
+  mov     r3, r0
+  str     r0,[sp]     
+  mov   r0,#30
+  str     r0,[sp,#0x4]    
+  mov     r0,#9     
+  mov     r1,#(24-11)   @24 = desired x coord 
+  mov     r2,#(9-2)   @9 = desired y coord
+  blh      DrawBar, r4
+
+
+PostLaguzBar:
 
 @ draw_textID_at 13, 15, textID=0x4f6 @move
 @ draw_move_bar_at 16, 15

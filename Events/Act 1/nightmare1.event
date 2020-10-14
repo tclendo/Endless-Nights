@@ -1,6 +1,6 @@
 // nightmare 1 events
 
-EventPointerTable(20, MyEvents) //20 is ch4 events
+EventPointerTable(20, MyEvents) //20 is ch3 events
 
 MyEvents:
 
@@ -64,12 +64,13 @@ NoFade
 ENDA
 
 EndingScene:
+REMU CyrusNM1
 MUSC BirdChirps
 SetBackground(0x11)
 Text(NM1WakeUpText)
 FADI 5
-MNC2(0x0)
-ENUT TempTheEndFlag
+MoveToChapter(0x4)
+//ENUT TempTheEndFlag
 ENDA
 
 /// Other Events ///

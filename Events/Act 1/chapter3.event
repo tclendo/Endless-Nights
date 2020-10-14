@@ -1,6 +1,6 @@
 //chapter 3 events
 
-EventPointerTable(13, MyEvents) //13 is ch2 events
+EventPointerTable(13, MyEvents) //25 is ch4 events
 
 MyEvents:
 
@@ -19,22 +19,21 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventEnemy(0x0,SpawnAshur,1)
-TurnEventPlayer(0x0,SpawnThief,2)
+TurnEventPlayer(0x0,SpawnThief,3)
 //TurnEventPlayer(0x0,SpawnEntranceReinforcements,6)
 //TurnEventPlayer(0x0,SpawnYvette,2)
 TurnEventPlayer(0x0,SpawnTopReinforcements,7)
 END_MAIN
 
 ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
-
 CharacterBasedEvents:
 CharacterEvent(0x8,RecruitAshur,Yakov,Ashur)
 CharacterEvent(0x9,RecruitYvette,Ashur,Yvette)
 END_MAIN
 
 LocationBasedEvents:
-Chest(EnergyRing,7,9)
-Chest(Mend,16,1)
+Chest(Mend,7,9)
+Chest(Shine,16,1)
 Door(16,3)
 END_MAIN
 
@@ -270,7 +269,7 @@ UNIT Ashur Thief 0 Level(6,Ally,False) [7,21] 0x0 0x0 0x1 REDA7R20 [IronSword,Lo
 UNIT
 
 EnemyUnits:
-UNIT Hystar AmaniMalePromoted Hystar Level(1,Enemy,False) [7,2] DropItem 0x0 0x0 0x1 [HellFang,HeroCrest] NeverMoveAI
+UNIT Hystar AmaniMalePromoted Hystar Level(1,Enemy,False) [7,2] DropItem 0x0 0x0 0x1 [HellFang] NeverMoveAI
 UNIT Yvette Swordstress Yvette Level(6,Enemy,True) [2,3] 0x0 0x0 0x0 0x1 [SteelSword,Vulnerary] AttackInRangeAI
 UNIT SwordBandit Swordstress Hystar Level(5,Enemy,True) [1,2] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
 UNIT SwordBandit Swordstress Hystar Level(5,Enemy,True) [1,4] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI

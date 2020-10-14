@@ -46,6 +46,8 @@
 
 // Animation Macros
 #define AnimTableEntry(index) "ORG NewClassAnimTable - 0x20 + (index * 0x20)"
+
+#define Spears 1
 #define Item 9
 
 #define TempTheEndFlag 0x86
@@ -61,6 +63,12 @@
 #define Elena 0x07
 #define Naiah 0x08
 #define Yvette 0x09
+#define Reginald 0xA
+#define Jerome 0xB
+#define Jerran 0xC
+#define Nicole 0xD
+#define Erron 0xE
+#define Rei 0xF
 
 #define Mokaya 0x1d
 
@@ -71,6 +79,7 @@
 #define Dante 0x46
 #define Hystar 0x47
 #define VillageChild 0x48
+#define Judson 0x49
 
 #define SwordBandit 0x65
 #define AxeBandit 0x66
@@ -102,6 +111,8 @@
 #define Swordstress 0x10
 #define DestrierKnight 0x12
 
+#define SoldierM 0x31
+#define HalberdierM 0x32
 #define Monk_F 0x33
 
 #define Deserter 0x4e
@@ -123,6 +134,7 @@
 //Label Battle Animations
 #define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
 #define SpearAnim(Animation) "BYTE Spears 0x01 ; SHORT Animation"
+#define LanceAnim(Animation) "BYTE Spears 0x01 ; SHORT Animation"
 #define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
 #define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation ; BYTE Hatchet 0x00 ; SHORT Animation"
 #define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
@@ -159,6 +171,8 @@
 #define VillagerFemale 0xD9
 #define NecromancerMagic 0xDA
 #define NecromancerStaff 0xDB
+#define SoldierLance 0xDC
+#define SoldierUnarmed 0xDE
 
 // Items //
 

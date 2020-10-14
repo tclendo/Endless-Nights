@@ -58,13 +58,13 @@ no regrets...[A][X]
 Ashur[X]
 
 # 0x273 AshurDescription
-A snark thief with an eye for[NL]
+A snarky thief with an eye for[NL]
 trouble. Greedy, yet sensitive.[X]
 
 # 0xC29 AshurDeathQuote
 [MidRight][LoadAshur]
 Couldn't find a way out...[NL]
-this... time...[A][X]
+this time...[A][X]
 
 # 0x218 ElenaText
 Elena[X]
@@ -93,13 +93,13 @@ People... Idi... I'm sorry...[A][X]
 Yvette[X]
 
 # 0x276 YvetteDescription
-[MidRight][LoadYvette]
-A naive swordstress from[NL]
+A quiet swordstress from[NL]
 Buldren. Skillful yet naive.[X]
 
 # 0xC2C YvetteDeathQuote
-I figured this day would[NL]
-come... someday...[A][X]
+[MidRight][LoadYvette]
+I knew this path would[NL]
+eventually lead to this...[A][X]
 
 # 0x239 DanteText
 Dante[X]
@@ -109,7 +109,7 @@ An impatient mercenary who[NL]
 strongly dislikes the desert.[X]
 
 # 0x23A HystarText
-Hystar[X]
+Mokaya[X]
 
 # 0x295 HystarDescription
 A powerful Amani warrior.[NL]
