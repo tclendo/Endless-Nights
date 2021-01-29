@@ -22,20 +22,35 @@ Elena_Mug:
 #incext PortraitFormatter "elena.png"
 Yvette_Mug:
 #incext PortraitFormatter "yvette.png"
+Reginald_Mug:
+#incext PortraitFormatter "reginald.png"
+Jerome_Mug:
+#incext PortraitFormatter "jerome.png"
+Jerran_Mug:
+#incext PortraitFormatter "jerran.png"
+Nicole_Mug:
+#incext PortraitFormatter "nicole.png"
+Erron_Mug:
+#incext PortraitFormatter "erron.png"
+Bjorn_Mug:
+#incext PortraitFormatter "bjorn.png"
+Wayne_Mug:
+#incext PortraitFormatter "wayne.png"
 
 Mokaya_Mug:
 #incext PortraitFormatter "mokaya.png"
 
+// bosses //
 Dante_Mug:
 #incext PortraitFormatter "dante.png"
 Hystar_Mug:
 #incext PortraitFormatter "hystar.png"
-
 Bulren_Mug:
-#incext PortraitFormatter "Bulren.png"
-
-AmaniMale_Mug:
-#incext PortraitFormatter "amani_male.png"
+#incext PortraitFormatter "bulren.png"
+Judson_Mug:
+#incext PortraitFormatter "judson.png"
+Vykkh_Mug:
+#incext PortraitFormatter "vykkh2.png"
 
 TheShadow_Mug:
 #incext PortraitFormatter "theshadow.png"
@@ -43,26 +58,10 @@ TheShadow_Mug:
 MyrHooded_Mug:
 #incext PortraitFormatter "myrhooded.png"
 
-Reginald_Mug:
-#incext PortraitFormatter "reginald.png"
+// generics //
 
-Jerome_Mug:
-#incext PortraitFormatter "jerome.png"
-
-Jerran_Mug:
-#incext PortraitFormatter "jerran.png"
-
-Nicole_Mug:
-#incext PortraitFormatter "nicole.png"
-
-Erron_Mug:
-#incext PortraitFormatter "erron.png"
-
-Bjorn_Mug:
-#incext PortraitFormatter "bjorn.png"
-
-Wayne_Mug:
-#incext PortraitFormatter "wayne.png"
+AmaniMale_Mug:
+#incext PortraitFormatter "amani_male.png"
 
 setMugEntry(0x02,Cyrus_Mug,2,4,3,2)
 setMugEntry(0x03,Cyrus_Mug,2,4,3,2)
@@ -93,7 +92,8 @@ setMugEntry(0x25,Mokaya_Mug,2,5,3,2)
 setMugEntry(0x30,Bulren_Mug,3,5,2,3)
 setMugEntry(0x31,Dante_Mug,3,5,3,3)
 setMugEntry(0x32,Hystar_Mug,3,5,3,3)
-
+setMugEntry(0x33,Judson_Mug,3,5,3,3)
+setMugEntry(0x34,Vykkh_Mug,3,6,3,4)
 setMugEntry(0x4A,MyrHooded_Mug,3,6,3,4)
 setMugEntry(0x50,TheShadow_Mug,3,5,3,3)
 setMugEntry(0x59,AmaniMale_Mug,3,5,3,3)

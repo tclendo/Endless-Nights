@@ -19,6 +19,8 @@
 #include "No Easy Mode/Installer.event"
 #include "DIsplayItemDrop/Display Droppable Item.event"
 #include "Trade Fix/Installer.event"
+#include "EscapeArrive/EscapeArrive.event"
+#include "MultiTileMarkers/MultiTileMarker_Install.event"
 
 PUSH
 ORG FreeSpaceA
@@ -55,7 +57,8 @@ BYTE $F1 $8F $1 $8 $E8 $4 $0 $3
 
 // Other //
 
+//draw bwl data even if game not cleared
 PUSH
 ORG $86fe4
-SHORT $46C0 $46C0 //draw bwl data even if game not cleared
+SHORT $46C0 $46C0
 POP

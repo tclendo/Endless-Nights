@@ -11,6 +11,12 @@
 # 0x163 Nm1Title
 NM: Imperius[X]
 
+# 0x164 Ch4Title
+4: Valoran Twist[X]
+
+# 0x166 Ch5Reunion
+5: Desert Friends[X]
+
 # 0x1a2 StatusText1
 Rout all bandits in[NL]the desert.[X]
 
@@ -19,3 +25,6 @@ Defeat Dante.[X]
 
 # 0x1a4 StatusText3
 Defeat Mokaya.[X]
+
+# 0x1a5 StatusText4
+Seize throne.[X]

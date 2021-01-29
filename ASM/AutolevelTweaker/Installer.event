@@ -116,7 +116,7 @@ POIN SmoothBonusLevel
 BYTE $C5 $7F $1 $8 $C9 $81 $1 $8 $91 $91 $1 $8 $65 $80 $1 $8
 SHORT $4718 $46C0
 
-MESSAGE AAAAAAAAAAAAAAAAAAA GetAutoleveledStatIncrease AAAAAAAAAAAAAAAAAA
+//MESSAGE AAAAAAAAAAAAAAAAAAA GetAutoleveledStatIncrease AAAAAAAAAAAAAAAAAA
 
 #else // _FE8_
   ERROR Autolevel Tweaker is for FE8

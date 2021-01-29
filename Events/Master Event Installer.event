@@ -19,3 +19,6 @@
 {
 	#include "Act 1/chapter4.event"
 }
+{
+   #include "Act 1/chapter5.event"
+}

@@ -85,7 +85,7 @@ SetBackground(0x30)
 Text(Ch2YakovOpening)
 EndConvo
 CAMERA [14,21]
-LOAD1 0 PlayerUnits1
+LOAD1 2 PlayerUnits1
 ENUN
 STAL 30
 SetBackground(0x1c)

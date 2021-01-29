@@ -1,5 +1,9 @@
 //Tileset and Animations Installer
 
+#ifndef tilesetAnimation
+    #define tilesetAnimation(speed, size, pointer) "BYTE speed 0; SHORT size; POIN pointer"
+#endif
+
 // Night Village
 ALIGN 4
 NightVillageObjects:
@@ -30,12 +34,66 @@ ALIGN 4
 FortTiles:
 #incext compress "Map Configs/Updated Fort.mapchip_config"
 
+// Updated Castle
+ALIGN 4
+CastleObjects:
+#incext Png2Dmp "Map Objects/Improved Castle Object_Palette 1.png" --lz77
+ALIGN 4
+BlueCastlePalette:
+#incext Png2Dmp "Map Objects/Improved Castle Object_Palette 1.png" --palette-only
+ALIGN 4
+CastleTiles:
+#incext compress "Map Configs/Updated Castle.mapchip_config"
 
 EventPointerTable(0xE,NightVillageObjects)
 EventPointerTable(0xF,NightVillagePalette)
+EventPointerTable(0x18,CastleObjects)
+EventPointerTable(0x19,BlueCastlePalette)
+EventPointerTable(0x1A,CastleTiles)
 EventPointerTable(0x3C,FortObjects)
 EventPointerTable(0x3D,FortPalette)
 EventPointerTable(0x3E,FortTiles)
 EventPointerTable(0x8b,DesertObjects)
 EventPointerTable(0x8c,DesertPalette)
 EventPointerTable(0x8d,DesertTiles)
+
+// Tile Animations
+
+ALIGN 4
+NewCastleAnimation0:
+#incext png2dmp "Tile Animations/castle_anims.mapanime 1_000.png"
+ALIGN 4
+NewCastleAnimation1:
+#incext png2dmp "Tile Animations/castle_anims.mapanime 1_001.png"
+ALIGN 4
+NewCastleAnimation2:
+#incext png2dmp "Tile Animations/castle_anims.mapanime 1_002.png"
+ALIGN 4
+NewCastleAnimation3:
+#incext png2dmp "Tile Animations/castle_anims.mapanime 1_003.png"
+ALIGN 4
+NewCastleAnimation4:
+#incext png2dmp "Tile Animations/castle_anims.mapanime 1_004.png"
+ALIGN 4
+NewCastleAnimation5:
+#incext png2dmp "Tile Animations/castle_anims.mapanime 1_005.png"
+ALIGN 4
+NewCastleAnimation6:
+#incext png2dmp "Tile Animations/castle_anims.mapanime 1_006.png"
+ALIGN 4
+NewCastleAnimation7:
+#incext png2dmp "Tile Animations/castle_anims.mapanime 1_007.png"
+
+ALIGN 4
+NewCastleAnimation:
+tilesetAnimation(0x1c, 0x1024, NewCastleAnimation0)
+tilesetAnimation(0x1c, 0x1024, NewCastleAnimation1)
+tilesetAnimation(0x1c, 0x1024, NewCastleAnimation2)
+tilesetAnimation(0x1c, 0x1024, NewCastleAnimation3)
+tilesetAnimation(0x1c, 0x1024, NewCastleAnimation4)
+tilesetAnimation(0x1c, 0x1024, NewCastleAnimation5)
+tilesetAnimation(0x1c, 0x1024, NewCastleAnimation6)
+tilesetAnimation(0x1c, 0x1024, NewCastleAnimation7)
+WORD 0 0
+
+EventPointerTable(0x1C, NewCastleAnimation)

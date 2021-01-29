@@ -1,4 +1,3 @@
-Not used
 Object type 
 Map Palette 1
 Tile Configuration

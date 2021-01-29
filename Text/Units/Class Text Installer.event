@@ -1,8 +1,15 @@
+# 0x2e3 SoldierName
+Soldier[X]
+
+# 0x32e SoldierDescription
+Balanced soldiers known for[NL]
+their reliability. Equip: lances.[X]
+
 # 0x2ed DeserterName
 Deserter[X]
 
 # 0x339 DeserterDescription
-Deserters of the Bulren Army.[NL]
+Deserters of the Boldren Army.[NL]
 Equip: lances.[X]
 
 # 0x2DB MonkFText
@@ -23,7 +30,7 @@ their transformed state.[X]
 Swordstress[X]
 
 # 0x349 SwordstressDescription
-A skilled female swordswoman with[NL]
+A skilled female swordwielder with[NL]
 beautiful technique. Equip: Swords.[X]
 
 # 0x2FE AmaniName

@@ -51,6 +51,14 @@
 #define Item 9
 
 #define TempTheEndFlag 0x86
+
+//Chapters
+#define Chapter1 0x00
+#define Chapter2 0x01
+#define Chapter3 0x02
+#define Nightmare1 0x03
+#define Chapter4 0x04
+
 //Units
 
 //Characters
@@ -64,11 +72,15 @@
 #define Naiah 0x08
 #define Yvette 0x09
 #define Reginald 0xA
-#define Jerome 0xB
+#define Gerome 0xB
 #define Jerran 0xC
 #define Nicole 0xD
 #define Erron 0xE
 #define Rei 0xF
+#define Bjorn 0x10
+#define Wayne 0x11
+#define Seamus 0x12
+#define Denni 0x13
 
 #define Mokaya 0x1d
 
@@ -80,6 +92,7 @@
 #define Hystar 0x47
 #define VillageChild 0x48
 #define Judson 0x49
+#define Vykkh 0x4A
 
 #define SwordBandit 0x65
 #define AxeBandit 0x66
@@ -104,6 +117,8 @@
 #define CivilianMan 0xF6
 #define CivilianWoman 0xF7
 
+#define CutsceneUnit2 0xFD
+#define CutsceneUnit1 0xFE
 #define CutsceneUnit 0xFF
 
 //Classes
@@ -182,9 +197,3 @@
 
 #define BirdChirps 0x4C
 #define WindTrack 0x4E
-
-// Chapters //
-#define Chapter1 0x0
-#define Chapter2 0x1
-#define Chapter3 0x2
-#define Nightmare1 0x3

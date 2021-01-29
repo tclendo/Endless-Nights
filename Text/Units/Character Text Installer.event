@@ -101,6 +101,56 @@ Buldren. Skillful yet naive.[X]
 I knew this path would[NL]
 eventually lead to this...[A][X]
 
+# 0x21b ReginaldText
+Reginald[X]
+
+# 0x277 ReginaldDescription
+Reginald[X]
+
+# 0xC2A ReginaldDeathQuote
+[MidRight][LoadReginald]
+I have died.[A][X]
+
+# 0x21c GeromeText
+Gerome[X]
+
+# 0x278 GeromeDescription
+Gerome[X]
+
+# 0xC35 GeromeDeathQuote
+[MidRight][LoadGerome]
+I have died.[A][X]
+
+# 0x21d JerranText
+Jerran[X]
+
+# 0x279 JerranDescription
+Jerran[X]
+
+# 0xC2F JerranDeathQuote
+[MidRight][LoadJerran]
+I have died.[A][X]
+
+# 0x21e NicoleText
+Nicole[X]
+
+# 0x27A NicoleDescription
+Nicole[X]
+
+# 0xC30 NicoleDeathQuote
+[MidRight][LoadNicole]
+I have died.[A][X]
+
+# 0x21f ErronText
+Erron[X]
+
+# 0x27b ErronDescription
+Erron[X]
+
+# 0xC3D ErronDeathQuote
+[MidRight][LoadErron]
+I have died.[A][X]
+
 # 0x239 DanteText
 Dante[X]
 

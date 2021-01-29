@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="22" height="23" tilewidth="16" tileheight="16">
- <tileset firstgid="1" name="01003803" tilewidth="16" tileheight="16">
-  <image source="01003803.png" trans="ffffff"/>
+ <tileset firstgid="1" name="01000203" tilewidth="16" tileheight="16">
+  <image source="01000203.png" trans="ffffff"/>
  </tileset>
  <layer name="Tile Layer 1" width="22" height="23">
   <properties>
@@ -142,7 +142,7 @@
   <tile gid="496"/>
   <tile gid="783"/>
   <tile gid="205"/>
-  <tile gid="334"/>
+  <tile gid="177"/>
   <tile gid="293"/>
   <tile gid="328"/>
   <tile gid="204"/>

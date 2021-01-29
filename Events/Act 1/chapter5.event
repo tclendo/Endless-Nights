@@ -1,0 +1,172 @@
+// chapter 5 events
+
+EventPointerTable(33, MyEvents) //33 is ch4 events
+
+MyEvents:
+
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+/// Pointer Data ///
+
+TurnBasedEvents:
+TurnEventPlayer(0x0,DesertConvo,2)
+END_MAIN
+
+ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Village(0x8,WayneVillage,1,13)
+Village(0x9,DesertVillage,20,17)
+Village(0xA,MountainVillage,10,15)
+House(0x0,HouseConvo,5,8)
+
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+Units:
+UNIT
+
+/// ASMC's ///
+
+/// Beginning/Ending Events ///
+
+BeginningScene:
+CAMERA [0,0]
+FADU 5
+LOAD1 0 PlayerUnits
+ENUN
+LOAD1 1 BjornSpawn
+ENUN
+LOAD1 1 EnemyUnits
+ENUN
+ENDA
+
+EndingScene:
+MoveToChapter(0x6)
+ENDA
+
+/// Other Events ///
+
+WayneVillage:
+LOAD1 1 WayneSpawn
+ENUN
+ENDA
+
+DesertVillage:
+ENDA
+
+MountainVillage:
+ENDA
+
+HouseConvo:
+ENDA
+
+DesertConvo:
+CAMERA [0,22]
+REVEAL Naiah
+REVEAL Idi
+REVEAL Safiyah
+REVEAL Ayanna
+LOAD1 0 DesertUnits
+ENUN
+CHECK_EXISTS Elena
+BEQ 0x0 0xC 0x0
+    REVEAL Elena
+    LOAD1 0 ElenaSpawn
+    ENUN
+LABEL 0x0
+CHECK_EXISTS Yakov
+BEQ 0x1 0xC 0x0
+    REVEAL Yakov
+    LOAD1 0 YakovSpawn
+    ENUN
+LABEL 0x1
+CHECK_EXISTS Ashur
+BEQ 0x2 0xC 0x0
+    REVEAL Ashur
+    LOAD1 0 AshurSpawn
+    ENUN
+LABEL 0x2
+CHECK_EXISTS Yvette
+BEQ 0x3 0xC 0x0
+    REVEAL Yvette
+    LOAD1 0 YvetteSpawn
+    ENUN
+LABEL 0x3
+ENDA
+
+/// Unit Data ///
+
+PlayerUnits:
+UNIT Cyrus EirikaLord Cyrus Level(3,Ally,False) [0,1] 0x0 0x0 0x1 REDA2R4 [CyrusAxe,Vulnerary] NoAI
+UNIT Reginald Paladin Cyrus Level(1,Ally,False) [0,0] 0x0 0x0 0x1 REDA3R3 [SilverSword,SteelLance] NoAI
+UNIT Gerome SoldierM Cyrus Level(2,Ally,False) [0,1] 0x0 0x0 0x1 REDA1R3 [IronLance,Javelin,Vulnerary] NoAI
+UNIT Nicole Troubadour Cyrus Level(1,Ally,False) [0,0] 0x0 0x0 0x1 REDA1R2 [Mend,Vulnerary] NoAI
+UNIT Jerran Archer Cyrus Level(2,Ally,False) [0,1] 0x0 0x0 0x1 REDA2R1 [SteelBow,Vulnerary] NoAI
+UNIT Erron Mage Cyrus Level(3,Ally,False) [0,2] 0x0 0x0 0x1 REDA2R2 [Thunder,Vulnerary] NoAI
+UNIT
+
+BjornSpawn:
+UNIT Bjorn Mercenary Cyrus Level(5,Ally,False) [0,2] 0x0 0x0 0x1 REDA3R4 [SteelSword,Vulnerary] NoAI
+UNIT
+
+WayneSpawn:
+UNIT Wayne Fighter Cyrus Level(6,Ally,False) [1,13] 0x0 0x0 0x1 REDA1R14 [SteelAxe,Vulnerary] NoAI
+UNIT
+
+DesertUnits:
+UNIT Naiah Mauthedoog Naiah Level(1,Ally,False) [0,21] 0x0 0x0 0x1 REDA3R21 [FireFang,Vulnerary] NoAI
+UNIT Idi Mauthedoog Naiah Level(1,Ally,False) [0,20] 0x0 0x0 0x1 REDA2R20 [FireFang,Vulnerary] NoAI
+UNIT Safiyah Archer_F Naiah Level(1,Ally,False) [0,21] 0x0 0x0 0x1 REDA1R21 [IronBow,Vulnerary] NoAI
+UNIT Ayanna Monk_F Naiah Level(2,Ally,False) [0,20] 0x0 0x0 0x0 0x1 [Lightning,Vulnerary] NoAI
+UNIT
+
+YakovSpawn:
+UNIT Yakov Brigand Naiah Level(7,Ally,False) [2,22] 0x0 0x0 0x0 0x1 [SteelAxe,Vulnerary] NoAI
+UNIT
+
+ElenaSpawn:
+UNIT Elena Cleric Naiah Level(3,Ally,False) [0,21] 0x0 0x0 0x0 0x1 [Mend,Vulnerary] NoAI
+UNIT
+
+AshurSpawn:
+UNIT Ashur Thief Naiah Level(6,Ally,False) [1,22] 0x0 0x0 0x0 0x1 [IronSword,Lockpick] NoAI
+UNIT
+
+YvetteSpawn:
+UNIT Yvette Swordstress Naiah Level(6,Ally,True) [0,22] 0x0 0x0 0x0 0x1 [SteelSword,Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Judson Fighter Judson Level(6,Enemy,False) [21,10] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe] NeverMoveAI
+//TODO: Populate enemy units and reinforcements
+UNIT
+
+///
+
+MESSAGE Ch5 ends at CURRENTOFFSET
