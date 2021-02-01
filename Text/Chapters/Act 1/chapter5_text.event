@@ -1,0 +1,111 @@
+## Ch5StartText
+[MidLeft][LoadCyrus][MidRight][LoadErron]
+[MidLeft]
+Erron, tell me, how long have the raids[NL]
+been going on?[ANL]
+Why haven't they been stopped?[A]
+[MidRight]
+We spare what men we can, but honestly[NL]
+with the trouble brewing in Boldren, we[ANL]
+don't have any other soldiers to spare.[ANL]
+Since my father passed, I've been stuck[NL]
+with all of this political nonsense.[ANL]
+You know as well as I do that I'm not[NL]
+cut out for it.[ANL]
+But, seeing as how I am the 'last of the[NL]
+line' I have a duty to the people.[ANL]
+What better way to show them I mean to[NL]
+protect them then by doing it in person?[A]
+[MidLeft]
+You'll get yourself killed doing that,[NL]
+you know.[A]
+[MidRight]
+So be it then,[ANL]
+I've made my peace with death long ago.[A]
+[MidLeft]
+...[A]
+[MidRight][Smile]
+Bah, enough of this, you sound like Jerran.[ANL]
+Come, see those plumes of smoke ahead?[NL]
+I think we've got assholes to kill.[ANL]
+Gather your people, let's go![A][X]
+
+## Ch5HarassText
+[MidLeft][LoadTeenagerMale][MidRight][LoadJudson]
+[MidRight]
+Heh heh, run along young'n.[A]
+[MidLeft]
+N-No. I-I can't let you. What you're[NL]
+doing is despicable.[A]
+[MidRight]
+Fine, might 's well go all in, startin'[NL]
+with you![A]
+[MidLeft]
+Aaaah![A][X]
+
+## Ch5MidHarassText
+[MidLeft][LoadCyrus][MidRight][LoadErron]
+[MidRight]
+Look over there![ANL]
+We need to help him, quickly![A]
+[MidLeft]
+Erron, wait![A][X]
+
+## Ch5HarassBattleText
+[MidLeft][LoadErron][MidRight][LoadJudson]
+[MidLeft]
+Hey jackass, get away from him![A]
+[MidRight]
+Huh? Looks like we got a do-gooder![NL]
+Know what we do to 'em 'round here?[A]
+[MidLeft]
+Let's not waste more words.[NL]
+I'd wager you don't know many more[A]
+[MidRight][MoveMidRight]
+Graugh![A][X]
+
+## Ch5EndHarass
+[MidLeft][LoadErron][MidRight][LoadJudson]
+[MidRight]
+Gah, the scum tried to kill me![ANL]
+We'll kill 'em first! Up 'n at 'em boys,[NL]
+we're gonna be rich by the looks of it![A][X]
+
+## Ch5StartBjornCyrus
+[MidLeft][LoadBjorn][MidRight][LoadCyrus]
+[MidLeft]
+Ran up trying to be the hero, did he?[A]
+[MidRight]
+As usual...[ANL]
+Come, let's catch up with him.[NL]
+We need to try and save these villages![A][X]
+
+## Ch5DesertText
+[MidLeft][LoadNaiah][MidRight][LoadIdi]
+[MidLeft]
+Hello.[A][X]
+
+## Ch5HouseText
+[MidLeft][LoadTeenagerMale][MidRight][LoadCurrent]
+[MidLeft]
+Thank you.[A][X]
+
+## Ch5WayneRecruit
+[MidLeft][LoadWayne][MidRight][LoadCurrent]
+[MidLeft]
+Hello.[A][X]
+
+## Ch5TopVillage
+[MidLeft][LoadWayne][MidRight][LoadCurrent]
+[MidLeft]
+Hello.[A][X]
+
+## Ch5BottomVillage
+[MidLeft][LoadWayne][MidRight][LoadCurrent]
+[MidLeft]
+Hello.[A][X]
+
+## Ch5EndText
+[MidLeft][LoadWayne][MidRight][LoadCurrent]
+[MidLeft]
+Hello.[A][X]

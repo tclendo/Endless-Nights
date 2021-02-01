@@ -19,6 +19,8 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0x0,DesertConvo,2)
+TurnEventPlayer(0x0,LoadDesertReinforcements,6)
+TurnEventPlayer(0x0,LoadBanditReinforcements,6)
 END_MAIN
 
 ALIGN 32 //CharacterBasedEvents have to be 32-Aligned
@@ -30,11 +32,11 @@ Village(0x8,WayneVillage,1,13)
 Village(0x9,DesertVillage,20,17)
 Village(0xA,MountainVillage,10,15)
 House(0x0,HouseConvo,5,8)
-
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
 END_MAIN
 
 Dunno:
@@ -56,34 +58,86 @@ UNIT
 /// Beginning/Ending Events ///
 
 BeginningScene:
-CAMERA [0,0]
-FADU 5
-LOAD1 0 PlayerUnits
-ENUN
-LOAD1 1 BjornSpawn
-ENUN
 LOAD1 1 EnemyUnits
 ENUN
+LOAD1 1 CutsceneSpawn
+ENUN
+SetBackground(0x1B)
+Text(Ch5StartText)
+EndConvo
+CAMERA [0,8]
+STAL 10
+SetBackground(0x1B)
+Text(Ch5HarassText)
+EndConvo
+CAMERA [0,2]
+LOAD1 0 CyrusErronSpawn
+ENUN
+Text(Ch5MidHarassText)
+EVBIT_T 0x9
+MOVE 20 Erron [5,11]
+ENUN
+EVBIT_F 0x9
+CAMERA [0,12]
+Text(Ch5HarassBattleText)
+MOVE 10 CutsceneUnit [5,8]
+ENUN
+REMOVEUNIT CutsceneUnit
+STAL 10
+StartBattle
+NormalDamage(0,9)
+MissedAttack(1,0)
+EndAttack
+FIGHT Erron Judson 0 0
+Text(Ch5EndHarass)
+MOVE 20 Judson [20,10]
+SVAL 1 25
+SET_HP Judson
+CAMERA [0,0]
+EVBIT_T 0x9
+MOVE 10 Cyrus [3,6]
+ENUN
+LOAD1 0 PlayerUnits
+ENUN
+STAL 10
+LOAD1 1 BjornSpawn
+ENUN
+EVBIT_F 0x9
+Text(Ch5StartBjornCyrus)
+NoFade
 ENDA
 
 EndingScene:
+SetBackground(0x1B)
+Text(Ch5EndText)
+EndConvo
 MoveToChapter(0x6)
 ENDA
 
 /// Other Events ///
 
 WayneVillage:
+SetBackground(0x2)
+Text(Ch5WayneRecruit)
+EndConvo
 LOAD1 1 WayneSpawn
 ENUN
+NoFade
 ENDA
 
 DesertVillage:
+VillageEventItem(Ch5BottomVillage,0x2,HandAxe)
+NoFade
 ENDA
 
 MountainVillage:
+VillageEventItem(Ch5TopVillage,0x2,BlueGem)
+NoFade
 ENDA
 
 HouseConvo:
+HouseEvent(Ch5HouseText,0x0)
+NoFade
 ENDA
 
 DesertConvo:
@@ -118,21 +172,50 @@ BEQ 0x3 0xC 0x0
     LOAD1 0 YvetteSpawn
     ENUN
 LABEL 0x3
+SetBackground(0x30)
+Text(Ch5DesertText)
+EndConvo
+NoFade
+ENDA
+
+LoadDesertReinforcements:
+CAMERA [12,22]
+LOAD1 1 DesertReinforcements
+ENUN
+STAL 5
+NoFade
+ENDA
+
+LoadBanditReinforcements:
+CAMERA [0,14]
+LOAD1 1 BanditReinforcements1
+ENUN
+STAL 5
+CAMERA [21,12]
+LOAD1 1 BanditReinforcements2
+ENUN
+STAL 5
+NoFade
 ENDA
 
 /// Unit Data ///
 
-PlayerUnits:
-UNIT Cyrus EirikaLord Cyrus Level(3,Ally,False) [0,1] 0x0 0x0 0x1 REDA2R4 [CyrusAxe,Vulnerary] NoAI
-UNIT Reginald Paladin Cyrus Level(1,Ally,False) [0,0] 0x0 0x0 0x1 REDA3R3 [SilverSword,SteelLance] NoAI
-UNIT Gerome SoldierM Cyrus Level(2,Ally,False) [0,1] 0x0 0x0 0x1 REDA1R3 [IronLance,Javelin,Vulnerary] NoAI
-UNIT Nicole Troubadour Cyrus Level(1,Ally,False) [0,0] 0x0 0x0 0x1 REDA1R2 [Mend,Vulnerary] NoAI
-UNIT Jerran Archer Cyrus Level(2,Ally,False) [0,1] 0x0 0x0 0x1 REDA2R1 [SteelBow,Vulnerary] NoAI
+CyrusErronSpawn:
+UNIT Cyrus EirikaLord Cyrus Level(3,Ally,False) [0,1] 0x0 0x0 0x1 REDA2R1 [CyrusAxe,Vulnerary] NoAI
 UNIT Erron Mage Cyrus Level(3,Ally,False) [0,2] 0x0 0x0 0x1 REDA2R2 [Thunder,Vulnerary] NoAI
 UNIT
 
+PlayerUnits:
+//UNIT Cyrus EirikaLord Cyrus Level(3,Ally,False) [0,1] 0x0 0x0 0x1 REDA2R4 [CyrusAxe,Vulnerary] NoAI
+UNIT Reginald Paladin Cyrus Level(1,Ally,False) [0,0] 0x0 0x0 0x1 REDA1R4 [SilverSword,SteelLance] NoAI
+UNIT Gerome SoldierM Cyrus Level(2,Ally,False) [0,1] 0x0 0x0 0x1 REDA3R5 [IronLance,Javelin,Vulnerary] NoAI
+UNIT Nicole Troubadour Cyrus Level(1,Ally,False) [0,0] 0x0 0x0 0x1 REDA1R5 [Mend,Vulnerary] NoAI
+UNIT Jerran Archer Cyrus Level(2,Ally,False) [0,1] 0x0 0x0 0x1 REDA2R4 [SteelBow,Vulnerary] NoAI
+//UNIT Erron Mage Cyrus Level(3,Ally,False) [0,2] 0x0 0x0 0x1 REDA2R2 [Thunder,Vulnerary] NoAI
+UNIT
+
 BjornSpawn:
-UNIT Bjorn Mercenary Cyrus Level(5,Ally,False) [0,2] 0x0 0x0 0x1 REDA3R4 [SteelSword,Vulnerary] NoAI
+UNIT Bjorn Mercenary Cyrus Level(5,Ally,False) [0,2] 0x0 0x0 0x1 REDA2R6 [SteelSword,Vulnerary] NoAI
 UNIT
 
 WayneSpawn:
@@ -162,9 +245,50 @@ YvetteSpawn:
 UNIT Yvette Swordstress Naiah Level(6,Ally,True) [0,22] 0x0 0x0 0x0 0x1 [SteelSword,Vulnerary] NoAI
 UNIT
 
+CutsceneSpawn:
+UNIT CutsceneUnit 0x6F 0 Level(1,NPC,True) [5,10] 0x0 0x0 0x0 0x1 [Vulnerary] NoAI
+UNIT Judson Fighter Judson Level(10,Enemy,False) [5,12] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe] NeverMoveAI
+UNIT AxeBandit Fighter Judson Level(8,Enemy,True) [9,14] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT
+
 EnemyUnits:
-UNIT Judson Fighter Judson Level(6,Enemy,False) [21,10] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe] NeverMoveAI
-//TODO: Populate enemy units and reinforcements
+UNIT AxeBandit Brigand Judson Level(8,Enemy,True) [21,0] 0x0 0x0 0x0 0x1 [IronAxe] BrigandAI
+UNIT AxeBandit Brigand Judson Level(8,Enemy,True) [0,15] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Brigand Judson Level(8,Enemy,True) [6,17] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Brigand Judson Level(8,Enemy,True) [10,8] 0x0 0x0 0x0 0x1 [IronAxe] DefaultAI
+UNIT AxeBandit Brigand Judson Level(8,Enemy,True) [13,3] 0x0 0x0 0x0 0x1 [HandAxe] DefaultAI
+UNIT LanceBandit Deserter Judson Level(8,Enemy,True) [16,6] 0x0 0x0 0x0 0x1 [Javelin] AttackInRangeAI
+UNIT AxeBandit Fighter Judson Level(8,Enemy,True) [20,11] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT AxeBandit Fighter Judson Level(8,Enemy,True) [19,10] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT BowBandit Archer Judson Level(8,Enemy,True) [20,9] 0x0 0x0 0x0 0x1 [IronBow] AttackInRangeAI
+UNIT BowBandit Archer Judson Level(8,Enemy,True) [21,10] 0x0 0x0 0x0 0x1 [IronBow] AttackInRangeAI
+UNIT AxeBandit Brigand Judson Level(8,Enemy,True) [13,16] 0x0 0x0 0x0 0x1 [SteelAxe] AttackInRangeAI
+UNIT LanceBandit Deserter Judson Level(8,Enemy,True) [12,17] 0x0 0x0 0x0 0x1 [Javelin] AttackInRangeAI
+UNIT LanceBandit Deserter Judson Level(8,Enemy,True) [14,18] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
+UNIT AxeBandit Fighter Judson Level(8,Enemy,True) [16,17] 0x0 0x0 0x0 0x1 [HandAxe] DefaultAI
+UNIT AxeBandit Fighter Judson Level(8,Enemy,True) [16,18] 0x0 0x0 0x0 0x1 [SteelAxe] DefaultAI
+UNIT LanceBandit Deserter Judson Level(8,Enemy,True) [14,11] 0x0 0x0 0x0 0x1 [IronLance] DefaultAI
+UNIT LanceBandit Deserter Judson Level(8,Enemy,True) [15,12] 0x0 0x0 0x0 0x1 [IronLance] DefaultAI
+UNIT SwordBandit Mercenary 0 Level(7,Enemy,True) [8,19] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+UNIT Amani18 AmaniMaleClass 0 Level(7,Enemy,True) [13,21] 0x0 0x0 0x0 0x1 [FireFang] AttackInRangeAI
+UNIT Amani18 AmaniMaleClass 0 Level(7,Enemy,True) [17,20] 0x0 0x0 0x0 0x1 [FireFang] AttackInRangeAI
+UNIT
+
+DesertReinforcements:
+UNIT AnimaMage Mage 0 Level(8,Enemy,True) [11,22] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
+UNIT AnimaMage Mage 0 Level(8,Enemy,True) [12,22] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
+UNIT AnimaMage Mage 0 Level(8,Enemy,True) [13,22] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
+UNIT AnimaMage Mage 0 Level(8,Enemy,True) [14,22] 0x0 0x0 0x0 0x1 [Fire] DefaultAI
+UNIT
+
+BanditReinforcements1:
+UNIT AxeBandit Fighter Judson Level(8,Enemy,True) [0,14] 0x0 0x0 0x0 0x1 [SteelAxe] DefaultAI
+UNIT AxeBandit Fighter Judson Level(8,Enemy,True) [0,15] 0x0 0x0 0x0 0x1 [SteelAxe] DefaultAI
+UNIT
+
+BanditReinforcements2:
+UNIT AxeBandit Fighter Judson Level(8,Enemy,True) [21,12] 0x0 0x0 0x0 0x1 [SteelAxe] DefaultAI
+UNIT AxeBandit Fighter Judson Level(8,Enemy,True) [21,13] 0x0 0x0 0x0 0x1 [SteelAxe] DefaultAI
 UNIT
 
 ///

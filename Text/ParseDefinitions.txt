@@ -86,6 +86,8 @@
 [LoadNicole] = [LoadFace][0x11][0x01]
 [LoadNicoleEyesClosed] = [LoadFace][0x12][0x06]
 [LoadErron] = [LoadFace][0x13][0x01]
+[LoadBjorn] = [LoadFace][0x16][0x01]
+[LoadWayne] = [LoadFace][0x18][0x01]
 
 [LoadMokaya] = [LoadFace][0x25][0x01]
 

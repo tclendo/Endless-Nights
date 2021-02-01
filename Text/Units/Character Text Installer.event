@@ -148,7 +148,26 @@ Erron[X]
 Erron[X]
 
 # 0xC3D ErronDeathQuote
-[MidRight][LoadErron]
+I have died.[A][X]
+
+# 0x221 BjornText
+Bjorn[X]
+
+# 0x27d BjornDescription
+Bjorn[X]
+
+# 0xC33 BjornDeathQuote
+[MidRight][LoadBjorn]
+I have died.[A][X]
+
+# 0x222 WayneText
+Wayne[X]
+
+# 0x27e WayneDescription
+Wayne[X]
+
+# 0xC32 WayneDeathQuote
+[MidRight][LoadBjorn]
 I have died.[A][X]
 
 # 0x239 DanteText
